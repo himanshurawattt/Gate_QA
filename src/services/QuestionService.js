@@ -9,7 +9,13 @@ export class QuestionService {
       return;
     }
 
-    const dataUrl = `${import.meta.env.BASE_URL}questions-filtered.json`;
+    // For GitHub Pages, BASE_URL might be '/Gate_QA/' or './'.
+    // We want to ensure we fetch from the correct root.
+    const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+      ? import.meta.env.BASE_URL
+      : `${import.meta.env.BASE_URL}/`;
+
+    const dataUrl = new URL('questions-filtered.json', new URL(baseUrl, window.location.origin)).href;
     const response = await fetch(dataUrl, { cache: "no-cache" });
 
     if (!response.ok) {
