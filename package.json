@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/ensure-nojekyll.mjs",
     "serve": "vite preview"
   },
   "eslintConfig": {

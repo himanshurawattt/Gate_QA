@@ -5,9 +5,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
   },
   server: {
     open: true,
   },
-  base: './', // Ensures relative paths for GitHub Pages
+  base: './',
 });

@@ -9,19 +9,7 @@ export class QuestionService {
       return;
     }
 
-    // In development (Vite), BASE_URL is "/" or "./".
-    // In production (GitHub Pages), it might be "/Gate_QA/".
-    // We need to construct the path correctly.
-
-    let base = import.meta.env.BASE_URL;
-    if (!base || base === "./" || base === "/") {
-      base = "";
-    } else {
-      base = base.replace(/\/$/, ""); // Remove trailing slash if present
-    }
-
-    const dataUrl = `${base}/questions-filtered.json`;
-    console.log("Fetching questions from:", dataUrl); // Debug log
+    const dataUrl = `${import.meta.env.BASE_URL}questions-filtered.json`;
     const response = await fetch(dataUrl, { cache: "no-cache" });
 
     if (!response.ok) {

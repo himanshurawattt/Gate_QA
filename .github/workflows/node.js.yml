@@ -20,7 +20,7 @@ jobs:
       pages: "write"
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -32,8 +32,11 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+    - name: Verify nojekyll marker
+      run: test -f dist/.nojekyll
     
     - name: Deploy to GitHub Pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist
