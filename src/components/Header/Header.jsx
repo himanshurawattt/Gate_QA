@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SupportModal from '../Footer/SupportModal';
+import { FaHeart } from 'react-icons/fa';
 
 const Header = ({ onOpenFilters }) => {
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
       <div className="relative flex items-center justify-center py-3 px-4 sm:px-6">
@@ -30,6 +33,23 @@ const Header = ({ onOpenFilters }) => {
             <span className="hidden sm:inline text-sm font-medium">Filters</span>
           </button>
         )}
+
+        {/* Support Button (Left of Filters or next to it) */}
+        <button
+          onClick={() => setIsSupportOpen(true)}
+          className="absolute right-16 sm:right-32 top-1/2 -translate-y-1/2 flex items-center gap-2 px-3 py-2 
+                     bg-blue-50 text-blue-600 rounded-lg shadow-sm border border-blue-200
+                     hover:bg-blue-100 transition-all text-sm font-medium"
+          aria-label="Support me"
+        >
+          <span className="hidden sm:inline">Support Me</span>
+          <FaHeart className="text-red-500 animate-pulse" />
+        </button>
+
+        <SupportModal
+          isOpen={isSupportOpen}
+          onClose={() => setIsSupportOpen(false)}
+        />
 
       </div>
     </header>

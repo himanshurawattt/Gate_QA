@@ -1,11 +1,9 @@
 import { MathJaxContext } from "better-react-mathjax";
 import { useCallback, useEffect, useState } from "react";
-import { FaFilter } from "react-icons/fa";
 
 import Header from "./components/Header/Header";
 import Question from "./components/Question/Question";
 import Footer from "./components/Footer/Footer";
-import FilterSidebar from "./components/Filters/FilterSidebar";
 import FilterModal from "./components/Filters/FilterModal";
 import ActiveFilterChips from "./components/Filters/ActiveFilterChips";
 import { FilterProvider, useFilters } from "./contexts/FilterContext";

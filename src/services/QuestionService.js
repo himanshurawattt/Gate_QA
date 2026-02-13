@@ -142,9 +142,9 @@ export class QuestionService {
     }
 
     this.sourceUrl = bestCandidate.dataUrl;
-    this.questions = bestCandidate.data.map((question) =>
-      this.normalizeQuestion(question)
-    );
+    this.questions = bestCandidate.data
+      .map((question) => this.normalizeQuestion(question))
+      .filter((q) => q.title !== "General");
 
     if (bestCandidate.joinCoverage < 1) {
       console.warn(

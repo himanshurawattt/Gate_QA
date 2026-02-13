@@ -3,7 +3,17 @@ import { QuestionService } from '../services/QuestionService';
 import { AnswerService } from '../services/AnswerService';
 
 const FilterContext = createContext();
+
 const DEFAULT_SELECTED_TYPES = ['MCQ', 'MSQ', 'NAT'];
+const STORAGE_KEYS = {
+    solved: 'gate_qa_solved_questions',
+    bookmarked: 'gate_qa_bookmarked_questions',
+    metadata: 'gate_qa_progress_metadata'
+};
+const LEGACY_STORAGE_KEYS = {
+    bookmarked: 'gateqa_bookmarks_v1'
+};
+const STORAGE_HEALTH_KEY = '__gate_qa_storage_health_check__';
 
 const normalizeSelectedTypes = (rawTypes, { fallbackToDefault = false } = {}) => {
     if (!Array.isArray(rawTypes)) {
@@ -21,6 +31,73 @@ const normalizeSelectedTypes = (rawTypes, { fallbackToDefault = false } = {}) =>
     }
 
     return orderedUnique;
+};
+
+const normalizeStoredIds = (rawIds) => {
+    if (!Array.isArray(rawIds)) {
+        return [];
+    }
+
+    const seen = new Set();
+    const normalized = [];
+
+    rawIds.forEach((rawId) => {
+        const id = String(rawId || '').trim();
+        if (!id || seen.has(id)) {
+            return;
+        }
+        seen.add(id);
+        normalized.push(id);
+    });
+
+    return normalized;
+};
+
+const parseBooleanParam = (value) => {
+    if (typeof value !== 'string') {
+        return false;
+    }
+    const normalized = value.trim().toLowerCase();
+    return normalized === '1' || normalized === 'true' || normalized === 'yes';
+};
+
+const canUseBrowserStorage = () => {
+    if (typeof window === 'undefined') {
+        return false;
+    }
+    try {
+        window.localStorage.setItem(STORAGE_HEALTH_KEY, 'ok');
+        window.localStorage.removeItem(STORAGE_HEALTH_KEY);
+        return true;
+    } catch (error) {
+        return false;
+    }
+};
+
+const readJsonFromStorage = (key, fallback) => {
+    if (typeof window === 'undefined') {
+        return fallback;
+    }
+    try {
+        const raw = window.localStorage.getItem(key);
+        return raw === null ? fallback : JSON.parse(raw);
+    } catch (error) {
+        return fallback;
+    }
+};
+
+const getQuestionTrackingId = (question = {}) => {
+    if (!question || typeof question !== 'object') {
+        return null;
+    }
+
+    const candidate = AnswerService.getStorageKeyForQuestion(question);
+    if (!candidate) {
+        return null;
+    }
+
+    const normalized = String(candidate).trim();
+    return normalized || null;
 };
 
 export const useFilters = () => {
@@ -45,22 +122,27 @@ export const FilterProvider = ({ children }) => {
         yearRange: [2000, 2025],
         selectedTopics: [],
         selectedSubtopics: [],
-        selectedTypes: [...DEFAULT_SELECTED_TYPES], // Default: All selected
-        searchQuery: ""
+        selectedTypes: [...DEFAULT_SELECTED_TYPES],
+        hideSolved: false,
+        showOnlyBookmarked: false,
+        searchQuery: ''
     });
 
     const [filteredQuestions, setFilteredQuestions] = useState([]);
     const [totalQuestions, setTotalQuestions] = useState(0);
     const [isInitialized, setIsInitialized] = useState(false);
 
-    // Initialize data from QuestionService
+    const [solvedQuestionIds, setSolvedQuestionIds] = useState([]);
+    const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState([]);
+    const [isProgressStorageAvailable, setIsProgressStorageAvailable] = useState(true);
+    const [hasLoadedProgressState, setHasLoadedProgressState] = useState(false);
+
     useEffect(() => {
         if (QuestionService.questions.length > 0) {
             const tags = QuestionService.getStructuredTags();
             setStructuredTags(tags);
             setTotalQuestions(QuestionService.questions.length);
 
-            // Initialize Year Range from data if not set/default
             const { minYear, maxYear } = tags;
             setFilters(prev => ({
                 ...prev,
@@ -69,9 +151,8 @@ export const FilterProvider = ({ children }) => {
 
             setIsInitialized(true);
         }
-    }, [QuestionService.loaded]); // Depend on loaded flag if observable, or we might need a manual trigger
+    }, [QuestionService.loaded]);
 
-    // Load state from URL on mount
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
         const urlTypes = params.get('types');
@@ -82,19 +163,19 @@ export const FilterProvider = ({ children }) => {
             selectedSubtopics: params.get('subtopics')?.split(',').filter(Boolean) || [],
             selectedTypes: urlTypes === null
                 ? [...DEFAULT_SELECTED_TYPES]
-                : normalizeSelectedTypes(urlTypes.split(',').filter(Boolean))
+                : normalizeSelectedTypes(urlTypes.split(',').filter(Boolean)),
+            hideSolved: parseBooleanParam(params.get('hideSolved')),
+            showOnlyBookmarked: parseBooleanParam(params.get('showOnlyBookmarked'))
         };
 
         if (urlFilters.yearRange && urlFilters.yearRange.length === 2 && !isNaN(urlFilters.yearRange[0])) {
             setFilters(prev => ({ ...prev, ...urlFilters }));
         } else {
-            // Only apply other filters if range is invalid/missing to keep default range from init
             const { yearRange, ...rest } = urlFilters;
             setFilters(prev => ({ ...prev, ...rest }));
         }
     }, []);
 
-    // Update URL when filters change
     useEffect(() => {
         if (!isInitialized) return;
 
@@ -104,80 +185,164 @@ export const FilterProvider = ({ children }) => {
         if (filters.selectedSubtopics.length) params.set('subtopics', filters.selectedSubtopics.join(','));
         if (filters.yearRange) params.set('range', filters.yearRange.join('-'));
 
-        // Only add 'types' to URL if it's NOT the default (all selected)
-        // This keeps the URL cleaner
         const selectedTypes = normalizeSelectedTypes(filters.selectedTypes);
         if (selectedTypes.length > 0 && selectedTypes.length < DEFAULT_SELECTED_TYPES.length) {
             params.set('types', selectedTypes.join(','));
         }
 
-        const newUrl = `${window.location.pathname}?${params.toString()}`;
+        if (filters.hideSolved) {
+            params.set('hideSolved', '1');
+        }
+        if (filters.showOnlyBookmarked) {
+            params.set('showOnlyBookmarked', '1');
+        }
+
+        const query = params.toString();
+        const newUrl = query
+            ? `${window.location.pathname}?${query}`
+            : window.location.pathname;
         window.history.replaceState({}, '', newUrl);
     }, [filters, isInitialized]);
 
-    // Apply filters
+    useEffect(() => {
+        if (typeof window === 'undefined') {
+            setIsProgressStorageAvailable(false);
+            setHasLoadedProgressState(true);
+            return;
+        }
+
+        const storageAvailable = canUseBrowserStorage();
+        setIsProgressStorageAvailable(storageAvailable);
+
+        if (!storageAvailable) {
+            setHasLoadedProgressState(true);
+            return;
+        }
+
+        const storedSolved = normalizeStoredIds(readJsonFromStorage(STORAGE_KEYS.solved, []));
+        const storedBookmarkedRaw = readJsonFromStorage(STORAGE_KEYS.bookmarked, null);
+        const storedBookmarked = storedBookmarkedRaw === null
+            ? normalizeStoredIds(readJsonFromStorage(LEGACY_STORAGE_KEYS.bookmarked, []))
+            : normalizeStoredIds(storedBookmarkedRaw);
+
+        setSolvedQuestionIds(storedSolved);
+        setBookmarkedQuestionIds(storedBookmarked);
+
+        if (storedBookmarkedRaw === null) {
+            try {
+                window.localStorage.setItem(STORAGE_KEYS.bookmarked, JSON.stringify(storedBookmarked));
+            } catch (error) {
+                setIsProgressStorageAvailable(false);
+            }
+        }
+
+        setHasLoadedProgressState(true);
+    }, []);
+
+    useEffect(() => {
+        if (!hasLoadedProgressState || !isProgressStorageAvailable || typeof window === 'undefined') {
+            return;
+        }
+
+        try {
+            window.localStorage.setItem(STORAGE_KEYS.solved, JSON.stringify(solvedQuestionIds));
+            window.localStorage.setItem(STORAGE_KEYS.bookmarked, JSON.stringify(bookmarkedQuestionIds));
+            window.localStorage.setItem(STORAGE_KEYS.metadata, JSON.stringify({
+                lastUpdated: new Date().toISOString(),
+                solvedCount: solvedQuestionIds.length,
+                bookmarkedCount: bookmarkedQuestionIds.length
+            }));
+        } catch (error) {
+            setIsProgressStorageAvailable(false);
+        }
+    }, [solvedQuestionIds, bookmarkedQuestionIds, hasLoadedProgressState, isProgressStorageAvailable]);
+
+    const validQuestionIdSet = useMemo(() => {
+        if (!isInitialized || !QuestionService.questions.length) {
+            return new Set();
+        }
+
+        return new Set(
+            QuestionService.questions
+                .map(question => getQuestionTrackingId(question))
+                .filter(Boolean)
+        );
+    }, [isInitialized, totalQuestions]);
+
+    useEffect(() => {
+        if (!isInitialized || validQuestionIdSet.size === 0) {
+            return;
+        }
+
+        setSolvedQuestionIds((prev) => {
+            const next = prev.filter(id => validQuestionIdSet.has(id));
+            return next.length === prev.length ? prev : next;
+        });
+
+        setBookmarkedQuestionIds((prev) => {
+            const next = prev.filter(id => validQuestionIdSet.has(id));
+            return next.length === prev.length ? prev : next;
+        });
+    }, [isInitialized, validQuestionIdSet]);
+
+    const solvedQuestionSet = useMemo(() => new Set(solvedQuestionIds), [solvedQuestionIds]);
+    const bookmarkedQuestionSet = useMemo(() => new Set(bookmarkedQuestionIds), [bookmarkedQuestionIds]);
+
     useEffect(() => {
         if (!QuestionService.questions.length) return;
 
-        const { selectedYears, selectedTopics, selectedSubtopics, yearRange } = filters;
+        const {
+            selectedYears,
+            selectedTopics,
+            selectedSubtopics,
+            yearRange,
+            hideSolved,
+            showOnlyBookmarked
+        } = filters;
+
         const selectedTypes = normalizeSelectedTypes(filters.selectedTypes);
         const selectedTypeSet = new Set(selectedTypes.map(type => type.toUpperCase()));
 
         const result = QuestionService.questions.filter(q => {
-            // 0. Question Type Filter
-            // Check if question type matches any of the selected types
+            const questionId = getQuestionTrackingId(q);
+            const isSolved = questionId ? solvedQuestionSet.has(questionId) : false;
+            const isBookmarked = questionId ? bookmarkedQuestionSet.has(questionId) : false;
 
-            // Optimization: If all types are selected (default), skip check
+            if (hideSolved && isSolved) {
+                return false;
+            }
+
+            if (showOnlyBookmarked && !isBookmarked) {
+                return false;
+            }
+
             if (selectedTypes.length < DEFAULT_SELECTED_TYPES.length) {
                 const answer = AnswerService.getAnswerForQuestion(q);
                 const qType = answer ? answer.type : null;
 
-                const normalizedQType = qType ? qType.toUpperCase() : "";
+                const normalizedQType = qType ? qType.toUpperCase() : '';
                 const typeMatch = normalizedQType && selectedTypeSet.has(normalizedQType);
 
                 if (!typeMatch) return false;
             }
 
-
-
-            // 1. Year Filter (Discrete)
-            // Extract year from tag (e.g., gatecse-2023 -> 2023)
-            // Or check if question matches specifically selected "gatecse-YYYY" tags
             let yearMatch = true;
-
-            const qYearTag = q.tags.find(t => t.startsWith("gate"));
-            const qYearNum = qYearTag ? parseInt(qYearTag.match(/\d{4}/)?.[0] || "0", 10) : 0;
+            const qYearTag = q.tags.find(t => t.startsWith('gate'));
+            const qYearNum = qYearTag ? parseInt(qYearTag.match(/\d{4}/)?.[0] || '0', 10) : 0;
 
             if (selectedYears.length > 0) {
                 yearMatch = selectedYears.includes(qYearTag);
             }
 
-            // 2. Year Range
             let rangeMatch = true;
             if (yearRange && yearRange.length === 2) {
                 rangeMatch = qYearNum >= yearRange[0] && qYearNum <= yearRange[1];
             }
 
-            // 3. Topic Filter
-            // Question matches if it has ANY of the selected topics
-            // Now using strict hierarchy: selectedTopics contains "Display Names" (e.g. "Operating System")
-            // Question tags are like "operating-system".
-            // We need to check if any of the question's tags map to the selected topics.
-            // QuestionService has the logic, but here we can just normalize and check.
-            // Actually, let's normalize the selected topic to check against question tags.
             let topicMatch = true;
             if (selectedTopics.length > 0) {
-                // We need to see if this question belongs to any of the selected topics.
-                // A question belongs to a topic if ANY of its tags is a subtopic of that topic.
-                // OR if it has a tag that matches the topic name itself.
-
-                // Let's iterate selected topics, for each, check if question has a matching tag.
-                // Optimization: Prepare a Set of normalized acceptable tags for the selected topics?
-                // Or just simple check:
                 topicMatch = selectedTopics.some(selectedTopic => {
-                    // Get all valid subtopics for this topic from QuestionService
                     const validSubtopics = QuestionService.TOPIC_HIERARCHY[selectedTopic] || [];
-                    // Check if question has any tag that matches these subtopics OR the topic itself
                     return q.tags.some(tag => {
                         const normTag = QuestionService.normalizeString(tag);
                         if (normTag === QuestionService.normalizeString(selectedTopic)) return true;
@@ -186,8 +351,6 @@ export const FilterProvider = ({ children }) => {
                 });
             }
 
-            // 4. Subtopic Filter
-            // selectedSubtopics contains "Display Names" (e.g. "Paging")
             let subtopicMatch = true;
             if (selectedSubtopics.length > 0) {
                 subtopicMatch = q.tags.some(tag => {
@@ -200,8 +363,7 @@ export const FilterProvider = ({ children }) => {
         });
 
         setFilteredQuestions(result);
-
-    }, [filters, isInitialized]);
+    }, [filters, isInitialized, solvedQuestionSet, bookmarkedQuestionSet]);
 
     const updateFilters = useCallback((newFilters) => {
         setFilters(prev => {
@@ -213,6 +375,82 @@ export const FilterProvider = ({ children }) => {
         });
     }, []);
 
+    const toggleSolved = useCallback((questionOrId) => {
+        const questionId = typeof questionOrId === 'string'
+            ? String(questionOrId || '').trim()
+            : getQuestionTrackingId(questionOrId);
+
+        if (!questionId) {
+            return;
+        }
+
+        setSolvedQuestionIds((prev) => (
+            prev.includes(questionId)
+                ? prev.filter(id => id !== questionId)
+                : [...prev, questionId]
+        ));
+    }, []);
+
+    const toggleBookmark = useCallback((questionOrId) => {
+        const questionId = typeof questionOrId === 'string'
+            ? String(questionOrId || '').trim()
+            : getQuestionTrackingId(questionOrId);
+
+        if (!questionId) {
+            return;
+        }
+
+        setBookmarkedQuestionIds((prev) => (
+            prev.includes(questionId)
+                ? prev.filter(id => id !== questionId)
+                : [...prev, questionId]
+        ));
+    }, []);
+
+    const getQuestionProgressId = useCallback((question = {}) => {
+        return getQuestionTrackingId(question);
+    }, []);
+
+    const isQuestionSolved = useCallback((questionOrId) => {
+        const questionId = typeof questionOrId === 'string'
+            ? String(questionOrId || '').trim()
+            : getQuestionTrackingId(questionOrId);
+        return questionId ? solvedQuestionSet.has(questionId) : false;
+    }, [solvedQuestionSet]);
+
+    const isQuestionBookmarked = useCallback((questionOrId) => {
+        const questionId = typeof questionOrId === 'string'
+            ? String(questionOrId || '').trim()
+            : getQuestionTrackingId(questionOrId);
+        return questionId ? bookmarkedQuestionSet.has(questionId) : false;
+    }, [bookmarkedQuestionSet]);
+
+    const setHideSolved = useCallback((value) => {
+        updateFilters({ hideSolved: !!value });
+    }, [updateFilters]);
+
+    const setShowOnlyBookmarked = useCallback((value) => {
+        updateFilters({ showOnlyBookmarked: !!value });
+    }, [updateFilters]);
+
+    const solvedCount = useMemo(() => {
+        if (validQuestionIdSet.size === 0) {
+            return solvedQuestionIds.length;
+        }
+        return solvedQuestionIds.filter(id => validQuestionIdSet.has(id)).length;
+    }, [solvedQuestionIds, validQuestionIdSet]);
+
+    const bookmarkedCount = useMemo(() => {
+        if (validQuestionIdSet.size === 0) {
+            return bookmarkedQuestionIds.length;
+        }
+        return bookmarkedQuestionIds.filter(id => validQuestionIdSet.has(id)).length;
+    }, [bookmarkedQuestionIds, validQuestionIdSet]);
+
+    const progressPercentage = totalQuestions > 0
+        ? Math.round((solvedCount / totalQuestions) * 100)
+        : 0;
+
     const clearFilters = useCallback(() => {
         const { minYear, maxYear } = structuredTags;
         setFilters({
@@ -221,7 +459,9 @@ export const FilterProvider = ({ children }) => {
             selectedTopics: [],
             selectedSubtopics: [],
             selectedTypes: [...DEFAULT_SELECTED_TYPES],
-            searchQuery: ""
+            hideSolved: false,
+            showOnlyBookmarked: false,
+            searchQuery: ''
         });
     }, [structuredTags]);
 
@@ -233,7 +473,20 @@ export const FilterProvider = ({ children }) => {
             filteredQuestions,
             structuredTags,
             totalQuestions,
-            isInitialized
+            isInitialized,
+            solvedQuestionIds,
+            bookmarkedQuestionIds,
+            solvedCount,
+            bookmarkedCount,
+            progressPercentage,
+            isProgressStorageAvailable,
+            toggleSolved,
+            toggleBookmark,
+            isQuestionSolved,
+            isQuestionBookmarked,
+            getQuestionProgressId,
+            setHideSolved,
+            setShowOnlyBookmarked
         }}>
             {children}
         </FilterContext.Provider>

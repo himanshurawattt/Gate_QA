@@ -2,6 +2,8 @@ import React from 'react';
 import YearFilter from './YearFilter';
 import YearRangeFilter from './YearRangeFilter';
 import TopicFilter from './TopicFilter';
+import ProgressBar from './ProgressBar';
+import ProgressFilterToggles from './ProgressFilterToggles';
 import { useFilters } from '../../contexts/FilterContext';
 
 const TYPE_BUTTON_STYLES = {
@@ -21,18 +23,30 @@ const TYPE_BUTTON_STYLES = {
 const QUESTION_TYPES = ['MCQ', 'MSQ', 'NAT'];
 
 const FilterSidebar = ({ className = "", onClose }) => {
-    const { filteredQuestions, totalQuestions, filters, updateFilters, clearFilters } = useFilters();
+    const {
+        filteredQuestions,
+        totalQuestions,
+        filters,
+        updateFilters,
+        clearFilters,
+        solvedCount,
+        bookmarkedCount,
+        progressPercentage,
+        isProgressStorageAvailable,
+        setHideSolved,
+        setShowOnlyBookmarked
+    } = useFilters();
     const selectedTypes = Array.isArray(filters.selectedTypes) ? filters.selectedTypes : [...QUESTION_TYPES];
 
     return (
-        <aside className={`flex flex-col flex-shrink-0 bg-gray-50 border-r border-gray-200 h-full overflow-hidden ${className}`}>
+        <aside className={`flex flex-col flex-shrink-0 bg-gray-50 border-r border-gray-200 h-full min-h-0 overflow-y-auto ${className}`}>
             {/* Reset / Clean filters (if needed) */}
             <div className="p-4 border-b border-gray-200 bg-white z-10 flex justify-between items-center flex-shrink-0">
                 <span className="text-sm font-semibold text-gray-700">
                     {filteredQuestions.length} / {totalQuestions} results
                 </span>
                 <div className="flex items-center gap-2">
-                    {(filters.selectedYears.length > 0 || filters.selectedTopics.length > 0 || filters.selectedSubtopics.length > 0 || selectedTypes.length < QUESTION_TYPES.length) && (
+                    {(filters.selectedYears.length > 0 || filters.selectedTopics.length > 0 || filters.selectedSubtopics.length > 0 || selectedTypes.length < QUESTION_TYPES.length || filters.hideSolved || filters.showOnlyBookmarked) && (
                         <button
                             onClick={clearFilters}
                             className="text-xs font-bold text-blue-600 hover:text-blue-800 uppercase tracking-wide"
@@ -51,8 +65,21 @@ const FilterSidebar = ({ className = "", onClose }) => {
                 </div>
             </div>
 
+            <div className="p-4 border-b border-gray-200 bg-white z-10 flex-shrink-0">
+                <ProgressBar
+                    solvedCount={solvedCount}
+                    totalQuestions={totalQuestions}
+                    progressPercentage={progressPercentage}
+                />
+                {!isProgressStorageAvailable && (
+                    <p className="mt-2 text-xs text-amber-700">
+                        Progress persistence is unavailable in this browser mode. Changes will reset on refresh.
+                    </p>
+                )}
+            </div>
+
             {/* Question Type Filter (Horizontal Toggles) */}
-            <div className="p-4 border-b border-gray-200 bg-white z-10 relative">
+            <div className="p-4 border-b border-gray-200 bg-white z-10 relative flex-shrink-0">
                 <div className="mb-2">
                     <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Question Type</h3>
                 </div>
@@ -87,25 +114,25 @@ const FilterSidebar = ({ className = "", onClose }) => {
             </div>
 
             {/* Scrollable Filter Content */}
-            <div className="flex-1 overflow-hidden p-2 relative">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 h-full min-h-0">
+            <div className="p-2 relative">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:h-[min(42vh,24rem)] md:min-h-[14rem]">
 
                     {/* Left Column: Topics */}
-                    <div className="border-r border-gray-200 pr-2 flex flex-col h-full overflow-hidden">
+                    <div className="md:border-r border-gray-200 pr-0 md:pr-2 flex flex-col min-h-0 overflow-hidden">
                         <div className="py-2 mb-2 border-b border-gray-100 flex-shrink-0 bg-gray-50">
                             <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Topics</h3>
                         </div>
-                        <div className="flex-1 overflow-y-auto custom-scrollbar">
+                        <div className="overflow-y-auto max-h-56 md:max-h-none md:flex-1 md:min-h-0 custom-scrollbar">
                             <TopicFilter />
                         </div>
                     </div>
 
                     {/* Right Column: Years */}
-                    <div className="pl-2 flex flex-col h-full overflow-hidden">
+                    <div className="pl-0 md:pl-2 flex flex-col min-h-0 overflow-hidden">
                         <div className="py-2 mb-2 border-b border-gray-100 flex-shrink-0 bg-gray-50">
                             <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Years</h3>
                         </div>
-                        <div className="flex-1 overflow-y-auto custom-scrollbar">
+                        <div className="overflow-y-auto max-h-56 md:max-h-none md:flex-1 md:min-h-0 custom-scrollbar">
                             <YearFilter />
                         </div>
                     </div>
@@ -114,11 +141,26 @@ const FilterSidebar = ({ className = "", onClose }) => {
             </div>
 
             {/* Sticky Bottom: Year Range */}
-            <div className="p-4 border-t border-gray-200 bg-gray-50 z-10">
+            <div className="p-4 border-t border-gray-200 bg-gray-50 z-10 flex-shrink-0">
                 <div className="mb-2">
                     <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Year Range</h3>
                 </div>
                 <YearRangeFilter />
+
+                <div className="mt-4 border-t border-gray-200 pt-4">
+                    <div className="mb-2">
+                        <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Progress Filters</h3>
+                    </div>
+                    <ProgressFilterToggles
+                        hideSolved={filters.hideSolved}
+                        showOnlyBookmarked={filters.showOnlyBookmarked}
+                        onToggleHideSolved={setHideSolved}
+                        onToggleShowBookmarked={setShowOnlyBookmarked}
+                    />
+                    <p className="mt-2 text-xs text-gray-500">
+                        {bookmarkedCount} bookmarked questions
+                    </p>
+                </div>
             </div>
         </aside>
     );

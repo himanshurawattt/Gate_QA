@@ -4,7 +4,14 @@ import { FaTimes } from 'react-icons/fa';
 
 const ActiveFilterChips = () => {
     const { filters, updateFilters, clearFilters, structuredTags } = useFilters();
-    const { selectedYears, selectedTopics, selectedSubtopics, yearRange } = filters;
+    const {
+        selectedYears,
+        selectedTopics,
+        selectedSubtopics,
+        yearRange,
+        hideSolved,
+        showOnlyBookmarked
+    } = filters;
     const { minYear, maxYear } = structuredTags;
 
     const removeYear = (year) => {
@@ -23,8 +30,21 @@ const ActiveFilterChips = () => {
         updateFilters({ yearRange: [minYear, maxYear] });
     };
 
+    const resetHideSolved = () => {
+        updateFilters({ hideSolved: false });
+    };
+
+    const resetShowBookmarkedOnly = () => {
+        updateFilters({ showOnlyBookmarked: false });
+    };
+
     const isRangeActive = yearRange && (yearRange[0] !== minYear || yearRange[1] !== maxYear);
-    const hasActiveFilters = selectedYears.length > 0 || selectedTopics.length > 0 || selectedSubtopics.length > 0 || isRangeActive;
+    const hasActiveFilters = selectedYears.length > 0
+        || selectedTopics.length > 0
+        || selectedSubtopics.length > 0
+        || isRangeActive
+        || hideSolved
+        || showOnlyBookmarked;
 
     const formatYear = (tag) => {
         // Remove non-digits first
@@ -76,6 +96,24 @@ const ActiveFilterChips = () => {
                     </button>
                 </span>
             ))}
+
+            {hideSolved && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                    Hide solved
+                    <button onClick={resetHideSolved} className="ml-1.5 inline-flex text-emerald-500 hover:text-emerald-600 focus:outline-none">
+                        <FaTimes />
+                    </button>
+                </span>
+            )}
+
+            {showOnlyBookmarked && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
+                    Bookmarked only
+                    <button onClick={resetShowBookmarkedOnly} className="ml-1.5 inline-flex text-orange-500 hover:text-orange-600 focus:outline-none">
+                        <FaTimes />
+                    </button>
+                </span>
+            )}
 
             <button
                 onClick={clearFilters}

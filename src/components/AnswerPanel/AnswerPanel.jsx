@@ -1,9 +1,10 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { AnswerService } from "../../services/AnswerService";
 import { evaluateAnswer } from "../../utils/evaluateAnswer";
+import { useFilters } from "../../contexts/FilterContext";
+import QuestionStatusControls from "../QuestionStatusControls/QuestionStatusControls";
 
 const PROGRESS_KEY = "gateqa_progress_v1";
-const BOOKMARKS_KEY = "gateqa_bookmarks_v1";
 const OPTIONS = ["A", "B", "C", "D"];
 
 function readJsonFromLocalStorage(key, fallback) {
@@ -24,6 +25,14 @@ function writeJsonToLocalStorage(key, payload) {
 }
 
 export default function AnswerPanel({ question = {}, onNextQuestion, solutionLink }) {
+  const {
+    toggleSolved,
+    toggleBookmark,
+    isQuestionSolved,
+    isQuestionBookmarked,
+    getQuestionProgressId,
+  } = useFilters();
+
   const questionIdentity = useMemo(
     () => AnswerService.getQuestionIdentity(question),
     [question]
@@ -41,33 +50,33 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
   const [msqSelection, setMsqSelection] = useState([]);
   const [natInput, setNatInput] = useState("");
   const [result, setResult] = useState(null);
-  const [bookmarked, setBookmarked] = useState(false);
+  const questionProgressId = useMemo(
+    () => getQuestionProgressId(question),
+    [question, getQuestionProgressId]
+  );
+  const isSolved = isQuestionSolved(questionProgressId);
+  const isBookmarked = isQuestionBookmarked(questionProgressId);
+  const isStatusActionDisabled = !questionProgressId;
 
   useEffect(() => {
     setMcqSelection("");
     setMsqSelection([]);
     setNatInput("");
     setResult(null);
-
-    if (!storageKey) {
-      setBookmarked(false);
-      return;
-    }
-    const bookmarks = readJsonFromLocalStorage(BOOKMARKS_KEY, []);
-    setBookmarked(Array.isArray(bookmarks) && bookmarks.includes(storageKey));
   }, [storageKey]);
 
-  const toggleBookmark = () => {
-    const bookmarks = readJsonFromLocalStorage(BOOKMARKS_KEY, []);
-    const bookmarkSet = new Set(Array.isArray(bookmarks) ? bookmarks : []);
-    if (bookmarkSet.has(storageKey)) {
-      bookmarkSet.delete(storageKey);
-    } else {
-      bookmarkSet.add(storageKey);
+  const handleToggleSolved = () => {
+    if (!questionProgressId) {
+      return;
     }
-    const updated = Array.from(bookmarkSet);
-    writeJsonToLocalStorage(BOOKMARKS_KEY, updated);
-    setBookmarked(updated.includes(storageKey));
+    toggleSolved(questionProgressId);
+  };
+
+  const handleToggleBookmark = () => {
+    if (!questionProgressId) {
+      return;
+    }
+    toggleBookmark(questionProgressId);
   };
 
   const evaluateSubmission = () => {
@@ -231,8 +240,8 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
         )}
       </div>
 
-      {/* Unified Action Bar - 4 Equal Columns */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* Unified Action Bar */}
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
 
         {/* 1. Submit Answer */}
         <button
@@ -247,19 +256,16 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
           Submit Answer
         </button>
 
-        {/* 2. Save / Bookmark */}
-        <button
-          type="button"
-          className={`flex items-center justify-center rounded px-4 py-3 text-sm font-medium border shadow-sm transition-colors h-12 ${bookmarked
-            ? "bg-gray-100 text-gray-800 border-gray-300 hover:bg-gray-200"
-            : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-            }`}
-          onClick={toggleBookmark}
-        >
-          {bookmarked ? "Saved" : "Save"}
-        </button>
+        {/* 2 + 3. Solved + Bookmark */}
+        <QuestionStatusControls
+          isSolved={isSolved}
+          isBookmarked={isBookmarked}
+          disabled={isStatusActionDisabled}
+          onToggleSolved={handleToggleSolved}
+          onToggleBookmark={handleToggleBookmark}
+        />
 
-        {/* 3. View Solution */}
+        {/* 4. View Solution */}
         {solutionLink ? (
           <a
             href={solutionLink}
@@ -275,7 +281,7 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
           </div>
         )}
 
-        {/* 4. Next Question */}
+        {/* 5. Next Question */}
         <button
           type="button"
           onClick={onNextQuestion}
@@ -285,6 +291,12 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
         </button>
 
       </div>
+
+      {isStatusActionDisabled && (
+        <p className="mt-3 text-xs text-amber-700">
+          Progress status is unavailable for this question identifier.
+        </p>
+      )}
     </div>
   );
 }

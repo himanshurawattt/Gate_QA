@@ -32,7 +32,7 @@ const FilterModal = ({ isOpen, onClose }) => {
                 </button>
             </div>
 
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 min-h-0 overflow-hidden">
                 <FilterSidebar className="w-full border-r-0" />
             </div>
 

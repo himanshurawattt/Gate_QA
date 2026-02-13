@@ -2,7 +2,7 @@
   "name": "gate-qa",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://himanshurawattt.github.io/Gate_QA",
+  "homepage": "https://superawat.github.io/Gate_QA",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

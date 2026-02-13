@@ -1,0 +1,12 @@
+{
+  "title": "GATE CSE 2021 Set 1 | GA Question: 2",
+  "year": "gatecse-2021-set1",
+  "link": "https://gateoverflow.in/357475/gate-cse-2021-set-1-ga-question-2",
+  "question": "<p>A polygon is convex if, for every pair of points, $\\text{P}$ and $\\text{Q}$ belonging to the polygon, the line segment $\\text{PQ}$ lies completely inside or on the polygon.</p>\n<p>Which one of the following is $\\underline{\\text{NOT}}$ a convex polygon?</p>\n<ol class=\"shrink-inline-options\" start=\"1\" style=\"list-style-type:upper-alpha\">\n<li><img alt=\"\" src=\"https://gateoverflow.in/?qa=blob&amp;qa_blobid=17270809462553088932\"/></li>\n<li><img alt=\"\" height=\"140\" src=\"https://gateoverflow.in/?qa=blob&amp;qa_blobid=17470186927622117085\" width=\"155\"/></li>\n<li><img alt=\"\" height=\"147\" src=\"https://gateoverflow.in/?qa=blob&amp;qa_blobid=16967521463137178532\" width=\"147\"/></li>\n<li><img alt=\"\" height=\"147\" src=\"https://gateoverflow.in/?qa=blob&amp;qa_blobid=7642318159703119165\" width=\"176\"/></li>\n</ol>",
+  "tags": [
+    "gatecse-2021-set1",
+    "spatial-aptitude",
+    "patterns-in-two-dimensions",
+    "1-mark"
+  ]
+}
