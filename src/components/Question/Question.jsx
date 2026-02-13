@@ -1,6 +1,7 @@
 import React from "react";
 import { MathJax } from "better-react-mathjax";
 import DOMPurify from "dompurify";
+import AnswerPanel from "../AnswerPanel/AnswerPanel";
 
 export default function Question({ question = {}, changeQuestion }) {
   const questionHtml = (question.question || "")
@@ -50,6 +51,8 @@ export default function Question({ question = {}, changeQuestion }) {
         >
           Get Question
         </button>
+
+        <AnswerPanel question={question} />
       </div>
     </div>
   );

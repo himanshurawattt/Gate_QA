@@ -1,0 +1,3566 @@
+{
+  "records_by_question_uid": {
+    "go:3647": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3647/gate-it-2004-question-6"
+    },
+    "go:3645": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3645/gate-it-2004-question-4"
+    },
+    "go:3665": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3665/gate-it-2004-question-24"
+    },
+    "go:3675": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3675/gate-it-2004-question-32"
+    },
+    "go:3681": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3681/gate-it-2004-question-38"
+    },
+    "go:3690": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3690/gate-it-2004-question-47"
+    },
+    "go:3655": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3655/gate-it-2004-question-14"
+    },
+    "go:3653": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3653/gate-it-2004-question-12-isro2016-77"
+    },
+    "go:3746": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3746/gate-it-2005-question-2"
+    },
+    "go:3721": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:selected_answer_tail_option:https://gateoverflow.in/3721/gate-it-2004-question-77"
+    },
+    "go:3643": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3643/gate-it-2004-question-2"
+    },
+    "go:3747": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3747/gate-it-2005-question-3"
+    },
+    "go:790": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/790/gate-it-2004-question-50"
+    },
+    "go:3692": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3692/gate-it-2004-question-49"
+    },
+    "go:3679": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3679/gate-it-2004-question-36"
+    },
+    "go:3682": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3682/gate-it-2004-question-39"
+    },
+    "go:3776": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3776/gate-it-2005-question-30"
+    },
+    "go:3709": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3709/gate-it-2004-question-66"
+    },
+    "go:3749": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3749/gate-it-2005-question-5"
+    },
+    "go:3648": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3648/gate-it-2004-question-7"
+    },
+    "go:3805": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3805/gate-it-2005-question-44"
+    },
+    "go:3780": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3780/gate-it-2005-question-34"
+    },
+    "go:3734": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3734/gate-it-2004-question-90"
+    },
+    "go:3563": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3563/gate-it-2006-question-24"
+    },
+    "go:3544": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3544/gate-it-2006-question-5"
+    },
+    "go:3565": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3565/gate-it-2006-question-26"
+    },
+    "go:3562": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3562/gate-it-2006-question-23"
+    },
+    "go:3569": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3569/gate-it-2006-question-30"
+    },
+    "go:3568": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3568/gate-it-2006-question-29"
+    },
+    "go:3586": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3586/gate-it-2006-question-43"
+    },
+    "go:3585": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3585/gate-it-2006-question-42"
+    },
+    "go:3566": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3566/gate-it-2006-question-27"
+    },
+    "go:3589": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3589/gate-it-2006-question-46"
+    },
+    "go:3597": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3597/gate-it-2006-question-54"
+    },
+    "go:3779": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3779/gate-it-2005-question-33"
+    },
+    "go:3601": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3601/gate-it-2006-question-57"
+    },
+    "go:3622": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3622/gate-it-2006-question-78"
+    },
+    "go:3624": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3624/gate-it-2006-question-80"
+    },
+    "go:3433": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3433/gate-it-2007-question-2"
+    },
+    "go:3637": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3637/gate-it-2006-question-81"
+    },
+    "go:3623": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3623/gate-it-2006-question-79"
+    },
+    "go:3437": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3437/gate-it-2007-question-6-isro2011-25"
+    },
+    "go:3452": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3452/gate-it-2007-question-19"
+    },
+    "go:3470": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3470/gate-it-2007-question-37"
+    },
+    "go:3456": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3456/gate-it-2007-question-23"
+    },
+    "go:3450": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3450/gate-it-2007-question-17"
+    },
+    "go:3469": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3469/gate-it-2007-question-36"
+    },
+    "go:3449": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3449/gate-it-2007-question-16"
+    },
+    "go:3476": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3476/gate-it-2007-question-41"
+    },
+    "go:3434": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3434/gate-it-2007-question-3-ugcnet-june2012-iii-34"
+    },
+    "go:3467": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3467/gate-it-2007-question-34-ugcnet-dec2012-iii-52"
+    },
+    "go:3532": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3532/gate-it-2007-question-80"
+    },
+    "go:3525": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3525/gate-it-2007-question-73"
+    },
+    "go:3533": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3533/gate-it-2007-question-81"
+    },
+    "go:3279": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3279/gate-it-2008-question-19-isro2016-76"
+    },
+    "go:3265": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3265/gate-it-2008-question-5"
+    },
+    "go:3276": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3276/gate-it-2008-question-16"
+    },
+    "go:3224": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3224/gate-it-2008-question-2"
+    },
+    "go:3318": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3318/gate-it-2008-question-28"
+    },
+    "go:3285": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3285/gate-it-2008-question-24"
+    },
+    "go:3320": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3320/gate-it-2008-question-30"
+    },
+    "go:3345": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3345/gate-it-2008-question-35"
+    },
+    "go:3319": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3319/gate-it-2008-question-29"
+    },
+    "go:3348": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3348/gate-it-2008-question-38"
+    },
+    "go:3366": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3366/gate-it-2008-question-56"
+    },
+    "go:3405": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3405/gate-it-2008-question-81"
+    },
+    "go:3350": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3350/gate-it-2008-question-40"
+    },
+    "go:3409": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3409/gate-it-2008-question-85"
+    },
+    "go:460076": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460076/gate-cse-2025-set-1-question-4"
+    },
+    "go:3349": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3349/gate-it-2008-question-39"
+    },
+    "go:460801": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460801/gate-cse-2025-set-2-question-34"
+    },
+    "go:460803": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460803/gate-cse-2025-set-2-question-32"
+    },
+    "go:460080": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460080/gate-cse-2025-set-1-question-1"
+    },
+    "go:460448": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460448/gate-cse-2025-set-2-ga-question-3"
+    },
+    "go:460816": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460816/gate-cse-2025-set-2-question-19"
+    },
+    "go:460851": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460851/gate-cse-2025-set-2-question-42"
+    },
+    "go:80373": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80373/gate-cse-1987-question-1-xix"
+    },
+    "go:80366": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80366/gate-cse-1987-question-1-xviii"
+    },
+    "go:80374": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80374/gate-cse-1987-question-1-xx"
+    },
+    "go:80380": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80380/gate-cse-1987-question-1-xxiii"
+    },
+    "go:80274": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80274/gate-cse-1987-question-1-viii"
+    },
+    "go:83991": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/83991/gate-cse-1990-question-2-vii"
+    },
+    "go:84837": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/84837/gate-cse-1990-question-3-viii"
+    },
+    "go:505": {
+      "type": "NAT",
+      "answer": 7.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/505/gate-cse-1991-question-01-vii",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:43580": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43580/gate-cse-1992-question-14b"
+    },
+    "go:554": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/554/gate-cse-1992-question-01-x",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:517": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/517/gate-cse-1991-question-03-iii"
+    },
+    "go:2301": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2301/gate-cse-1993-question-8-3"
+    },
+    "go:2302": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2302/gate-cse-1993-question-8-4"
+    },
+    "go:584": {
+      "type": "NAT",
+      "answer": 180.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/584/gate-cse-1992-question-5-a",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2446": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2446/gate-cse-1994-question-1-9"
+    },
+    "go:2438": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2438/gate-cse-1994-question-1-2"
+    },
+    "go:596": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/596/gate-cse-1993-question-01-1"
+    },
+    "go:2464": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2464/gate-cse-1994-question-1-21"
+    },
+    "go:2451": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2451/gate-cse-1994-question-1-10"
+    },
+    "go:2476": {
+      "type": "NAT",
+      "answer": 5.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2476/gate-cse-1994-question-2-9",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2594": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2594/gate-cse-1995-question-1-7"
+    },
+    "go:2606": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2606/gate-cse-1995-question-1-19"
+    },
+    "go:2607": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2607/gate-cse-1995-question-1-20"
+    },
+    "go:2611": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2611/gate-cse-1995-question-1-24"
+    },
+    "go:2629": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2629/gate-cse-1995-question-2-17"
+    },
+    "go:314348": {
+      "type": "NAT",
+      "answer": 192.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/314348/gate-cse-1995-question-25b",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2706": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2706/gate-cse-1996-question-1-2"
+    },
+    "go:2714": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2714/gate-cse-1996-question-1-10"
+    },
+    "go:2711": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2711/gate-cse-1996-question-1-7"
+    },
+    "go:2708": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2708/gate-cse-1996-question-1-4"
+    },
+    "go:2625": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2625/gate-cse-1995-question-2-13"
+    },
+    "go:2728": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2728/gate-cse-1996-question-1-24"
+    },
+    "go:2731": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2731/gate-cse-1996-question-2-2"
+    },
+    "go:2735": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2735/gate-cse-1996-question-2-6"
+    },
+    "go:2733": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2733/gate-cse-1996-question-2-4"
+    },
+    "go:2628": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2628/gate-cse-1995-question-2-16"
+    },
+    "go:2741": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2741/gate-cse-1996-question-2-12"
+    },
+    "go:2705": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2705/gate-cse-1996-question-1-1"
+    },
+    "go:2642": {
+      "type": "NAT",
+      "answer": 24.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2642/gate-cse-1995-question-7-a",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2754": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2754/gate-cse-1996-question-2-25"
+    },
+    "go:2637": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2637/gate-cse-1995-question-2-24"
+    },
+    "go:2218": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/2218/gate-cse-1997-question-1-2"
+    },
+    "go:2219": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2219/gate-cse-1997-question-1-3"
+    },
+    "go:2230": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2230/gate-cse-1997-question-2-4"
+    },
+    "go:2234": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2234/gate-cse-1997-question-3-3"
+    },
+    "go:2243": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2243/gate-cse-1997-question-4-2"
+    },
+    "go:2245": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2245/gate-cse-1997-question-4-4"
+    },
+    "go:2257": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2257/gate-cse-1997-question-6-1"
+    },
+    "go:2254": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2254/gate-cse-1997-question-5-3"
+    },
+    "go:2259": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2259/gate-cse-1997-question-6-3"
+    },
+    "go:2236": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2236/gate-cse-1997-question-3-5"
+    },
+    "go:1646": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1646/gate-cse-1998-question-1-9"
+    },
+    "go:1639": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1639/gate-cse-1998-question-1-2"
+    },
+    "go:1643": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1643/gate-cse-1998-question-1-6"
+    },
+    "go:1644": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1644/gate-cse-1998-question-1-7"
+    },
+    "go:1678": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1678/gate-cse-1998-question-2-6"
+    },
+    "go:2247": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2247/gate-cse-1997-question-4-6"
+    },
+    "go:1675": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1675/gate-cse-1998-question-2-3"
+    },
+    "go:1674": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1674/gate-cse-1998-question-2-2"
+    },
+    "go:1673": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1673/gate-cse-1998-question-2-1"
+    },
+    "go:1465": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1465/gate-cse-1999-question-1-12"
+    },
+    "go:1456": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1456/gate-cse-1999-question-1-2"
+    },
+    "go:1649": {
+      "type": "MSQ",
+      "answer": [
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1649/gate-cse-1998-question-1-12"
+    },
+    "go:1691": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1691/gate-cse-1998-question-2-18-ugcnet-june2012-iii-48"
+    },
+    "go:1466": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1466/gate-cse-1999-question-1-13"
+    },
+    "go:1676": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1676/gate-cse-1998-question-2-4"
+    },
+    "go:1481": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1481/gate-cse-1999-question-2-3"
+    },
+    "go:1499": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1499/gate-cse-1999-question-2-22"
+    },
+    "go:648": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/648/gate-cse-2000-question-2-1"
+    },
+    "go:627": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/627/gate-cse-2000-question-1-4"
+    },
+    "go:626": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/626/gate-cse-2000-question-1-3"
+    },
+    "go:1512": {
+      "type": "NAT",
+      "answer": 15.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1512/gate-cse-1999-question-13",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:631": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/631/gate-cse-2000-question-1-8"
+    },
+    "go:1469": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1469/gate-cse-1999-question-1-16"
+    },
+    "go:1475": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1475/gate-cse-1999-question-1-22"
+    },
+    "go:652": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/652/gate-cse-2000-question-2-5"
+    },
+    "go:1497": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1497/gate-cse-1999-question-2-19"
+    },
+    "go:638": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/638/gate-cse-2000-question-1-15"
+    },
+    "go:653": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/653/gate-cse-2000-question-2-6"
+    },
+    "go:665": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/665/gate-cse-2000-question-2-18"
+    },
+    "go:651": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/651/gate-cse-2000-question-2-4"
+    },
+    "go:669": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/669/gate-cse-2000-question-2-22"
+    },
+    "go:695": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/695/gate-cse-2001-question-1-2"
+    },
+    "go:697": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/697/gate-cse-2001-question-1-4"
+    },
+    "go:694": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/694/gate-cse-2001-question-1-1"
+    },
+    "go:720": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/720/gate-cse-2001-question-2-2"
+    },
+    "go:701": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/701/gate-cse-2001-question-1-8"
+    },
+    "go:703": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/703/gate-cse-2001-question-1-10-ugcnet-dec2012-iii-36"
+    },
+    "go:713": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/713/gate-cse-2001-question-1-20"
+    },
+    "go:805": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/805/gate-cse-2002-question-1-1"
+    },
+    "go:813": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/813/gate-cse-2002-question-1-9"
+    },
+    "go:49481": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/49481/isro2007-11-gate-cse-2001-question-1-19"
+    },
+    "go:739": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/739/gate-cse-2001-question-2-21"
+    },
+    "go:724": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/724/gate-cse-2001-question-2-6"
+    },
+    "go:836": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/836/gate-cse-2002-question-2-6-isro2008-19"
+    },
+    "go:847": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/847/gate-cse-2002-question-2-17"
+    },
+    "go:841": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/841/gate-cse-2002-question-2-11"
+    },
+    "go:258": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/258/gate-cse-2003-question-66"
+    },
+    "go:43577": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43577/gate-cse-2003-question-49"
+    },
+    "go:43578": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43578/gate-cse-2003-question-79"
+    },
+    "go:788": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/788/gate-cse-2003-question-78"
+    },
+    "go:920": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/920/gate-cse-2003-question-30"
+    },
+    "go:905": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/905/gate-cse-2003-question-14"
+    },
+    "go:921": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/921/gate-cse-2003-question-31"
+    },
+    "go:914": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/914/gate-cse-2003-question-24"
+    },
+    "go:901": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/901/gate-cse-2003-question-10-isro-dec2017-41"
+    },
+    "go:932": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/932/gate-cse-2003-question-41"
+    },
+    "go:948": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/948/gate-cse-2003-question-60-isro2007-45"
+    },
+    "go:1031": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1031/gate-cse-2004-question-34"
+    },
+    "go:1008": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1008/gate-cse-2004-question-11"
+    },
+    "go:1024": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1024/gate-cse-2004-question-27"
+    },
+    "go:1063": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1063/gate-cse-2004-question-69"
+    },
+    "go:1058": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1058/gate-cse-2004-question-63"
+    },
+    "go:1036": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1036/gate-cse-2004-question-39"
+    },
+    "go:1062": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1062/gate-cse-2004-question-68"
+    },
+    "go:916": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/916/gate-cse-2003-question-26"
+    },
+    "go:1070": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1070/gate-cse-2004-question-76"
+    },
+    "go:1065": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1065/gate-cse-2004-question-71"
+    },
+    "go:1021": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1021/gate-cse-2004-question-24"
+    },
+    "go:1067": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1067/gate-cse-2004-question-73"
+    },
+    "go:1072": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1072/gate-cse-2004-question-78"
+    },
+    "go:1059": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1059/gate-cse-2004-question-65"
+    },
+    "go:1023": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1023/gate-cse-2004-question-26"
+    },
+    "go:1081": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1081/gate-cse-2004-question-87"
+    },
+    "go:318": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/318/gate-cse-2004-question-47"
+    },
+    "go:1076": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1076/gate-cse-2004-question-82"
+    },
+    "go:1157": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1157/gate-cse-2005-question-8"
+    },
+    "go:1158": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1158/gate-cse-2005-question-9"
+    },
+    "go:1074": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1074/gate-cse-2004-question-80"
+    },
+    "go:1173": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1173/gate-cse-2005-question-48"
+    },
+    "go:43570": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43570/gate-cse-2004-question-64"
+    },
+    "go:1167": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1167/gate-cse-2005-question-42"
+    },
+    "go:1381": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1381/gate-cse-2005-question-58"
+    },
+    "go:1380": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1380/gate-cse-2005-question-57"
+    },
+    "go:1174": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1174/gate-cse-2005-question-49"
+    },
+    "go:1390": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1390/gate-cse-2005-question-67"
+    },
+    "go:43568": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43568/gate-cse-2005-question-80"
+    },
+    "go:1840": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1840/gate-cse-2006-question-62-isro2016-50"
+    },
+    "go:1393": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1393/gate-cse-2005-question-70"
+    },
+    "go:1819": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1819/gate-cse-2006-question-43"
+    },
+    "go:1841": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1841/gate-cse-2006-question-63-ugcnet-june2012-iii-45"
+    },
+    "go:1851": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1851/gate-cse-2006-question-74"
+    },
+    "go:1854": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1854/gate-cse-2006-question-80"
+    },
+    "go:792": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/792/gate-cse-2006-question-1-isro2009-57"
+    },
+    "go:1349": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1349/gate-cse-2005-question-7"
+    },
+    "go:43517": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43517/gate-cse-2006-question-81"
+    },
+    "go:883": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/883/gate-cse-2006-question-4"
+    },
+    "go:976": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/976/gate-cse-2006-question-15"
+    },
+    "go:983": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/983/gate-cse-2006-question-22"
+    },
+    "go:984": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/984/gate-cse-2006-question-23"
+    },
+    "go:1201": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1201/gate-cse-2007-question-2"
+    },
+    "go:992": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/992/gate-cse-2006-question-29"
+    },
+    "go:1205": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1205/gate-cse-2007-question-7"
+    },
+    "go:995": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/995/gate-cse-2006-question-32-isro2016-35"
+    },
+    "go:994": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/994/gate-cse-2006-question-31"
+    },
+    "go:1208": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1208/gate-cse-2007-question-10"
+    },
+    "go:1215": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1215/gate-cse-2007-question-17"
+    },
+    "go:987": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/987/gate-cse-2006-question-24"
+    },
+    "go:1222": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1222/gate-cse-2007-question-24"
+    },
+    "go:1229": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1229/gate-cse-2007-question-31"
+    },
+    "go:1235": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1235/gate-cse-2007-question-37-isro2009-37"
+    },
+    "go:1225": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1225/gate-cse-2007-question-27"
+    },
+    "go:1249": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1249/gate-cse-2007-question-51"
+    },
+    "go:1248": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1248/gate-cse-2007-question-50"
+    },
+    "go:31821": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/31821/gate-cse-2007-question-5"
+    },
+    "go:1269": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1269/gate-cse-2007-question-71"
+    },
+    "go:43516": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43516/gate-cse-2007-question-73"
+    },
+    "go:1243": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1243/gate-cse-2007-question-45"
+    },
+    "go:56129": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/56129/gate-cse-2007-question-15-isro2016-26"
+    },
+    "go:43511": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43511/gate-cse-2007-question-81"
+    },
+    "go:400": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/400/gate-cse-2008-question-2"
+    },
+    "go:426": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/426/gate-cse-2008-question-28"
+    },
+    "go:43487": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43487/gate-cse-2008-question-77"
+    },
+    "go:43489": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43489/gate-cse-2008-question-75"
+    },
+    "go:254": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/254/gate-cse-2007-question-25"
+    },
+    "go:43490": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43490/gate-cse-2008-question-72"
+    },
+    "go:446": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/446/gate-cse-2008-question-35"
+    },
+    "go:43515": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43515/gate-cse-2007-question-72"
+    },
+    "go:447": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/447/gate-cse-2008-question-36"
+    },
+    "go:449": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/449/gate-cse-2008-question-38"
+    },
+    "go:452": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/452/gate-cse-2008-question-40"
+    },
+    "go:476": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/476/gate-cse-2008-question-53"
+    },
+    "go:459": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/459/gate-cse-2008-question-47"
+    },
+    "go:448": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/448/gate-cse-2008-question-37-isro2009-38"
+    },
+    "go:485": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/485/gate-cse-2008-question-62"
+    },
+    "go:494": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/494/gate-cse-2008-question-71"
+    },
+    "go:495": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/495/gate-cse-2008-question-74"
+    },
+    "go:490": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/490/gate-cse-2008-question-67"
+    },
+    "go:445": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/445/gate-cse-2008-question-34"
+    },
+    "go:497": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/497/gate-cse-2008-question-78"
+    },
+    "go:496": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/496/gate-cse-2008-question-76"
+    },
+    "go:1300": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1300/gate-cse-2009-question-8-ugcnet-june2012-iii-58"
+    },
+    "go:1302": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1302/gate-cse-2009-question-10"
+    },
+    "go:487": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/487/gate-cse-2008-question-64-isro2009-13"
+    },
+    "go:1312": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1312/gate-cse-2009-question-20"
+    },
+    "go:1306": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1306/gate-cse-2009-question-14"
+    },
+    "go:1307": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1307/gate-cse-2009-question-15"
+    },
+    "go:1149": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1149/gate-cse-2010-question-3"
+    },
+    "go:2185": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2185/gate-cse-2010-question-12"
+    },
+    "go:797": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/797/gate-cse-2009-question-4"
+    },
+    "go:2189": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2189/gate-cse-2010-question-16"
+    },
+    "go:1320": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1320/gate-cse-2009-question-34"
+    },
+    "go:1155": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1155/gate-cse-2010-question-29"
+    },
+    "go:2207": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2207/gate-cse-2010-question-33"
+    },
+    "go:2340": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2340/gate-cse-2010-question-39"
+    },
+    "go:2368": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2368/gate-cse-2010-question-60"
+    },
+    "go:2105": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2105/gate-cse-2011-question-3"
+    },
+    "go:1339": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:selected_answer_tail_option:https://gateoverflow.in/1339/gate-cse-2009-question-55"
+    },
+    "go:2110": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2110/gate-cse-2011-question-8"
+    },
+    "go:2352": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2352/gate-cse-2010-question-48"
+    },
+    "go:2120": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2120/gate-cse-2011-question-18"
+    },
+    "go:2122": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2122/gate-cse-2011-question-20-ugcnet-june2013-ii-48"
+    },
+    "go:2136": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2136/gate-cse-2011-question-34"
+    },
+    "go:2118": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2118/gate-cse-2011-question-16-ugcnet-june2013-iii-65"
+    },
+    "go:2142": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2142/gate-cse-2011-question-40"
+    },
+    "go:3429": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/3429/gate-cse-2011-question-24"
+    },
+    "go:2143": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2143/gate-cse-2011-question-41"
+    },
+    "go:1609": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1609/gate-cse-2012-question-25"
+    },
+    "go:2145": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2145/gate-cse-2011-question-43"
+    },
+    "go:43325": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43325/gate-cse-2011-question-55"
+    },
+    "go:43329": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43329/gate-cse-2010-question-49"
+    },
+    "go:43": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43/gate-cse-2012-question-11"
+    },
+    "go:2111": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2111/gate-cse-2011-question-9"
+    },
+    "go:36": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/36/gate-cse-2012-question-4"
+    },
+    "go:52": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/52/gate-cse-2012-question-20-isro2016-23"
+    },
+    "go:1415": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1415/gate-cse-2013-question-6"
+    },
+    "go:1412": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1412/gate-cse-2013-question-3"
+    },
+    "go:1440": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1440/gate-cse-2013-question-18"
+    },
+    "go:1417": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1417/gate-cse-2013-question-8"
+    },
+    "go:1442": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1442/gate-cse-2013-question-20"
+    },
+    "go:1539": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1539/gate-cse-2013-question-28"
+    },
+    "go:1535": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1535/gate-cse-2013-question-24"
+    },
+    "go:1614": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1614/gate-cse-2012-question-28"
+    },
+    "go:1560": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1560/gate-cse-2013-question-57"
+    },
+    "go:35": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/35/gate-cse-2012-question-3"
+    },
+    "go:379": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/379/gate-cse-2013-question-52"
+    },
+    "go:330": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/330/gate-cse-2013-question-45"
+    },
+    "go:1957": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1957/gate-cse-2014-set-2-question-5"
+    },
+    "go:1971": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1971/gate-cse-2014-set-2-question-15"
+    },
+    "go:1956": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1956/gate-cse-2014-set-2-question-4",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:1987": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1987/gate-cse-2014-set-2-question-28"
+    },
+    "go:43294": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/43294/gate-cse-2013-question-53"
+    },
+    "go:2013": {
+      "type": "NAT",
+      "answer": 6.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2013/gate-cse-2014-set-2-question-47",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:1997": {
+      "type": "NAT",
+      "answer": 358.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1997/gate-cse-2014-set-2-question-38",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2015": {
+      "type": "NAT",
+      "answer": 8.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2015/gate-cse-2014-set-2-question-49",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2039": {
+      "type": "NAT",
+      "answer": 2.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2039/gate-cse-2014-set-3-question-5",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2016": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2016/gate-cse-2014-set-2-question-50"
+    },
+    "go:2043": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2043/gate-cse-2014-set-3-question-9"
+    },
+    "go:2067": {
+      "type": "NAT",
+      "answer": 122.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2067/gate-cse-2014-set-3-question-33",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8186": {
+      "type": "NAT",
+      "answer": 4.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8186/gate-cse-2015-set-1-question-1-2",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2082": {
+      "type": "NAT",
+      "answer": 0.25,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2082/gate-cse-2014-set-3-question-48",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2078": {
+      "type": "NAT",
+      "answer": 1.68,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2078/gate-cse-2014-set-3-question-44",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2049": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2049/gate-cse-2014-set-3-question-15",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8281": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8281/gate-cse-2015-set-1-question-34"
+    },
+    "go:2038": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2038/gate-cse-2014-set-3-question-4"
+    },
+    "go:8241": {
+      "type": "NAT",
+      "answer": 5.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8241/gate-cse-2015-set-1-question-1-8",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8285": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8285/gate-cse-2015-set-1-question-36"
+    },
+    "go:1995": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1995/gate-cse-2014-set-2-question-36"
+    },
+    "go:8238": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8238/gate-cse-2015-set-1-question-1-6"
+    },
+    "go:8211": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8211/gate-cse-2015-set-1-question-1-5"
+    },
+    "go:8355": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8355/gate-cse-2015-set-1-question-49"
+    },
+    "go:2080": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2080/gate-cse-2014-set-3-question-46"
+    },
+    "go:8288": {
+      "type": "NAT",
+      "answer": 3.2,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8288/gate-cse-2015-set-1-question-38",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8008": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8008/gate-cse-2015-set-1-question-ga-5"
+    },
+    "go:8357": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8357/gate-cse-2015-set-1-question-51"
+    },
+    "go:8051": {
+      "type": "NAT",
+      "answer": 6.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8051/gate-cse-2015-set-2-question-5",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8058": {
+      "type": "NAT",
+      "answer": 36.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8058/gate-cse-2015-set-2-question-9",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8299": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8299/gate-cse-2015-set-1-question-40"
+    },
+    "go:8063": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8063/gate-cse-2015-set-2-question-13"
+    },
+    "go:8092": {
+      "type": "NAT",
+      "answer": 2048.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8092/gate-cse-2015-set-2-question-18",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8089": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8089/gate-cse-2015-set-2-question-16"
+    },
+    "go:8113": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8113/gate-cse-2015-set-2-question-22"
+    },
+    "go:8120": {
+      "type": "NAT",
+      "answer": 22.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8120/gate-cse-2015-set-2-question-25",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8131": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8131/gate-cse-2015-set-2-question-27",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8119": {
+      "type": "NAT",
+      "answer": 14.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8119/gate-cse-2015-set-2-question-24",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8210": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8210/gate-cse-2015-set-2-question-39"
+    },
+    "go:8247": {
+      "type": "NAT",
+      "answer": 36.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8247/gate-cse-2015-set-2-question-47",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8159": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8159/gate-cse-2015-set-2-question-35"
+    },
+    "go:8411": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8411/gate-cse-2015-set-3-question-15"
+    },
+    "go:8302": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8302/gate-cse-2015-set-3-question-ga-4"
+    },
+    "go:8254": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8254/gate-cse-2015-set-2-question-51"
+    },
+    "go:8218": {
+      "type": "NAT",
+      "answer": 13.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8218/gate-cse-2015-set-2-question-44",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8410": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8410/gate-cse-2015-set-3-question-14"
+    },
+    "go:8426": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8426/gate-cse-2015-set-3-question-23"
+    },
+    "go:8490": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8490/gate-cse-2015-set-3-question-33"
+    },
+    "go:8498": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8498/gate-cse-2015-set-3-question-39"
+    },
+    "go:8556": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8556/gate-cse-2015-set-3-question-47"
+    },
+    "go:39634": {
+      "type": "NAT",
+      "answer": 15.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39634/gate-cse-2016-set-1-question-05",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8500": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8500/gate-cse-2015-set-3-question-41"
+    },
+    "go:39647": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39647/gate-cse-2016-set-1-question-18"
+    },
+    "go:39669": {
+      "type": "NAT",
+      "answer": 6.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39669/gate-cse-2016-set-1-question-11",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:8559": {
+      "type": "NAT",
+      "answer": 309.33,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8559/gate-cse-2015-set-3-question-50",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39542": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39542/gate-cse-2016-set-2-question-17"
+    },
+    "go:39547": {
+      "type": "NAT",
+      "answer": 16.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39547/gate-cse-2016-set-2-question-10",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39548": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39548/gate-cse-2016-set-2-question-19"
+    },
+    "go:39549": {
+      "type": "NAT",
+      "answer": 0.125,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39549/gate-cse-2016-set-2-question-06",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39690": {
+      "type": "NAT",
+      "answer": 384.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39690/gate-cse-2016-set-1-question-47",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39575": {
+      "type": "NAT",
+      "answer": -1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39575/gate-cse-2016-set-2-question-07",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39580": {
+      "type": "NAT",
+      "answer": 4.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39580/gate-cse-2016-set-2-question-33",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39545": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39545/gate-cse-2016-set-2-question-04"
+    },
+    "go:39601": {
+      "type": "NAT",
+      "answer": 500.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39601/gate-cse-2016-set-2-question-31",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:39595": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39595/gate-cse-2016-set-2-question-28"
+    },
+    "go:39603": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39603/gate-cse-2016-set-2-question-26"
+    },
+    "go:39627": {
+      "type": "NAT",
+      "answer": 28.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39627/gate-cse-2016-set-2-question-30",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:460063": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460063/gate-cse-2025-set-1-question-17"
+    },
+    "go:118282": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118282/gate-cse-2017-set-1-question-3"
+    },
+    "go:39593": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39593/gate-cse-2016-set-2-question-54"
+    },
+    "go:118298": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118298/gate-cse-2017-set-1-question-18"
+    },
+    "go:118305": {
+      "type": "NAT",
+      "answer": 0.05,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118305/gate-cse-2017-set-1-question-25",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118311": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118311/gate-cse-2017-set-1-question-30"
+    },
+    "go:118332": {
+      "type": "NAT",
+      "answer": -16.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118332/gate-cse-2017-set-1-question-49",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118719": {
+      "type": "NAT",
+      "answer": 1.508,
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/118719/gate-cse-2017-set-1-question-50",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118330": {
+      "type": "NAT",
+      "answer": 271.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118330/gate-cse-2017-set-1-question-47",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118156": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118156/gate-cse-2017-set-2-question-03"
+    },
+    "go:118240": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118240/gate-cse-2017-set-2-question-07"
+    },
+    "go:118312": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118312/gate-cse-2017-set-1-question-31"
+    },
+    "go:118748": {
+      "type": "NAT",
+      "answer": 14.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118748/gate-cse-2017-set-1-question-54",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118745": {
+      "type": "NAT",
+      "answer": 76.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118745/gate-cse-2017-set-1-question-51",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118185": {
+      "type": "NAT",
+      "answer": 8.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118185/gate-cse-2017-set-2-question-24",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118363": {
+      "type": "NAT",
+      "answer": 2.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118363/gate-cse-2017-set-2-question-22",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118278": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118278/gate-cse-2017-set-2-question-21",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118613": {
+      "type": "NAT",
+      "answer": 18.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118613/gate-cse-2017-set-2-question-53",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:118283": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118283/gate-cse-2017-set-2-question-38"
+    },
+    "go:118373": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118373/gate-cse-2017-set-2-question-31"
+    },
+    "go:204084": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204084/gate-cse-2018-question-10"
+    },
+    "go:118618": {
+      "type": "NAT",
+      "answer": 5.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118618/gate-cse-2017-set-2-question-52",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:204079": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204079/gate-cse-2018-question-5"
+    },
+    "go:204091": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204091/gate-cse-2018-question-17",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:204108": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204108/gate-cse-2018-question-34"
+    },
+    "go:204117": {
+      "type": "NAT",
+      "answer": 109.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204117/gate-cse-2018-question-43",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:204125": {
+      "type": "NAT",
+      "answer": 219.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204125/gate-cse-2018-question-50",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:204127": {
+      "type": "NAT",
+      "answer": 2.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204127/gate-cse-2018-question-52",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:204126": {
+      "type": "NAT",
+      "answer": 32.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204126/gate-cse-2018-question-51",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:302801": {
+      "type": "NAT",
+      "answer": 0.8,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302801/gate-cse-2019-question-47",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:302804": {
+      "type": "NAT",
+      "answer": 12.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302804/gate-cse-2019-question-44",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:302805": {
+      "type": "NAT",
+      "answer": 5.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302805/gate-cse-2019-question-43",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:302811": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302811/gate-cse-2019-question-37"
+    },
+    "go:302815": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302815/gate-cse-2019-question-33"
+    },
+    "go:204100": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204100/gate-cse-2018-question-26"
+    },
+    "go:333186": {
+      "type": "NAT",
+      "answer": 0.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333186/gate-cse-2020-question-45",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:333180": {
+      "type": "NAT",
+      "answer": 6.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333180/gate-cse-2020-question-51",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:302841": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302841/gate-cse-2019-question-7"
+    },
+    "go:333187": {
+      "type": "NAT",
+      "answer": 14.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333187/gate-cse-2020-question-44",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:302847": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302847/gate-cse-2019-question-1"
+    },
+    "go:302846": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302846/gate-cse-2019-question-2"
+    },
+    "go:333198": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333198/gate-cse-2020-question-33"
+    },
+    "go:333204": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333204/gate-cse-2020-question-27"
+    },
+    "go:302839": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302839/gate-cse-2019-question-9"
+    },
+    "go:333223": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333223/gate-cse-2020-question-8"
+    },
+    "go:333236": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333236/gate-cse-2020-question-ga-5"
+    },
+    "go:333227": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333227/gate-cse-2020-question-4"
+    },
+    "go:333238": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333238/gate-cse-2020-question-ga-3"
+    },
+    "go:333224": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:selected_answer_tail_option:https://gateoverflow.in/333224/gate-cse-2020-question-7"
+    },
+    "go:333197": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333197/gate-cse-2020-question-34"
+    },
+    "go:357405": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357405/gate-cse-2021-set-1-question-46"
+    },
+    "go:357416": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357416/gate-cse-2021-set-1-question-35"
+    },
+    "go:333201": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333201/gate-cse-2020-question-30"
+    },
+    "go:357438": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357438/gate-cse-2021-set-1-question-14"
+    },
+    "go:357437": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357437/gate-cse-2021-set-1-question-15"
+    },
+    "go:357475": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357475/gate-cse-2021-set-1-ga-question-2"
+    },
+    "go:357472": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357472/gate-cse-2021-set-1-ga-question-5"
+    },
+    "go:357473": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357473/gate-cse-2021-set-1-ga-question-4"
+    },
+    "go:460447": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460447/gate-cse-2025-set-2-ga-question-4"
+    },
+    "go:357484": {
+      "type": "NAT",
+      "answer": 1.875,
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/357484/gate-cse-2021-set-2-question-53",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357493": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357493/gate-cse-2021-set-2-question-47"
+    },
+    "go:357503": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357503/gate-cse-2021-set-2-question-37"
+    },
+    "go:357425": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357425/gate-cse-2021-set-1-question-26"
+    },
+    "go:357511": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357511/gate-cse-2021-set-2-question-29"
+    },
+    "go:357507": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357507/gate-cse-2021-set-2-question-33"
+    },
+    "go:357548": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357548/gate-cse-2021-set-2-ga-question-2"
+    },
+    "go:460449": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460449/gate-cse-2025-set-2-ga-question-2"
+    },
+    "go:357531": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357531/gate-cse-2021-set-2-question-9"
+    },
+    "go:371881": {
+      "type": "NAT",
+      "answer": 80.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371881/gate-cse-2022-question-55",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:371892": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371892/gate-cse-2022-question-44"
+    },
+    "go:371893": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371893/gate-cse-2022-question-43"
+    },
+    "go:357526": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357526/gate-cse-2021-set-2-question-14"
+    },
+    "go:357545": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357545/gate-cse-2021-set-2-ga-question-5"
+    },
+    "go:371901": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371901/gate-cse-2022-question-35"
+    },
+    "go:371913": {
+      "type": "NAT",
+      "answer": 0.85,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371913/gate-cse-2022-question-23",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:371927": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371927/gate-cse-2022-question-9"
+    },
+    "go:371929": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371929/gate-cse-2022-question-7"
+    },
+    "go:371934": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371934/gate-cse-2022-question-2"
+    },
+    "go:371922": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371922/gate-cse-2022-question-14"
+    },
+    "go:371496": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371496/gate-cse-2022-ga-question-10"
+    },
+    "go:357498": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357498/gate-cse-2021-set-2-question-42"
+    },
+    "go:371926": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371926/gate-cse-2022-question-10"
+    },
+    "go:399251": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399251/gate-cse-2023-ga-question-5"
+    },
+    "go:399261": {
+      "type": "NAT",
+      "answer": 2.375,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399261/gate-cse-2023-question-50",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:399280": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399280/gate-cse-2023-question-31"
+    },
+    "go:399288": {
+      "type": "NAT",
+      "answer": 2040.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399288/gate-cse-2023-question-23",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:399279": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399279/gate-cse-2023-question-32"
+    },
+    "go:399299": {
+      "type": "MSQ",
+      "answer": [
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399299/gate-cse-2023-question-13"
+    },
+    "go:399291": {
+      "type": "NAT",
+      "answer": 2.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399291/gate-cse-2023-question-20",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:399303": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399303/gate-cse-2023-question-9"
+    },
+    "go:399283": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399283/gate-cse-2023-question-28"
+    },
+    "go:399304": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399304/gate-cse-2023-question-8"
+    },
+    "go:399308": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399308/gate-cse-2023-question-4"
+    },
+    "go:422778": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422778/gate-cse-2024-set-1-ga-question-9"
+    },
+    "go:399263": {
+      "type": "NAT",
+      "answer": 5.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399263/gate-cse-2023-question-48",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422791": {
+      "type": "NAT",
+      "answer": 44.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422791/gate-cse-2024-set-1-question-51",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422790": {
+      "type": "NAT",
+      "answer": 6596.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422790/gate-cse-2024-set-1-question-52",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422822": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422822/gate-cse-2024-set-1-question-20"
+    },
+    "go:422829": {
+      "type": "MSQ",
+      "answer": [
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422829/gate-cse-2024-set-1-question-13"
+    },
+    "go:422825": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422825/gate-cse-2024-set-1-question-17"
+    },
+    "go:422800": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422800/gate-cse-2024-set-1-question-42"
+    },
+    "go:422799": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422799/gate-cse-2024-set-1-question-43"
+    },
+    "go:460067": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460067/gate-cse-2025-set-1-question-13"
+    },
+    "go:422860": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "B"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422860/gate-cse-2024-set-2-question-37"
+    },
+    "go:422846": {
+      "type": "NAT",
+      "answer": 34.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422846/gate-cse-2024-set-2-question-51",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422845": {
+      "type": "NAT",
+      "answer": 15.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422845/gate-cse-2024-set-2-question-52",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422873": {
+      "type": "NAT",
+      "answer": 5.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422873/gate-cse-2024-set-2-question-24",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422898": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422898/gate-cse-2024-set-2-ga-question-9"
+    },
+    "go:422878": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422878/gate-cse-2024-set-2-question-19"
+    },
+    "go:422889": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422889/gate-cse-2024-set-2-question-8"
+    },
+    "go:422883": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422883/gate-cse-2024-set-2-question-14"
+    },
+    "go:460817": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460817/gate-cse-2025-set-2-question-18"
+    },
+    "go:460062": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460062/gate-cse-2025-set-1-question-18"
+    },
+    "go:460073": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460073/gate-cse-2025-set-1-question-7"
+    },
+    "go:460819": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460819/gate-cse-2025-set-2-question-16"
+    },
+    "go:460046": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460046/gate-cse-2025-set-1-question-34"
+    },
+    "go:80576": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80576/gate-cse-1987-question-2b",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:460834": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460834/gate-cse-2025-set-2-question-1"
+    },
+    "go:80572": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80572/gate-cse-1987-question-2a",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80579": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80579/gate-cse-1987-question-2c",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80603": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80603/gate-cse-1987-question-2l",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80589": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80589/gate-cse-1987-question-2h",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80609": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80609/gate-cse-1987-question-2n",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80583": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80583/gate-cse-1987-question-2d",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:460823": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460823/gate-cse-2025-set-2-question-12"
+    },
+    "go:80606": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80606/gate-cse-1987-question-2m",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80590": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80590/gate-cse-1987-question-2i",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:80588": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/80588/gate-cse-1987-question-2g",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:85387": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/85387/gate-cse-1990-question-4-i",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:85391": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/85391/gate-cse-1990-question-4-iii",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:85390": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/85390/gate-cse-1990-question-4-ii",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:85394": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/85394/gate-cse-1990-question-4-v",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:521": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:selected_answer_text:https://gateoverflow.in/521/gate-cse-1991-question-03-vi"
+    },
+    "go:528": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/528/gate-cse-1991-question-03-xiv"
+    },
+    "go:560": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/560/gate-cse-1992-question-02-v"
+    },
+    "go:559": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/559/gate-cse-1992-question-02-ix"
+    },
+    "go:2479": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2479/gate-cse-1994-question-3-2",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2480": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2480/gate-cse-1994-question-3-3",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2495": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2495/gate-cse-1994-question-3-9",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2492": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2492/gate-cse-1994-question-3-6",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2499": {
+      "type": "NAT",
+      "answer": 1.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2499/gate-cse-1994-question-3-13",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2778": {
+      "type": "NAT",
+      "answer": 61.25,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2778/gate-cse-1996-question-26",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:1488": {
+      "type": "MSQ",
+      "answer": [
+        "A",
+        "C"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1488/gate-cse-1999-question-2-10"
+    },
+    "go:2497": {
+      "type": "NAT",
+      "answer": 0.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2497/gate-cse-1994-question-3-11",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:1489": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1489/gate-cse-1999-question-2-11"
+    },
+    "go:460831": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460831/gate-cse-2025-set-2-question-4"
+    },
+    "go:460053": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460053/gate-cse-2025-set-1-question-27"
+    },
+    "go:357408": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357408/gate-cse-2021-set-1-question-43"
+    },
+    "go:460049": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460049/gate-cse-2025-set-1-question-31"
+    },
+    "go:460054": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460054/gate-cse-2025-set-1-question-26"
+    },
+    "go:460806": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460806/gate-cse-2025-set-2-question-29"
+    },
+    "go:399254": {
+      "type": "MSQ",
+      "answer": [
+        "B",
+        "D"
+      ],
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/399254/gate-cse-2023-ga-question-2"
+    },
+    "go:422797": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422797/gate-cse-2024-set-1-question-45",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422803": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422803/gate-cse-2024-set-1-question-39"
+    },
+    "go:422812": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422812/gate-cse-2024-set-1-question-30"
+    },
+    "go:422828": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422828/gate-cse-2024-set-1-question-14"
+    },
+    "go:422787": {
+      "type": "NAT",
+      "answer": 6.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422787/gate-cse-2024-set-1-question-55",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422838": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422838/gate-cse-2024-set-1-question-4"
+    },
+    "go:422815": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422815/gate-cse-2024-set-1-question-27"
+    },
+    "go:422837": {
+      "type": "MCQ",
+      "answer": "C",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422837/gate-cse-2024-set-1-question-5"
+    },
+    "go:422840": {
+      "type": "MCQ",
+      "answer": "B",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422840/gate-cse-2024-set-1-question-2"
+    },
+    "go:422876": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422876/gate-cse-2024-set-2-question-21"
+    },
+    "go:422843": {
+      "type": "NAT",
+      "answer": 1028.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422843/gate-cse-2024-set-2-question-54",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:422863": {
+      "type": "MCQ",
+      "answer": "D",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422863/gate-cse-2024-set-2-question-34"
+    },
+    "go:422835": {
+      "type": "MCQ",
+      "answer": "A",
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422835/gate-cse-2024-set-1-question-7"
+    },
+    "go:422849": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/422849/gate-cse-2024-set-2-question-48",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:460030": {
+      "type": "NAT",
+      "answer": 7.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460030/gate-cse-2025-set-1-question-50",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:460847": {
+      "type": "NAT",
+      "answer": 260.7,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460847/gate-cse-2025-set-2-question-46",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:460842": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460842/gate-cse-2025-set-2-question-51",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:460839": {
+      "type": "NAT",
+      "answer": 0.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460839/gate-cse-2025-set-2-question-54",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:460034": {
+      "type": "NAT",
+      "answer": 0.9504999999999999,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460034/gate-cse-2025-set-1-question-46",
+      "tolerance": {
+        "abs": 0.0015000000000000013
+      }
+    },
+    "go:460037": {
+      "type": "NAT",
+      "answer": 11.85,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460037/gate-cse-2025-set-1-question-43",
+      "tolerance": {
+        "abs": 0.019999999999999574
+      }
+    },
+    "go:460841": {
+      "type": "NAT",
+      "answer": 111.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460841/gate-cse-2025-set-2-question-52",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:546": {
+      "type": "NAT",
+      "answer": 3.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/546/gate-cse-1992-question-01-ii",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:2777": {
+      "type": "NAT",
+      "answer": 1.45,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2777/gate-cse-1996-question-25",
+      "tolerance": {
+        "abs": 0.050000000000000044
+      }
+    },
+    "go:1694": {
+      "type": "NAT",
+      "answer": 0.695,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1694/gate-cse-1998-question-3a",
+      "tolerance": {
+        "abs": 0.0050000000000000044
+      }
+    },
+    "go:1977": {
+      "type": "NAT",
+      "answer": 99.6,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1977/gate-cse-2014-set-2-question-20",
+      "tolerance": {
+        "abs": 0.05000000000000426
+      }
+    },
+    "go:460838": {
+      "type": "NAT",
+      "answer": 0.75,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460838/gate-cse-2025-set-2-question-55",
+      "tolerance": {
+        "abs": 0.050000000000000044
+      }
+    },
+    "go:1954": {
+      "type": "NAT",
+      "answer": 3.8499999999999996,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1954/gate-cse-2014-set-2-question-2",
+      "tolerance": {
+        "abs": 0.050000000000000044
+      }
+    },
+    "go:460033": {
+      "type": "NAT",
+      "answer": 7.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460033/gate-cse-2025-set-1-question-47",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:2000": {
+      "type": "NAT",
+      "answer": 1.73,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2000/gate-cse-2014-set-2-question-40",
+      "tolerance": {
+        "abs": 0.010000000000000009
+      }
+    },
+    "go:460059": {
+      "type": "NAT",
+      "answer": -2.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460059/gate-cse-2025-set-1-question-21",
+      "tolerance": {
+        "abs": 0.10000000000000009
+      }
+    },
+    "go:1953": {
+      "type": "NAT",
+      "answer": 11.899999999999999,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/1953/gate-cse-2014-set-2-question-1",
+      "tolerance": {
+        "abs": 0.04999999999999982
+      }
+    },
+    "go:2014": {
+      "type": "NAT",
+      "answer": 0.26,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2014/gate-cse-2014-set-2-question-48",
+      "tolerance": {
+        "abs": 0.0010000000000000009
+      }
+    },
+    "go:8251": {
+      "type": "NAT",
+      "answer": 6.15,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/8251/gate-cse-2015-set-2-question-49",
+      "tolerance": {
+        "abs": 0.050000000000000266
+      }
+    },
+    "go:2077": {
+      "type": "NAT",
+      "answer": 1.55,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/2077/gate-cse-2014-set-3-question-43",
+      "tolerance": {
+        "abs": 0.050000000000000044
+      }
+    },
+    "go:39709": {
+      "type": "NAT",
+      "answer": 0.335,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39709/gate-cse-2016-set-1-question-29",
+      "tolerance": {
+        "abs": 0.0050000000000000044
+      }
+    },
+    "go:39670": {
+      "type": "NAT",
+      "answer": 3.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39670/gate-cse-2016-set-1-question-8",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:39691": {
+      "type": "NAT",
+      "answer": 33.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39691/gate-cse-2016-set-1-question-32",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:39720": {
+      "type": "NAT",
+      "answer": 1.145,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39720/gate-cse-2016-set-1-question-54",
+      "tolerance": {
+        "abs": 0.04499999999999993
+      }
+    },
+    "go:39714": {
+      "type": "NAT",
+      "answer": 198.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/39714/gate-cse-2016-set-1-question-27",
+      "tolerance": {
+        "abs": 0.09999999999999432
+      }
+    },
+    "go:204090": {
+      "type": "NAT",
+      "answer": 0.2885,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204090/gate-cse-2018-question-16",
+      "tolerance": {
+        "abs": 0.0005000000000000004
+      }
+    },
+    "go:204089": {
+      "type": "NAT",
+      "answer": 0.0231,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204089/gate-cse-2018-question-15",
+      "tolerance": {
+        "abs": 9.99999999999994e-05
+      }
+    },
+    "go:118328": {
+      "type": "NAT",
+      "answer": 88.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118328/gate-cse-2017-set-1-question-45",
+      "tolerance": {
+        "abs": 1.5
+      }
+    },
+    "go:118597": {
+      "type": "NAT",
+      "answer": 4.75,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/118597/gate-cse-2017-set-2-question-45",
+      "tolerance": {
+        "abs": 0.04999999999999982
+      }
+    },
+    "go:204099": {
+      "type": "NAT",
+      "answer": 34.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204099/gate-cse-2018-question-25",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:204097": {
+      "type": "NAT",
+      "answer": 59.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204097/gate-cse-2018-question-23",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:204119": {
+      "type": "NAT",
+      "answer": 0.605,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/204119/gate-cse-2018-question-44",
+      "tolerance": {
+        "abs": 0.0050000000000000044
+      }
+    },
+    "go:302806": {
+      "type": "NAT",
+      "answer": 4.05,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/302806/gate-cse-2019-question-42",
+      "tolerance": {
+        "abs": 0.04999999999999982
+      }
+    },
+    "go:333178": {
+      "type": "NAT",
+      "answer": 155.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333178/gate-cse-2020-question-53",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:333181": {
+      "type": "NAT",
+      "answer": 5.255,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333181/gate-cse-2020-question-50",
+      "tolerance": {
+        "abs": 0.004999999999999893
+      }
+    },
+    "go:333188": {
+      "type": "NAT",
+      "answer": 2.165,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333188/gate-cse-2020-question-43",
+      "tolerance": {
+        "abs": 0.015000000000000124
+      }
+    },
+    "go:333214": {
+      "type": "NAT",
+      "answer": 0.1254,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/333214/gate-cse-2020-question-17",
+      "tolerance": {
+        "abs": 0.0005000000000000074
+      }
+    },
+    "go:357396": {
+      "type": "NAT",
+      "answer": 0.04,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357396/gate-cse-2021-set-1-question-54",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357397": {
+      "type": "NAT",
+      "answer": 50.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357397/gate-cse-2021-set-1-question-55",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357431": {
+      "type": "NAT",
+      "answer": 0.25,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357431/gate-cse-2021-set-1-question-20",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357398": {
+      "type": "NAT",
+      "answer": 17160.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357398/gate-cse-2021-set-1-question-53",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357402": {
+      "type": "NAT",
+      "answer": 51.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357402/gate-cse-2021-set-1-question-49",
+      "tolerance": {
+        "abs": 1.0
+      }
+    },
+    "go:357399": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357399/gate-cse-2021-set-1-question-52",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357429": {
+      "type": "NAT",
+      "answer": 17.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357429/gate-cse-2021-set-1-question-22",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357433": {
+      "type": "NAT",
+      "answer": 0.37,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357433/gate-cse-2021-set-1-question-18",
+      "tolerance": {
+        "abs": 0.020000000000000018
+      }
+    },
+    "go:357518": {
+      "type": "NAT",
+      "answer": 15.5,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357518/gate-cse-2021-set-2-question-22",
+      "tolerance": {
+        "abs": 0.5
+      }
+    },
+    "go:357521": {
+      "type": "NAT",
+      "answer": 2.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357521/gate-cse-2021-set-2-question-19",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357488": {
+      "type": "NAT",
+      "answer": 60.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357488/gate-cse-2021-set-2-question-49",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357522": {
+      "type": "NAT",
+      "answer": 3.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357522/gate-cse-2021-set-2-question-18",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:357483": {
+      "type": "NAT",
+      "answer": 135.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357483/gate-cse-2021-set-2-question-54",
+      "tolerance": {
+        "abs": 5.0
+      }
+    },
+    "go:357516": {
+      "type": "NAT",
+      "answer": 4.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/357516/gate-cse-2021-set-2-question-24",
+      "tolerance": {
+        "abs": 0.01
+      }
+    },
+    "go:371885": {
+      "type": "NAT",
+      "answer": 1.435,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371885/gate-cse-2022-question-51",
+      "tolerance": {
+        "abs": 0.015000000000000013
+      }
+    },
+    "go:371887": {
+      "type": "NAT",
+      "answer": 7.08,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/371887/gate-cse-2022-question-49",
+      "tolerance": {
+        "abs": 0.009999999999999787
+      }
+    },
+    "go:460844": {
+      "type": "NAT",
+      "answer": 6.0,
+      "note": "auto_backfill:gateoverflow_widget:https://gateoverflow.in/460844/gate-cse-2025-set-2-question-49",
+      "tolerance": {
+        "abs": 0.01
+      }
+    }
+  }
+}

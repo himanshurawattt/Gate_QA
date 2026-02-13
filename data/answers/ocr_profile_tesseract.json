@@ -1,0 +1,9 @@
+{
+  "id_delimiters": [".", ":", ","],
+  "answer_separators": [";", ",", "/"],
+  "lookahead_lines": 4,
+  "max_answer_line_length": 96,
+  "max_chapter_no": 20,
+  "max_subject_code": 120,
+  "max_question_no": 120
+}

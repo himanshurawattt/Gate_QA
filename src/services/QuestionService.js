@@ -1,8 +1,82 @@
+import { getExamUidFromQuestion } from "../utils/examUid";
+
 export class QuestionService {
   static questions = [];
   static loaded = false;
   static count = new Map();
   static tags = [];
+  static sourceUrl = "";
+
+  static extractGateOverflowId(link = "") {
+    const raw = String(link || "").trim();
+    if (!raw) {
+      return null;
+    }
+    const absoluteMatch = raw.match(
+      /(?:https?:\/\/)?(?:www\.)?gateoverflow\.in\/(\d+)(?:[/?#]|$)/i
+    );
+    if (absoluteMatch) {
+      return absoluteMatch[1];
+    }
+    const relativeMatch = raw.match(/^\/?(\d+)(?:[/?#]|$)/);
+    return relativeMatch ? relativeMatch[1] : null;
+  }
+
+  static hashString(value = "") {
+    let hash = 2166136261;
+    for (let i = 0; i < value.length; i += 1) {
+      hash ^= value.charCodeAt(i);
+      hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0).toString(16);
+  }
+
+  static buildQuestionUid(question = {}) {
+    if (question.question_uid) {
+      return String(question.question_uid);
+    }
+    const goId = this.extractGateOverflowId(question.link || "");
+    if (goId) {
+      return `go:${goId}`;
+    }
+    const key = `${question.title || ""}||${question.question || ""}||${question.link || ""}`;
+    return `local:${this.hashString(key)}`;
+  }
+
+  static hasNativeJoinIdentity(question = {}) {
+    if (!question || typeof question !== "object") {
+      return false;
+    }
+    if (question.question_uid && String(question.question_uid).trim()) {
+      return true;
+    }
+    if (this.extractGateOverflowId(question.link || "")) {
+      return true;
+    }
+    if (
+      question.id_str != null &&
+      question.volume != null &&
+      String(question.id_str).trim()
+    ) {
+      return true;
+    }
+    if (getExamUidFromQuestion(question)) {
+      return true;
+    }
+    return false;
+  }
+
+  static normalizeQuestion(question = {}) {
+    const normalized =
+      question && typeof question === "object" ? { ...question } : {};
+    normalized.title = normalized.title || "";
+    normalized.question = normalized.question || "";
+    normalized.link = normalized.link || "";
+    normalized.tags = Array.isArray(normalized.tags) ? normalized.tags : [];
+    normalized.question_uid = this.buildQuestionUid(normalized);
+    normalized.exam_uid = getExamUidFromQuestion(normalized) || "";
+    return normalized;
+  }
 
   static async init() {
     if (this.loaded) {
@@ -16,21 +90,68 @@ export class QuestionService {
       ? import.meta.env.BASE_URL
       : `${import.meta.env.BASE_URL}/`;
 
-    // Simple concatenation is safer when BASE_URL is known to be correct (e.g. '/Gate_QA/')
-    const dataUrl = `${baseUrl}questions-filtered.json`;
-    console.log("Fetching:", dataUrl);
-    const response = await fetch(dataUrl, { cache: "no-cache" });
+    const dataCandidates = [
+      `${baseUrl}questions-with-answers.json`,
+      `${baseUrl}questions-filtered-with-ids.json`,
+      `${baseUrl}questions-filtered.json`,
+    ];
 
-    if (!response.ok) {
-      throw new Error(`Failed to load questions (${response.status}).`);
+    let bestCandidate = null;
+    let lastStatus = 0;
+    for (const dataUrl of dataCandidates) {
+      const response = await fetch(dataUrl, { cache: "no-cache" });
+      lastStatus = response.status;
+      if (!response.ok) {
+        continue;
+      }
+      const payload = await response.json();
+      if (!Array.isArray(payload) || payload.length === 0) {
+        continue;
+      }
+
+      const objectRows = payload.filter(
+        (question) => question && typeof question === "object"
+      );
+      if (!objectRows.length) {
+        continue;
+      }
+
+      const joinReadyCount = objectRows.reduce(
+        (count, question) =>
+          count + (this.hasNativeJoinIdentity(question) ? 1 : 0),
+        0
+      );
+      const joinCoverage = joinReadyCount / objectRows.length;
+
+      if (!bestCandidate || joinCoverage > bestCandidate.joinCoverage) {
+        bestCandidate = {
+          dataUrl,
+          data: objectRows,
+          joinCoverage,
+          joinReadyCount,
+        };
+      }
+
+      if (joinCoverage === 1) {
+        break;
+      }
     }
 
-    const data = await response.json();
-    if (!Array.isArray(data) || data.length === 0) {
-      throw new Error("Question bank is empty or invalid.");
+    if (!bestCandidate) {
+      throw new Error(`Failed to load questions (${lastStatus}).`);
     }
 
-    this.questions = data;
+    this.sourceUrl = bestCandidate.dataUrl;
+    this.questions = bestCandidate.data.map((question) =>
+      this.normalizeQuestion(question)
+    );
+
+    if (bestCandidate.joinCoverage < 1) {
+      console.warn(
+        `[QuestionService] Using ${bestCandidate.dataUrl} with ${bestCandidate.joinReadyCount}/${bestCandidate.data.length} native join identities.`
+      );
+    }
+
     this.loaded = true;
     this.buildIndexes();
   }

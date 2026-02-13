@@ -1,0 +1,90 @@
+{
+  "valid_parse_cases": [
+    {
+      "name": "mcq",
+      "token": "A",
+      "expected_type": "MCQ",
+      "expected_answer": "A"
+    },
+    {
+      "name": "msq",
+      "token": "A;B;C",
+      "expected_type": "MSQ",
+      "expected_answer": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "nat_decimal",
+      "token": "2.32",
+      "expected_type": "NAT",
+      "expected_answer": 2.32
+    },
+    {
+      "name": "nat_integer",
+      "token": "24",
+      "expected_type": "NAT",
+      "expected_answer": 24.0
+    },
+    {
+      "name": "nat_signed",
+      "token": "-16.0",
+      "expected_type": "NAT",
+      "expected_answer": -16.0
+    },
+    {
+      "name": "msq_duplicate_options",
+      "token": "A;A;C",
+      "expected_type": "MSQ",
+      "expected_answer": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "name": "nat_equal_range",
+      "token": "60:60",
+      "expected_type": "NAT",
+      "expected_answer": 60.0
+    }
+  ],
+  "invalid_parse_cases": [
+    {
+      "name": "mcq_with_e",
+      "token": "E",
+      "expected_reason": "invalid_mcq_option"
+    },
+    {
+      "name": "nat_with_letter",
+      "token": "2.3O",
+      "expected_reason": "letters_present_in_numeric_token"
+    },
+    {
+      "name": "unsupported_true",
+      "token": "True",
+      "expected_reason": "unsupported_literal"
+    },
+    {
+      "name": "unsupported_na",
+      "token": "N/A",
+      "expected_reason": "unsupported_literal"
+    },
+    {
+      "name": "unsupported_x",
+      "token": "X",
+      "expected_reason": "unsupported_literal"
+    },
+    {
+      "name": "nat_range_mismatch",
+      "token": "5:7",
+      "expected_reason": "nat_range_mismatch"
+    },
+    {
+      "name": "empty",
+      "token": "",
+      "expected_reason": "empty_answer_token"
+    }
+  ]
+}

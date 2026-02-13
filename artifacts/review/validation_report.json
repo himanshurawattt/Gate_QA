@@ -1,0 +1,37 @@
+{
+  "answers_json": "data\\answers\\answers_master_v1.json",
+  "parsed_summary_path": "artifacts\\parsed\\summary.json",
+  "mapping_report_path": "data\\answers\\answer_to_question_map_v1.json",
+  "answers_by_exam_uid_path": "data\\answers\\answers_by_exam_uid_v1.json",
+  "questions_missing_report_path": "artifacts\\review\\questions_missing_answers.csv",
+  "questions_missing_scope": "full_dataset",
+  "unsupported_questions_path": "data/answers/unsupported_question_uids_v1.json",
+  "unsupported_questions_count": 81,
+  "missing_questions_count": 0,
+  "missing_questions_count_by_scope": {
+    "mapped_universe": 0,
+    "full_dataset": 0
+  },
+  "missing_questions_diff_count": 0,
+  "questions_missing_report_mapped_universe_path": "artifacts\\review\\questions_missing_answers.mapped_universe.csv",
+  "questions_missing_report_full_dataset_path": "artifacts\\review\\questions_missing_answers.full_dataset.csv",
+  "questions_missing_report_diff_path": "artifacts\\review\\questions_missing_answers.diff_unresolved_ui.csv",
+  "error_count": 0,
+  "errors": [],
+  "mapping_validation": {
+    "status": "checked",
+    "stats": {
+      "resolved": 2343,
+      "unresolved": 893,
+      "unresolved_in_dataset": 0,
+      "conflicts": 0,
+      "coverage_ratio": 0.7240420271940667,
+      "coverage_ratio_in_dataset": 1.0
+    },
+    "thresholds": {
+      "min_mapping_coverage_ratio": 1.0,
+      "max_mapping_conflicts": 0,
+      "max_unresolved_mappings": 0
+    }
+  }
+}

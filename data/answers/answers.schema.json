@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GATE QA Answers Master v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "generated_at",
+    "stats",
+    "records_by_uid"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "v1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total_rows_seen",
+        "parsed_records",
+        "suspicious_lines"
+      ],
+      "properties": {
+        "total_rows_seen": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parsed_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "suspicious_lines": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parse_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "mapped_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unmapped_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mapping_conflicts": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "records_by_uid": {
+      "type": "object",
+      "patternProperties": {
+        "^v[0-9]+:[0-9]+\\.[0-9]+\\.[0-9]+$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "uid",
+            "id_str",
+            "volume",
+            "chapter_no",
+            "subject_code",
+            "question_no",
+            "type",
+            "answer",
+            "source"
+          ],
+          "properties": {
+            "uid": {
+              "type": "string"
+            },
+            "id_str": {
+              "type": "string",
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "volume": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "chapter_no": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "subject_code": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "question_no": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "MCQ",
+                "MSQ",
+                "NAT"
+              ]
+            },
+            "answer": {},
+            "question_uid": {
+              "type": "string"
+            },
+            "tolerance": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "abs"
+              ],
+              "properties": {
+                "abs": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            },
+            "source": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "pdf",
+                "page",
+                "line_index"
+              ],
+              "properties": {
+                "pdf": {
+                  "type": "string",
+                  "enum": [
+                    "volume1",
+                    "volume2"
+                  ]
+                },
+                "page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "line_index": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": "MCQ"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "answer": {
+                    "type": "string",
+                    "enum": [
+                      "A",
+                      "B",
+                      "C",
+                      "D"
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": "MSQ"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "answer": {
+                    "type": "array",
+                    "minItems": 2,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "A",
+                        "B",
+                        "C",
+                        "D"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "type": {
+                    "const": "NAT"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "tolerance"
+                ],
+                "properties": {
+                  "answer": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

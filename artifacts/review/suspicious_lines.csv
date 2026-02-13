@@ -1,0 +1,544 @@
+volume,page_no,line_index,ocr_line,reason,reason_code,reason_detail,candidate_uid
+1,14,2,A. B. C. 2 D. x7,orphan_answer_without_id,orphan_answer_without_id,answer-like line without detectable id_str,
+1,14,12,1 4 9,orphan_answer_without_id,orphan_answer_without_id,answer-like line without detectable id_str,
+1,14,36,1.7.1 N/A 1.7.2 B 1.7.3 197.9 : 198.1 1.7.4 A;B;C 1.7.5 A,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,1.7.3
+1,14,5,1.8.1 SUMMAT10N:GATE CSE 1994 1 QUEST10N:15 0F W0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:1.8.1
+1,14,17,1.8.2 SUMMAT10N:GATE CSE 2008 1 QUEST10N:24 0E AG,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:1.8.2
+1,14,22,1.8.3 SUMMAT10N:GATE CSE 2015 SET 1 1 QUEST10N:26 MAR1A,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:1.8.3
+1,14,28,1.1.1 N/A,unsupported_literal,unsupported_literal,,v1:1.1.1
+1,14,28,1.2.1 N/A,unsupported_literal,unsupported_literal,,v1:1.2.1
+1,14,29,1.2.4 N/A,unsupported_literal,unsupported_literal,,v1:1.2.4
+1,14,29,1.2.5 N/A,unsupported_literal,unsupported_literal,,v1:1.2.5
+1,14,30,1.2.9 N/A,unsupported_literal,unsupported_literal,,v1:1.2.9
+1,14,34,1.4.1 N/A,unsupported_literal,unsupported_literal,,v1:1.4.1
+1,14,36,1.7.1 N/A,unsupported_literal,unsupported_literal,,v1:1.7.1
+1,14,37,1.8.1 N/A,unsupported_literal,unsupported_literal,,v1:1.8.1
+1,30,9,2.1.3 X,unsupported_literal,unsupported_literal,,v1:2.1.3
+1,30,9,2.2.1 N/A,unsupported_literal,unsupported_literal,,v1:2.2.1
+1,30,9,2.2.2 N/A,unsupported_literal,unsupported_literal,,v1:2.2.2
+1,30,10,2.2.3 N/A,unsupported_literal,unsupported_literal,,v1:2.2.3
+1,30,14,2.4.1 N/A,unsupported_literal,unsupported_literal,,v1:2.4.1
+1,30,14,2.4.2 N/A,unsupported_literal,unsupported_literal,,v1:2.4.2
+1,30,14,2.4.3 N/A,unsupported_literal,unsupported_literal,,v1:2.4.3
+1,30,14,2.4.4 N/A,unsupported_literal,unsupported_literal,,v1:2.4.4
+1,30,15,2.4.5 N/A,unsupported_literal,unsupported_literal,,v1:2.4.5
+1,30,15,2.4.8 N/A,unsupported_literal,unsupported_literal,,v1:2.4.8
+1,30,15,2.4.9 N/A,unsupported_literal,unsupported_literal,,v1:2.4.9
+1,30,16,2.4.12 N/A,unsupported_literal,unsupported_literal,,v1:2.4.12
+1,30,23,2.7.1 Q-Q,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:2.7.1
+1,30,23,2.7.2 N/A,unsupported_literal,unsupported_literal,,v1:2.7.2
+1,30,23,2.7.4 N/A,unsupported_literal,unsupported_literal,,v1:2.7.4
+1,47,3,3.3.40 PR0P0S1T10NAL L0G1C:GATE 1T 2004 1 QUEST10N:31 0FC,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:3.3.40
+1,47,13,3.1.1 N/A,unsupported_literal,unsupported_literal,,v1:3.1.1
+1,47,13,3.1.2 N/A,unsupported_literal,unsupported_literal,,v1:3.1.2
+1,47,14,3.1.10 X,unsupported_literal,unsupported_literal,,v1:3.1.10
+1,47,16,3.1.17 X,unsupported_literal,unsupported_literal,,v1:3.1.17
+1,47,20,3.3.1 N/A,unsupported_literal,unsupported_literal,,v1:3.3.1
+1,47,20,3.3.2 N/A,unsupported_literal,unsupported_literal,,v1:3.3.2
+1,47,21,3.3.7 N/A,unsupported_literal,unsupported_literal,,v1:3.3.7
+1,47,21,3.3.8 N/A,unsupported_literal,unsupported_literal,,v1:3.3.8
+1,47,22,3.3.10 TRUE,unsupported_literal,unsupported_literal,,v1:3.3.10
+1,47,22,3.3.11 N/A,unsupported_literal,unsupported_literal,,v1:3.3.11
+1,47,23,3.3.16 N/A,unsupported_literal,unsupported_literal,,v1:3.3.16
+1,47,24,3.3.20 N/A,unsupported_literal,unsupported_literal,,v1:3.3.20
+1,79,4,4.13.25 SET THE0RY:GATE 1T 2005 1 QUEST10N:33 [MSE [MY,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:4.13.25
+1,79,10,4.13.26 SET THE0RY:GATE 1T 2006 1 QUEST10N:23 0H0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:4.13.26
+1,79,18,4.13.27 SET THE0RY:GATE 1T 2006 1 QUEST10N:24 [M4 [M,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:4.13.27
+1,79,25,4.1.1 N/A,unsupported_literal,unsupported_literal,,v1:4.1.1
+1,79,25,4.1.2 N/A,unsupported_literal,unsupported_literal,,v1:4.1.2
+1,79,26,4.2.1 TRUE,unsupported_literal,unsupported_literal,,v1:4.2.1
+1,79,27,4.3.1 N/A,unsupported_literal,unsupported_literal,,v1:4.3.1
+1,79,27,4.3.2 N/A,unsupported_literal,unsupported_literal,,v1:4.3.2
+1,79,27,4.3.3 N/A,unsupported_literal,unsupported_literal,,v1:4.3.3
+1,79,28,4.3.7 N/A,unsupported_literal,unsupported_literal,,v1:4.3.7
+1,79,28,4.3.10 N/A,unsupported_literal,unsupported_literal,,v1:4.3.10
+1,79,32,4.4.1 N/A,unsupported_literal,unsupported_literal,,v1:4.4.1
+1,79,33,4.4.2 N/A,unsupported_literal,unsupported_literal,,v1:4.4.2
+1,79,33,4.4.3 N/A,unsupported_literal,unsupported_literal,,v1:4.4.3
+1,79,33,4.4.4 N/A,unsupported_literal,unsupported_literal,,v1:4.4.4
+1,79,33,4.4.5 C 4.46 D,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:4.4.5
+1,79,34,4.4.7 N;A 448 C 449 C,unsupported_separator_pattern,unsupported_separator_pattern,,v1:4.4.7
+1,79,34,4.4.11 N/A,unsupported_literal,unsupported_literal,,v1:4.4.11
+1,79,35,4.4.12 N/A,unsupported_literal,unsupported_literal,,v1:4.4.12
+1,79,35,4.4.13 N/A,unsupported_literal,unsupported_literal,,v1:4.4.13
+1,79,39,4.4.32 B:D,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:4.4.32
+1,79,39,4.6.1 N/A,unsupported_literal,unsupported_literal,,v1:4.6.1
+1,79,39,4.6.2 N/A,unsupported_literal,unsupported_literal,,v1:4.6.2
+1,92,0,25 3,orphan_answer_without_id,orphan_answer_without_id,answer-like line without detectable id_str,
+1,92,4,1 1 1,orphan_answer_without_id,orphan_answer_without_id,answer-like line without detectable id_str,
+1,92,26,5.4.9 A 5.4.10 0.288 : 0.289 5.4.11 B 5.5.1 1 5.5.2 1,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,5.4.10
+1,92,28,5.5.8 C 5.5.9 C 5.5.10 0.25 : 0.25 5.5.11 -0.5 5.5.12 0.5:0.5,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,5.5.10
+1,92,28,5.5.8 C 5.5.9 C 5.5.10 0.25 : 0.25 5.5.11 -0.5 5.5.12 0.5:0.5,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,5.5.12
+1,92,8,5.7.1 P0LYN0M1ALS:GATE CSE 1987 1 QUEST10N:1-XX11 0N0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:5.7.1
+1,92,13,5.7.2 P0LYN0M1ALS:GATE CSE 1995 1 QUEST10N:2.8 0F G1,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:5.7.2
+1,92,20,5.1.1 N/A,unsupported_literal,unsupported_literal,,v1:5.1.1
+1,92,23,5.3.7 -2.1:-1.9,nat_range_mismatch,nat_range_mismatch,,v1:5.3.7
+1,92,24,5.4.1 N/A,unsupported_literal,unsupported_literal,,v1:5.4.1
+1,92,24,5.4.2 N/A,unsupported_literal,unsupported_literal,,v1:5.4.2
+1,136,15,7.1.1 0.25:0.25 7.2.1 C 7.2.2 0.125 7.3.1 A 7.4.1 C,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.1.1
+1,136,19,7.5.11 Sat 7.5.12 0.04 : 0.04 7.5.13 0.375 7.5.14 C 7.6.1 0.5,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.5.12
+1,136,21,7.7.6 3.8 :3.9 T07 B 7.7.8 D 7.79 D 7.7.10 C,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.7.6
+1,136,22,7.7.11 A 7.7.12 66.6:66.7 7.7.13 C 7.8.1 0.35 : 0.39 7.8.2 A,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.7.12
+1,136,22,7.7.11 A 7.7.12 66.6:66.7 7.7.13 C 7.8.1 0.35 : 0.39 7.8.2 A,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.8.1
+1,136,30,7.12.21 0.49:0.51 7.12.22 C 7.12.23 0.25 7.12.24 B 7.12.25 B,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.12.21
+1,136,31,7.12.26 B 7.12.27 B 7.12.28 X 7.13.1 C 7.14.1 0.300:0.302,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.14.1
+1,136,17,7.5.2 N/A,unsupported_literal,unsupported_literal,,v1:7.5.2
+1,136,19,7.5.11 SAT,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:7.5.11
+1,136,20,7.7.4 C 7.75 C,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:7.7.4
+1,136,21,3.8.3 9 T07 B,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:3.8.3
+1,136,21,7.7.8 D 7.79 D,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:7.7.8
+1,136,25,7.11.1 N/A,unsupported_literal,unsupported_literal,,v1:7.11.1
+1,136,28,7.12.13 |S,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:7.12.13
+1,136,28,"7.12.14 0S"" 712.15 0.25",letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:7.12.14
+1,136,29,7.12.16 C35 74217 0C 7.1218 A 712.19 BC 71220 B,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:7.12.16
+1,136,31,7.12.28 X,unsupported_literal,unsupported_literal,,v1:7.12.28
+1,171,8,8.9.15 X,unsupported_literal,unsupported_literal,,v1:8.9.15
+1,171,10,8.9.25 S,invalid_mcq_option,invalid_mcq_option,,v1:8.9.25
+1,171,11,8.9.26 X,unsupported_literal,unsupported_literal,,v1:8.9.26
+1,171,12,8.9.35 S,invalid_mcq_option,invalid_mcq_option,,v1:8.9.35
+1,279,2,9.70.15 W0RK T1ME:GATE2019 EC:GA-3 0R,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:9.70.15
+1,279,9,9.70.16 W0RK T1ME:GATE2019 EE:GA-4 0N0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:9.70.16
+1,279,15,9.70.17 W0RK T1ME:GATE2019 ME-2:GA-7 L0G0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:9.70.17
+1,279,37,9.12.5 X,unsupported_literal,unsupported_literal,,v1:9.12.5
+1,280,1,9.14.4 A 9.14.5 ) 9.15.1 B 9.15.2 B 9.15.3 C,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,9.14.5
+1,280,2,9.15.4 0.4895 : 0.4897 9.15.5 B 9.15.6 B 9.16.1 A 9.17.1 C,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,9.15.4
+1,280,17,9.28.19 D 9.28.20 22.2: 22.3 9.28.21 D 9.28.22 C 9.28.23 B,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,9.28.20
+1,280,36,9.43.7 B 9.43.8 D 9.43.9 C 9.43.10 D 9.43.11 ),id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,9.43.11
+1,280,40,9.45.2 C 9.45.3 D 9.45.4 C 9.45.5 X 9.45.6 ),id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,9.45.6
+1,280,13,9.28.2 X,unsupported_literal,unsupported_literal,,v1:9.28.2
+1,280,31,9.41.4 X,unsupported_literal,unsupported_literal,,v1:9.41.4
+1,280,34,9.42.14 X,unsupported_literal,unsupported_literal,,v1:9.42.14
+1,280,40,9.45.5 X,unsupported_literal,unsupported_literal,,v1:9.45.5
+1,281,7,9.49.28 X,unsupported_literal,unsupported_literal,,v1:9.49.28
+1,281,20,9.58.1 X,unsupported_literal,unsupported_literal,,v1:9.58.1
+1,281,37,9.70.13 X,unsupported_literal,unsupported_literal,,v1:9.70.13
+1,281,38,9.70.16 S,invalid_mcq_option,invalid_mcq_option,,v1:9.70.16
+1,300,2,D.,orphan_answer_without_id,orphan_answer_without_id,answer-like line without detectable id_str,
+1,300,16,C.,orphan_answer_without_id,orphan_answer_without_id,answer-like line without detectable id_str,
+1,300,4,10.8.8 PATTERNS 1N TW0 D1MENS10NS:GATE ELECTR1CAL 2023 1 GA QUEST10N:5 0K AG,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:10.8.8
+1,300,9,10.8.9 PATTERNS 1N TW0 D1MENS10NS:GATE MECHAN1CAL 2022 SET 1 1 GA QUEST10N:5 A ' [A,letters_present_in_numeric_token,letters_present_in_numeric_token,,v1:10.8.9
+1,301,0,10.6.1 10.6.2 10.6.3 10.6.4 1065,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.6.1
+1,301,0,10.6.1 10.6.2 10.6.3 10.6.4 1065,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.6.2
+1,301,0,10.6.1 10.6.2 10.6.3 10.6.4 1065,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.6.3
+1,301,1,10.6.11 10.6.12 10.7.1 10.7.2 10.7.3,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.6.11
+1,301,1,10.6.11 10.6.12 10.7.1 10.7.2 10.7.3,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.6.12
+1,301,1,10.6.11 10.6.12 10.7.1 10.7.2 10.7.3,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.7.1
+1,301,1,10.6.11 10.6.12 10.7.1 10.7.2 10.7.3,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.7.2
+1,301,1,10.6.11 10.6.12 10.7.1 10.7.2 10.7.3,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.7.3
+1,301,2,10.8.1 10.8.2 10.8.3 10.8.4 1085 |,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.8.1
+1,301,2,10.8.1 10.8.2 10.8.3 10.8.4 1085 |,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.8.2
+1,301,2,10.8.1 10.8.2 10.8.3 10.8.4 1085 |,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.8.3
+1,372,27,11.19.2 B 11.19.3 C 11.19.4 C 11.19.5 B 11.19.6 ),id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,11.19.6
+1,372,39,11.20.37 C 11.20.38 ) 11.20.39 C 11.20.40 C 11.21.1 A,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,11.20.38
+2,90,5,1.1.1 N/A,unsupported_literal,unsupported_literal,,v2:1.1.1
+2,90,5,1.1.2 N/A,unsupported_literal,unsupported_literal,,v2:1.1.2
+2,90,6,1.2.1 N/A,unsupported_literal,unsupported_literal,,v2:1.2.1
+2,90,7,1.2.2 N/A,unsupported_literal,unsupported_literal,,v2:1.2.2
+2,90,8,1.3.1 X,unsupported_literal,unsupported_literal,,v2:1.3.1
+2,90,14,1.9.1 N/A,unsupported_literal,unsupported_literal,,v2:1.9.1
+2,90,19,1.14.1 N/A,unsupported_literal,unsupported_literal,,v2:1.14.1
+2,90,25,1.16.2 N/A,unsupported_literal,unsupported_literal,,v2:1.16.2
+2,91,26,1.27.22 D 1.27.23 A 1.27.24 A 1.27.25 s) 1.27.26 2.32 :2.33,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,1.27.26
+2,91,36,1.31.17 C 1.31.18 B 1.31.19 147.1: 148.1 1.31.20 D 1.31.21 D,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,1.31.19
+2,91,1,1.18.1 N/A,unsupported_literal,unsupported_literal,,v2:1.18.1
+2,91,2,1.18.2 N/A,unsupported_literal,unsupported_literal,,v2:1.18.2
+2,91,2,1.18.5 N/A,unsupported_literal,unsupported_literal,,v2:1.18.5
+2,91,3,1.18.8 N/A,unsupported_literal,unsupported_literal,,v2:1.18.8
+2,91,11,1.24.1 B;D;E,invalid_mcq_option,invalid_mcq_option,,v2:1.24.1
+2,91,12,1.24.2 N/A,unsupported_literal,unsupported_literal,,v2:1.24.2
+2,91,12,1.24.4 N/A,unsupported_literal,unsupported_literal,,v2:1.24.4
+2,91,12,1.24.5 N/A,unsupported_literal,unsupported_literal,,v2:1.24.5
+2,91,13,1.24.7 N/A,unsupported_literal,unsupported_literal,,v2:1.24.7
+2,91,15,1.24.18 X,unsupported_literal,unsupported_literal,,v2:1.24.18
+2,91,19,1.26.2 N/A,unsupported_literal,unsupported_literal,,v2:1.26.2
+2,91,19,1.26.3 N/A,unsupported_literal,unsupported_literal,,v2:1.26.3
+2,91,21,1.27.1 N/A,unsupported_literal,unsupported_literal,,v2:1.27.1
+2,91,22,1.27.2 N/A,unsupported_literal,unsupported_literal,,v2:1.27.2
+2,91,22,1.27.3 N/A,unsupported_literal,unsupported_literal,,v2:1.27.3
+2,91,22,1.27.4 N/A,unsupported_literal,unsupported_literal,,v2:1.27.4
+2,91,22,1.27.5 N/A,unsupported_literal,unsupported_literal,,v2:1.27.5
+2,91,22,1.27.6 N/A,unsupported_literal,unsupported_literal,,v2:1.27.6
+2,91,23,1.27.7 N/A,unsupported_literal,unsupported_literal,,v2:1.27.7
+2,91,23,1.27.10 N/A,unsupported_literal,unsupported_literal,,v2:1.27.10
+2,91,24,1.27.12 N/A,unsupported_literal,unsupported_literal,,v2:1.27.12
+2,91,24,1.27.15 S,invalid_mcq_option,invalid_mcq_option,,v2:1.27.15
+2,91,25,1.27.20 X,unsupported_literal,unsupported_literal,,v2:1.27.20
+2,91,26,1.27.25 S,invalid_mcq_option,invalid_mcq_option,,v2:1.27.25
+2,91,29,1.29.1 N/A,unsupported_literal,unsupported_literal,,v2:1.29.1
+2,91,31,1.30.1 N/A,unsupported_literal,unsupported_literal,,v2:1.30.1
+2,91,32,1.31.1 N/A,unsupported_literal,unsupported_literal,,v2:1.31.1
+2,91,33,1.31.4 N/A,unsupported_literal,unsupported_literal,,v2:1.31.4
+2,91,33,1.31.6 N/A,unsupported_literal,unsupported_literal,,v2:1.31.6
+2,91,34,1.31.7 N/A,unsupported_literal,unsupported_literal,,v2:1.31.7
+2,91,34,1.31.10 N/A,unsupported_literal,unsupported_literal,,v2:1.31.10
+2,91,34,1.31.11 N/A,unsupported_literal,unsupported_literal,,v2:1.31.11
+2,153,42,2.1.16 D 2.1.17 D 2.1.18 D 2.2.1 11.83:11.87 2.2.2 4:4,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.2.1
+2,153,0,2.19.4 SPEEDUP:GATE 1T 2007 1 QUEST10N:36 MSE 1,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.19.4
+2,153,13,2.20.1 V1RTUAL MEM0RY:GATE CSE 1991 1 QUEST10N:03;111 00PS,unsupported_separator_pattern,unsupported_separator_pattern,,v2:2.20.1
+2,153,20,2.20.2 V1RTUAL MEM0RY:GATE CSE 2004 1 QUEST10N:47 0A,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.20.2
+2,153,29,2.20.3 V1RTUAL MEM0RY:GATE CSE 2008 1 QUEST10N:38 00NA,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.20.3
+2,153,39,2.1.2 N/A,unsupported_literal,unsupported_literal,,v2:2.1.2
+2,153,39,2.1.3 N/A,unsupported_literal,unsupported_literal,,v2:2.1.3
+2,153,39,2.1.4 N/A,unsupported_literal,unsupported_literal,,v2:2.1.4
+2,154,11,2454 B 2455 17:17 2456 2:2 2.4.57 A 2.4.58 A:B:D,orphan_answer_without_id,orphan_answer_without_id,extra answer tokens remained after assigning to pending ids,
+2,154,0,2.4.2 N/A,unsupported_literal,unsupported_literal,,v2:2.4.2
+2,154,0,2.4.3 TRUE,unsupported_literal,unsupported_literal,,v2:2.4.3
+2,154,1,2.4.4 22 245 180 246 N;A,unsupported_separator_pattern,unsupported_separator_pattern,,v2:2.4.4
+2,154,2,2.4.13 N/A,unsupported_literal,unsupported_literal,,v2:2.4.13
+2,154,3,2.4.17 IN,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.4.17
+2,154,4,2.4.23 IN,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.4.23
+2,154,9,2.4.48 47:48,nat_range_mismatch,nat_range_mismatch,,v2:2.4.48
+2,154,11,2.4.58 A:B:D,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.4.58
+2,154,12,2.4.62 B:C,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.4.62
+2,154,14,2.4.73 IN,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.4.73
+2,154,16,2.6.6 A 267 C,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.6.6
+2,154,17,2.8.1 N/A,unsupported_literal,unsupported_literal,,v2:2.8.1
+2,154,18,2.8.4 B 2.85 28 «2.86 C,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.8.4
+2,154,18,2.8.7 ABC ©,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.8.7
+2,154,18,2.9.1 TRUE,unsupported_literal,unsupported_literal,,v2:2.9.1
+2,154,20,2.9.7 B 210.1 FALSE,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.9.7
+2,154,20,2.10.2 N/A,unsupported_literal,unsupported_literal,,v2:2.10.2
+2,154,21,2.11.1 N/A,unsupported_literal,unsupported_literal,,v2:2.11.1
+2,154,21,2.11.3 TRUE,unsupported_literal,unsupported_literal,,v2:2.11.3
+2,154,25,2.14.3 N/A,unsupported_literal,unsupported_literal,,v2:2.14.3
+2,154,28,2.14.17 B 21418 8B,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.14.17
+2,154,30,2.16.2 N/A,unsupported_literal,unsupported_literal,,v2:2.16.2
+2,154,33,2.17.3 N/A,unsupported_literal,unsupported_literal,,v2:2.17.3
+2,154,33,2.17.4 N/A,unsupported_literal,unsupported_literal,,v2:2.17.4
+2,154,36,2.17.17 C 21718 B,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.17.17
+2,154,37,2.17.20 NN 21721 C,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:2.17.20
+2,154,37,2.17.22 3.2 217.23 13,not_a_valid_numeric_token,not_a_valid_numeric_token,,v2:2.17.22
+2,155,0,2.17.25 2.17.26 2.17.27 2.17.28 2.17.29,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.25
+2,155,0,2.17.25 2.17.26 2.17.27 2.17.28 2.17.29,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.26
+2,155,0,2.17.25 2.17.26 2.17.27 2.17.28 2.17.29,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.27
+2,155,0,2.17.25 2.17.26 2.17.27 2.17.28 2.17.29,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.28
+2,155,0,2.17.25 2.17.26 2.17.27 2.17.28 2.17.29,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.29
+2,155,1,2.17.35 2.17.36 2.17.37 2.17.38 2.17.39,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.35
+2,155,1,2.17.35 2.17.36 2.17.37 2.17.38 2.17.39,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.36
+2,155,1,2.17.35 2.17.36 2.17.37 2.17.38 2.17.39,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.37
+2,155,1,2.17.35 2.17.36 2.17.37 2.17.38 2.17.39,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.38
+2,155,1,2.17.35 2.17.36 2.17.37 2.17.38 2.17.39,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,2.17.39
+2,218,23,3.23.2 VAR1ABLE SC0PE:GATE CSE 1987 1 QUEST10N:1-XX 0NT0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:3.23.2
+2,218,48,3.1.1 N/A,unsupported_literal,unsupported_literal,,v2:3.1.1
+2,218,48,3.1.2 Q-Q,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:3.1.2
+2,218,48,3.1.3 N/A,unsupported_literal,unsupported_literal,,v2:3.1.3
+2,218,48,3.1.5 TRUE,unsupported_literal,unsupported_literal,,v2:3.1.5
+2,218,49,3.1.6 N/A,unsupported_literal,unsupported_literal,,v2:3.1.6
+2,218,49,3.1.7 TRUE,unsupported_literal,unsupported_literal,,v2:3.1.7
+2,218,49,3.1.8 FALSE,unsupported_literal,unsupported_literal,,v2:3.1.8
+2,218,52,3.5.2 N/A,unsupported_literal,unsupported_literal,,v2:3.5.2
+2,219,0,3.5.6 S,invalid_mcq_option,invalid_mcq_option,,v2:3.5.6
+2,219,3,3.8.1 N/A,unsupported_literal,unsupported_literal,,v2:3.8.1
+2,219,3,3.8.2 N/A,unsupported_literal,unsupported_literal,,v2:3.8.2
+2,219,3,3.8.3 N/A,unsupported_literal,unsupported_literal,,v2:3.8.3
+2,219,3,3.8.4 N/A,unsupported_literal,unsupported_literal,,v2:3.8.4
+2,219,4,3.8.5 N/A,unsupported_literal,unsupported_literal,,v2:3.8.5
+2,219,4,3.8.6 N/A,unsupported_literal,unsupported_literal,,v2:3.8.6
+2,219,4,3.8.9 N/A,unsupported_literal,unsupported_literal,,v2:3.8.9
+2,219,5,3.8.10 N/A,unsupported_literal,unsupported_literal,,v2:3.8.10
+2,219,5,3.8.11 X,unsupported_literal,unsupported_literal,,v2:3.8.11
+2,219,5,3.8.12 N/A,unsupported_literal,unsupported_literal,,v2:3.8.12
+2,219,5,3.8.13 N/A,unsupported_literal,unsupported_literal,,v2:3.8.13
+2,219,6,3.8.16 N/A,unsupported_literal,unsupported_literal,,v2:3.8.16
+2,219,6,3.8.17 N/A,unsupported_literal,unsupported_literal,,v2:3.8.17
+2,219,6,3.8.18 N/A,unsupported_literal,unsupported_literal,,v2:3.8.18
+2,219,7,3.8.21 N/A,unsupported_literal,unsupported_literal,,v2:3.8.21
+2,219,9,3.8.30 S,invalid_mcq_option,invalid_mcq_option,,v2:3.8.30
+2,219,11,3.8.44 5S,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:3.8.44
+2,219,13,3.9.1 N/A,unsupported_literal,unsupported_literal,,v2:3.9.1
+2,219,13,3.9.2 N/A,unsupported_literal,unsupported_literal,,v2:3.9.2
+2,219,13,3.9.3 N/A,unsupported_literal,unsupported_literal,,v2:3.9.3
+2,219,22,3.14.1 N/A,unsupported_literal,unsupported_literal,,v2:3.14.1
+2,219,23,3.16.2 N/A,unsupported_literal,unsupported_literal,,v2:3.16.2
+2,219,24,3.16.4 N/A,unsupported_literal,unsupported_literal,,v2:3.16.4
+2,219,24,3.16.6 N/A,unsupported_literal,unsupported_literal,,v2:3.16.6
+2,219,24,3.16.7 N/A,unsupported_literal,unsupported_literal,,v2:3.16.7
+2,219,24,3.16.8 N/A,unsupported_literal,unsupported_literal,,v2:3.16.8
+2,219,25,3.16.10 N/A,unsupported_literal,unsupported_literal,,v2:3.16.10
+2,219,25,3.16.11 X,unsupported_literal,unsupported_literal,,v2:3.16.11
+2,219,26,3.17.3 N/A,unsupported_literal,unsupported_literal,,v2:3.17.3
+2,219,26,3.17.4 N/A,unsupported_literal,unsupported_literal,,v2:3.17.4
+2,219,27,3.17.5 N/A,unsupported_literal,unsupported_literal,,v2:3.17.5
+2,219,27,3.17.7 N/A,unsupported_literal,unsupported_literal,,v2:3.17.7
+2,219,28,3.17.10 N/A,unsupported_literal,unsupported_literal,,v2:3.17.10
+2,219,28,3.17.11 N/A,unsupported_literal,unsupported_literal,,v2:3.17.11
+2,219,32,3.19.1 N/A,unsupported_literal,unsupported_literal,,v2:3.19.1
+2,219,33,3.19.2 N/A,unsupported_literal,unsupported_literal,,v2:3.19.2
+2,219,33,3.19.3 N/A,unsupported_literal,unsupported_literal,,v2:3.19.3
+2,219,33,3.19.4 N/A,unsupported_literal,unsupported_literal,,v2:3.19.4
+2,219,33,3.19.5 TRUE,unsupported_literal,unsupported_literal,,v2:3.19.5
+2,219,38,3.22.1 N/A,unsupported_literal,unsupported_literal,,v2:3.22.1
+2,219,38,3.22.3 N/A,unsupported_literal,unsupported_literal,,v2:3.22.3
+2,219,38,3.22.4 N/A,unsupported_literal,unsupported_literal,,v2:3.22.4
+2,219,38,3.22.5 N/A,unsupported_literal,unsupported_literal,,v2:3.22.5
+2,219,39,3.22.6 N/A,unsupported_literal,unsupported_literal,,v2:3.22.6
+2,271,35,4.8.1 A 4.8.2 7.07:7.09 4.8.3 B 4.8.4 B 4.9.1 D,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,4.8.2
+2,271,0,4.32.1 UDP:GATE CSE 2005 1 QUEST10N:23 0RG 1,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:4.32.1
+2,271,6,4.32.2 UDP:GATE CSE 2013 1 QUEST10N:12 MSL,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:4.32.2
+2,271,12,4.32.3 UDP:GATE CSE 2017 SET 2 1 QUEST10N:18 [A= [5,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:4.32.3
+2,271,21,4.32.4 UDP:GATE 1T 2006 1 QUEST10N:69 0R,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:4.32.4
+2,271,36,4.9.3 1100:1300,nat_range_mismatch,nat_range_mismatch,,v2:4.9.3
+2,271,38,4.11.1 3:4,nat_range_mismatch,nat_range_mismatch,,v2:4.11.1
+2,271,38,4.11.2 N/A,unsupported_literal,unsupported_literal,,v2:4.11.2
+2,272,14,4.22.1 B 4.23.1 0.949:0.952 4.24.1 B 4.24.2 D 4.24.3 A,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,4.23.1
+2,272,21,4.28.1 320 4.28.2 2900 4.28.3 865:89.5 4.28.4 B 4.28.5 D,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,4.28.3
+2,272,26,4.29.20 C 4.29.21 ) 4.30.1 A 4.30.2 C 4.30.3 B,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,4.29.21
+2,272,31,4.31.2 1.10:1.19 4.32.1 B 4.32.2 C 4.32.3 B 4.32.4 D,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,4.31.2
+2,272,0,4.11.10 N/A,unsupported_literal,unsupported_literal,,v2:4.11.10
+2,272,2,4.13.1 V1,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:4.13.1
+2,272,8,4.17.3 1380:140,nat_range_mismatch,nat_range_mismatch,,v2:4.17.3
+2,272,9,4.18.1 N/A,unsupported_literal,unsupported_literal,,v2:4.18.1
+2,272,12,4.20.6 90:52,nat_range_mismatch,nat_range_mismatch,,v2:4.20.6
+2,272,27,4.30.8 34:35,nat_range_mismatch,nat_range_mismatch,,v2:4.30.8
+2,272,31,1.10.1 19,duplicate_uid_conflict,duplicate_uid_conflict,,v2:1.10.1
+2,358,9,5.1.1 N/A,unsupported_literal,unsupported_literal,,v2:5.1.1
+2,358,9,5.1.2 N/A,unsupported_literal,unsupported_literal,,v2:5.1.2
+2,358,9,5.1.3 N/A,unsupported_literal,unsupported_literal,,v2:5.1.3
+2,358,9,5.1.4 N/A,unsupported_literal,unsupported_literal,,v2:5.1.4
+2,358,10,5.1.6 N/A,unsupported_literal,unsupported_literal,,v2:5.1.6
+2,358,10,5.1.8 N/A,unsupported_literal,unsupported_literal,,v2:5.1.8
+2,358,10,5.1.9 N/A,unsupported_literal,unsupported_literal,,v2:5.1.9
+2,358,10,5.1.10 N/A,unsupported_literal,unsupported_literal,,v2:5.1.10
+2,358,15,5.2.1 N/A,unsupported_literal,unsupported_literal,,v2:5.2.1
+2,358,18,5.4.1 FALSE,unsupported_literal,unsupported_literal,,v2:5.4.1
+2,358,18,5.5.1 TRUE,unsupported_literal,unsupported_literal,,v2:5.5.1
+2,358,18,9.5.2 N/A,unsupported_literal,unsupported_literal,,v2:9.5.2
+2,358,18,5.5.3 N/A,unsupported_literal,unsupported_literal,,v2:5.5.3
+2,358,18,5.5.4 N/A,unsupported_literal,unsupported_literal,,v2:5.5.4
+2,358,19,5.5.5 N/A,unsupported_literal,unsupported_literal,,v2:5.5.5
+2,358,19,5.5.6 N/A,unsupported_literal,unsupported_literal,,v2:5.5.6
+2,358,19,5.5.8 FALSE,unsupported_literal,unsupported_literal,,v2:5.5.8
+2,358,19,5.5.9 N/A,unsupported_literal,unsupported_literal,,v2:5.5.9
+2,358,20,5.5.12 N/A,unsupported_literal,unsupported_literal,,v2:5.5.12
+2,358,21,5.5.18 N/A,unsupported_literal,unsupported_literal,,v2:5.5.18
+2,358,27,5.5.49 Q-Q,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:5.5.49
+2,358,32,5.9.1 N/A,unsupported_literal,unsupported_literal,,v2:5.9.1
+2,358,32,5.9.2 N/A,unsupported_literal,unsupported_literal,,v2:5.9.2
+2,358,37,5.13.1 N/A,unsupported_literal,unsupported_literal,,v2:5.13.1
+2,359,0,9.15.1 N/A,unsupported_literal,unsupported_literal,,v2:9.15.1
+2,359,0,9.15.2 N/A,unsupported_literal,unsupported_literal,,v2:9.15.2
+2,359,0,9.15.3 N/A,unsupported_literal,unsupported_literal,,v2:9.15.3
+2,359,1,5.15.4 N/A,unsupported_literal,unsupported_literal,,v2:5.15.4
+2,359,1,5.15.5 N/A,unsupported_literal,unsupported_literal,,v2:5.15.5
+2,359,1,5.15.6 N/A,unsupported_literal,unsupported_literal,,v2:5.15.6
+2,359,1,9.15.8 N/A,unsupported_literal,unsupported_literal,,v2:9.15.8
+2,359,2,5.15.13 N/A,unsupported_literal,unsupported_literal,,v2:5.15.13
+2,359,6,5.16.1 N/A,unsupported_literal,unsupported_literal,,v2:5.16.1
+2,359,6,5.16.2 N/A,unsupported_literal,unsupported_literal,,v2:5.16.2
+2,359,10,5.18.1 N/A,unsupported_literal,unsupported_literal,,v2:5.18.1
+2,359,10,5.18.2 N/A,unsupported_literal,unsupported_literal,,v2:5.18.2
+2,359,10,5.18.3 N/A,unsupported_literal,unsupported_literal,,v2:5.18.3
+2,359,10,5.18.4 N/A,unsupported_literal,unsupported_literal,,v2:5.18.4
+2,359,10,9.18.5 N/A,unsupported_literal,unsupported_literal,,v2:9.18.5
+2,359,11,5.18.6 N/A,unsupported_literal,unsupported_literal,,v2:5.18.6
+2,359,11,5.18.8 N/A,unsupported_literal,unsupported_literal,,v2:5.18.8
+2,359,11,5.18.9 N/A,unsupported_literal,unsupported_literal,,v2:5.18.9
+2,359,12,5.18.12 N/A,unsupported_literal,unsupported_literal,,v2:5.18.12
+2,359,12,5.18.14 N/A,unsupported_literal,unsupported_literal,,v2:5.18.14
+2,359,12,5.18.15 N/A,unsupported_literal,unsupported_literal,,v2:5.18.15
+2,359,13,5.18.16 N/A,unsupported_literal,unsupported_literal,,v2:5.18.16
+2,359,14,9.18.24 X,unsupported_literal,unsupported_literal,,v2:9.18.24
+2,359,18,9.18.48 819:820;205:205,unsupported_separator_pattern,unsupported_separator_pattern,,v2:9.18.48
+2,359,26,5.19.26 X,unsupported_literal,unsupported_literal,,v2:5.19.26
+2,431,7,6.1.1 N/A,unsupported_literal,unsupported_literal,,v2:6.1.1
+2,431,7,6.1.2 N/A,unsupported_literal,unsupported_literal,,v2:6.1.2
+2,431,8,6.1.9 -,not_a_valid_numeric_token,not_a_valid_numeric_token,,v2:6.1.9
+2,431,9,6.3.3 N/A,unsupported_literal,unsupported_literal,,v2:6.3.3
+2,431,9,6.3.4 N/A,unsupported_literal,unsupported_literal,,v2:6.3.4
+2,431,10,6.3.5 N/A,unsupported_literal,unsupported_literal,,v2:6.3.5
+2,431,10,6.3.7 N/A,unsupported_literal,unsupported_literal,,v2:6.3.7
+2,431,16,6.4.1 N/A,unsupported_literal,unsupported_literal,,v2:6.4.1
+2,431,19,6.7.2 N/A,unsupported_literal,unsupported_literal,,v2:6.7.2
+2,431,20,6.7.4 N/A,unsupported_literal,unsupported_literal,,v2:6.7.4
+2,431,20,6.7.5 N/A,unsupported_literal,unsupported_literal,,v2:6.7.5
+2,431,22,6.7.13 N/A,unsupported_literal,unsupported_literal,,v2:6.7.13
+2,431,22,6.7.14 N/A,unsupported_literal,unsupported_literal,,v2:6.7.14
+2,431,26,6.7.36 X,unsupported_literal,unsupported_literal,,v2:6.7.36
+2,431,28,6.10.1 N/A,unsupported_literal,unsupported_literal,,v2:6.10.1
+2,431,28,6.10.2 N/A,unsupported_literal,unsupported_literal,,v2:6.10.2
+2,431,30,6.11.2 N/A,unsupported_literal,unsupported_literal,,v2:6.11.2
+2,431,30,6.11.3 N/A,unsupported_literal,unsupported_literal,,v2:6.11.3
+2,431,30,6.11.5 N/A,unsupported_literal,unsupported_literal,,v2:6.11.5
+2,431,30,6.11.6 N/A,unsupported_literal,unsupported_literal,,v2:6.11.6
+2,431,31,6.11.11 3:4,nat_range_mismatch,nat_range_mismatch,,v2:6.11.11
+2,431,33,6.11.17 N/A,unsupported_literal,unsupported_literal,,v2:6.11.17
+2,431,33,6.12.1 TRUE,unsupported_literal,unsupported_literal,,v2:6.12.1
+2,431,34,6.14.1 N/A,unsupported_literal,unsupported_literal,,v2:6.14.1
+2,431,35,6.15.2 N/A,unsupported_literal,unsupported_literal,,v2:6.15.2
+2,431,36,6.15.3 N/A,unsupported_literal,unsupported_literal,,v2:6.15.3
+2,431,36,6.15.4 N/A,unsupported_literal,unsupported_literal,,v2:6.15.4
+2,431,36,6.15.5 N/A,unsupported_literal,unsupported_literal,,v2:6.15.5
+2,432,24,6.2446 3:3 6.24.47 A;D 6.24.48 3) 6.24.49 110 6.24.50 B,orphan_answer_without_id,orphan_answer_without_id,extra answer tokens remained after assigning to pending ids,
+2,432,0,6.16.1 N/A,unsupported_literal,unsupported_literal,,v2:6.16.1
+2,432,0,6.16.3 N/A,unsupported_literal,unsupported_literal,,v2:6.16.3
+2,432,0,6.16.4 N/A,unsupported_literal,unsupported_literal,,v2:6.16.4
+2,432,3,6.18.2 N/A,unsupported_literal,unsupported_literal,,v2:6.18.2
+2,432,3,6.18.3 N/A,unsupported_literal,unsupported_literal,,v2:6.18.3
+2,432,3,6.18.4 N/A,unsupported_literal,unsupported_literal,,v2:6.18.4
+2,432,3,6.18.5 N/A,unsupported_literal,unsupported_literal,,v2:6.18.5
+2,432,8,6.20.1 N/A,unsupported_literal,unsupported_literal,,v2:6.20.1
+2,432,8,6.21.1 N/A,unsupported_literal,unsupported_literal,,v2:6.21.1
+2,432,9,6.22.1 N/A,unsupported_literal,unsupported_literal,,v2:6.22.1
+2,432,9,6.22.2 N/A,unsupported_literal,unsupported_literal,,v2:6.22.2
+2,432,9,6.22.4 N/A,unsupported_literal,unsupported_literal,,v2:6.22.4
+2,432,12,6.23.1 N/A,unsupported_literal,unsupported_literal,,v2:6.23.1
+2,432,14,6.23.14 N/A,unsupported_literal,unsupported_literal,,v2:6.23.14
+2,432,15,6.24.2 N/A,unsupported_literal,unsupported_literal,,v2:6.24.2
+2,432,15,6.24.4 N/A,unsupported_literal,unsupported_literal,,v2:6.24.4
+2,432,15,6.24.5 N/A,unsupported_literal,unsupported_literal,,v2:6.24.5
+2,432,16,6.24.6 N/A,unsupported_literal,unsupported_literal,,v2:6.24.6
+2,432,16,6.24.7 N/A,unsupported_literal,unsupported_literal,,v2:6.24.7
+2,432,16,6.24.8 N/A,unsupported_literal,unsupported_literal,,v2:6.24.8
+2,432,19,6.24.22 N/A,unsupported_literal,unsupported_literal,,v2:6.24.22
+2,432,27,6.26.1 N/A,unsupported_literal,unsupported_literal,,v2:6.26.1
+2,432,28,6.28.1 1:8,nat_range_mismatch,nat_range_mismatch,,v2:6.28.1
+2,432,28,6.29.2 N/A,unsupported_literal,unsupported_literal,,v2:6.29.2
+2,432,29,6.31.2 N/A,unsupported_literal,unsupported_literal,,v2:6.31.2
+2,521,31,7.3.22 D 7.3.23 14020 7.3.24 6.1:6.2 7.3.25 85 7.3.26 4096,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.3.24
+2,521,36,7.5.2 C 7.5.3 D 7.5.4 99.55 : 99.65 7.5.5 D 7.5.6 4.0: 4.1,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.5.4
+2,521,36,7.5.2 C 7.5.3 D 7.5.4 99.55 : 99.65 7.5.5 D 7.5.6 4.0: 4.1,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.5.6
+2,521,5,7.27.42 V1RTUAL MEM0RY:GATE 1T 2008 1 QUEST10N:16 0R,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:7.27.42
+2,521,12,7.27.43 V1RTUAL MEM0RY:GATE 1T 2008 1 QUEST10N:56 0F AC,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:7.27.43
+2,521,26,7.3.1 N/A,unsupported_literal,unsupported_literal,,v2:7.3.1
+2,521,27,7.3.2 N/A,unsupported_literal,unsupported_literal,,v2:7.3.2
+2,521,27,7.3.4 N/A,unsupported_literal,unsupported_literal,,v2:7.3.4
+2,521,28,7.3.7 N/A,unsupported_literal,unsupported_literal,,v2:7.3.7
+2,521,28,7.3.8 N/A,unsupported_literal,unsupported_literal,,v2:7.3.8
+2,521,31,6.1.6 2,duplicate_uid_conflict,duplicate_uid_conflict,,v2:6.1.6
+2,521,33,7.4.1 N/A,unsupported_literal,unsupported_literal,,v2:7.4.1
+2,521,33,7.4.2 N/A,unsupported_literal,unsupported_literal,,v2:7.4.2
+2,521,33,7.4.3 N/A,unsupported_literal,unsupported_literal,,v2:7.4.3
+2,521,35,7.5.1 N/A,unsupported_literal,unsupported_literal,,v2:7.5.1
+2,521,37,7.5.7 A;:C,unsupported_separator_pattern,unsupported_separator_pattern,,v2:7.5.7
+2,521,38,7.6.5 C:D,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:7.6.5
+2,522,20,7.19.34 2 7.19.35 C 7.19.36 5.25:5.26 7.19.37 12:12 7.19.38 A;C0;D,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,7.19.36
+2,522,0,7.7.7 C,duplicate_uid_conflict,duplicate_uid_conflict,,v2:7.7.7
+2,522,2,7.12.2 N/A,unsupported_literal,unsupported_literal,,v2:7.12.2
+2,522,5,7.16.1 N/A,unsupported_literal,unsupported_literal,,v2:7.16.1
+2,522,6,7.16.7 S,invalid_mcq_option,invalid_mcq_option,,v2:7.16.7
+2,522,11,7.17.1 N/A,unsupported_literal,unsupported_literal,,v2:7.17.1
+2,522,12,7.17.2 N/A,unsupported_literal,unsupported_literal,,v2:7.17.2
+2,522,12,7.17.3 N/A,unsupported_literal,unsupported_literal,,v2:7.17.3
+2,522,13,7.19.1 N/A,unsupported_literal,unsupported_literal,,v2:7.19.1
+2,522,13,7.19.2 N/A,unsupported_literal,unsupported_literal,,v2:7.19.2
+2,522,13,7.19.3 N/A,unsupported_literal,unsupported_literal,,v2:7.19.3
+2,522,15,7.19.9 N/A,unsupported_literal,unsupported_literal,,v2:7.19.9
+2,522,20,7.19.38 A;C0;D,unsupported_separator_pattern,unsupported_separator_pattern,,v2:7.19.38
+2,522,22,7.19.46 S,invalid_mcq_option,invalid_mcq_option,,v2:7.19.46
+2,522,23,7.20.2 N/A,unsupported_literal,unsupported_literal,,v2:7.20.2
+2,522,23,7.20.3 N/A,unsupported_literal,unsupported_literal,,v2:7.20.3
+2,522,23,7.20.4 N/A,unsupported_literal,unsupported_literal,,v2:7.20.4
+2,522,23,7.20.5 N/A,unsupported_literal,unsupported_literal,,v2:7.20.5
+2,522,24,7.20.6 N/A,unsupported_literal,unsupported_literal,,v2:7.20.6
+2,522,24,7.20.7 N/A,unsupported_literal,unsupported_literal,,v2:7.20.7
+2,522,24,7.20.8 N/A,unsupported_literal,unsupported_literal,,v2:7.20.8
+2,522,24,7.20.9 N/A,unsupported_literal,unsupported_literal,,v2:7.20.9
+2,522,25,7.20.12 N/A,unsupported_literal,unsupported_literal,,v2:7.20.12
+2,522,25,7.20.14 N/A,unsupported_literal,unsupported_literal,,v2:7.20.14
+2,522,26,7.20.16 N/A,unsupported_literal,unsupported_literal,,v2:7.20.16
+2,522,26,7.20.17 N/A,unsupported_literal,unsupported_literal,,v2:7.20.17
+2,522,26,7.20.19 N/A,unsupported_literal,unsupported_literal,,v2:7.20.19
+2,522,27,7.20.21 N/A,unsupported_literal,unsupported_literal,,v2:7.20.21
+2,522,27,7.20.22 N/A,unsupported_literal,unsupported_literal,,v2:7.20.22
+2,522,27,7.20.23 N/A,unsupported_literal,unsupported_literal,,v2:7.20.23
+2,522,33,7.21.1 N/A,unsupported_literal,unsupported_literal,,v2:7.21.1
+2,522,33,7.21.2 N/A,unsupported_literal,unsupported_literal,,v2:7.21.2
+2,522,34,7.21.4 D;E,invalid_mcq_option,invalid_mcq_option,,v2:7.21.4
+2,522,34,7.21.5 N/A,unsupported_literal,unsupported_literal,,v2:7.21.5
+2,522,34,7.21.6 N/A,unsupported_literal,unsupported_literal,,v2:7.21.6
+2,522,34,7.21.8 N/A,unsupported_literal,unsupported_literal,,v2:7.21.8
+2,522,35,7.21.11 N/A,unsupported_literal,unsupported_literal,,v2:7.21.11
+2,522,39,7.23.1 N/A,unsupported_literal,unsupported_literal,,v2:7.23.1
+2,579,0,8.15.12 TREE:GATE CSE 2017 SET 1 1 QUEST10N:20 A 1,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:8.15.12
+2,579,4,8.15.13 TREE:GATE CSE 2021 SET 1 1 QUEST10N:41 0NT0,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:8.15.13
+2,579,16,8.15.14 TREE:GATE CSE 2025 1 SET 1 1 QUEST10N:25 GE,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:8.15.14
+2,579,23,8.1.1 N/A,unsupported_literal,unsupported_literal,,v2:8.1.1
+2,579,23,8.1.3 N/A,unsupported_literal,unsupported_literal,,v2:8.1.3
+2,579,24,8.2.1 N/A,unsupported_literal,unsupported_literal,,v2:8.2.1
+2,579,24,8.2.3 N/A,unsupported_literal,unsupported_literal,,v2:8.2.3
+2,579,24,8.2.4 N/A,unsupported_literal,unsupported_literal,,v2:8.2.4
+2,579,25,8.2.7 N/A,unsupported_literal,unsupported_literal,,v2:8.2.7
+2,579,26,8.3.1 N/A,unsupported_literal,unsupported_literal,,v2:8.3.1
+2,579,27,8.3.3 N/A,unsupported_literal,unsupported_literal,,v2:8.3.3
+2,579,32,8.4.2 N/A,unsupported_literal,unsupported_literal,,v2:8.4.2
+2,579,33,8.4.4 N/A,unsupported_literal,unsupported_literal,,v2:8.4.4
+2,580,19,8.9.13 D 8.9.14 ) 8.9.15 D 8.9.16 C 8.9.17 B,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,8.9.14
+2,580,0,8.5.1 FALSE,unsupported_literal,unsupported_literal,,v2:8.5.1
+2,580,1,8.5.2 FALSE,unsupported_literal,unsupported_literal,,v2:8.5.2
+2,580,1,8.5.3 N/A,unsupported_literal,unsupported_literal,,v2:8.5.3
+2,580,1,8.5.4 N/A,unsupported_literal,unsupported_literal,,v2:8.5.4
+2,580,1,8.5.5 N/A,unsupported_literal,unsupported_literal,,v2:8.5.5
+2,580,2,8.5.9 N/A,unsupported_literal,unsupported_literal,,v2:8.5.9
+2,580,2,8.5.10 N/A,unsupported_literal,unsupported_literal,,v2:8.5.10
+2,580,2,8.5.11 N/A,unsupported_literal,unsupported_literal,,v2:8.5.11
+2,580,3,8.5.12 N/A,unsupported_literal,unsupported_literal,,v2:8.5.12
+2,580,3,8.5.13 N/A,unsupported_literal,unsupported_literal,,v2:8.5.13
+2,580,3,8.5.14 N/A,unsupported_literal,unsupported_literal,,v2:8.5.14
+2,580,3,8.5.16 N/A,unsupported_literal,unsupported_literal,,v2:8.5.16
+2,580,4,8.5.18 N/A,unsupported_literal,unsupported_literal,,v2:8.5.18
+2,580,4,8.5.19 N/A,unsupported_literal,unsupported_literal,,v2:8.5.19
+2,580,5,8.5.23 N/A,unsupported_literal,unsupported_literal,,v2:8.5.23
+2,580,12,8.7.2 N/A,unsupported_literal,unsupported_literal,,v2:8.7.2
+2,580,12,8.7.3 N/A,unsupported_literal,unsupported_literal,,v2:8.7.3
+2,580,15,8.8.1 N/A,unsupported_literal,unsupported_literal,,v2:8.8.1
+2,580,16,8.8.3 N/A,unsupported_literal,unsupported_literal,,v2:8.8.3
+2,580,16,8.9.2 N/A,unsupported_literal,unsupported_literal,,v2:8.9.2
+2,580,17,8.9.3 N/A,unsupported_literal,unsupported_literal,,v2:8.9.3
+2,580,17,8.9.7 N/A,unsupported_literal,unsupported_literal,,v2:8.9.7
+2,580,18,8.9.8 N/A,unsupported_literal,unsupported_literal,,v2:8.9.8
+2,580,18,8.9.9 N/A,unsupported_literal,unsupported_literal,,v2:8.9.9
+2,580,21,8.12.1 N/A,unsupported_literal,unsupported_literal,,v2:8.12.1
+2,580,22,8.12.2 N/A,unsupported_literal,unsupported_literal,,v2:8.12.2
+2,580,25,8.13.4 N/A,unsupported_literal,unsupported_literal,,v2:8.13.4
+2,580,28,8.15.1 N/A,unsupported_literal,unsupported_literal,,v2:8.15.1
+2,580,28,8.15.3 N/A,unsupported_literal,unsupported_literal,,v2:8.15.3
+2,624,26,9.13.8 D 9.13.9 1.72 : 1.74 9.13.10 D 9.13.11 A 9.13.12 3,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,9.13.9
+2,624,7,9.5.1 N/A,unsupported_literal,unsupported_literal,,v2:9.5.1
+2,624,9,9.6.1 N/A,unsupported_literal,unsupported_literal,,v2:9.6.1
+2,624,9,9.6.2 N/A,unsupported_literal,unsupported_literal,,v2:9.6.2
+2,624,9,9.6.3 N/A,unsupported_literal,unsupported_literal,,v2:9.6.3
+2,624,9,9.6.4 N/A,unsupported_literal,unsupported_literal,,v2:9.6.4
+2,624,12,9.8.1 N/A,unsupported_literal,unsupported_literal,,v2:9.8.1
+2,624,17,9.9.14 1414:111,nat_range_mismatch,nat_range_mismatch,,v2:9.9.14
+2,624,25,9.13.3 N/A,unsupported_literal,unsupported_literal,,v2:9.13.3
+2,624,25,9.13.4 N/A,unsupported_literal,unsupported_literal,,v2:9.13.4
+2,624,25,9.13.5 N/A,unsupported_literal,unsupported_literal,,v2:9.13.5
+2,624,29,9.16.1 X,unsupported_literal,unsupported_literal,,v2:9.16.1
+2,624,29,9.17.1 C,duplicate_uid_conflict,duplicate_uid_conflict,,v2:9.17.1
+2,624,30,9.19.1 A,duplicate_uid_conflict,duplicate_uid_conflict,,v2:9.19.1
+2,694,2,10.19.34 REGULAR LANGUAGE:GATE 1T 2006 1 QUEST10N:80 0RG,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:10.19.34
+2,694,12,10.19.35 REGULAR LANGUAGE:GATE 1T 2006 1 QUEST10N:81 [A] [M,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:10.19.35
+2,694,26,10.19.36 REGULAR LANGUAGE:GATE 1T 2008 1 QUEST10N:35 0RG,letters_present_in_numeric_token,letters_present_in_numeric_token,,v2:10.19.36
+2,694,37,10.3.1 FALSE,unsupported_literal,unsupported_literal,,v2:10.3.1
+2,694,38,10.3.7 N/A,unsupported_literal,unsupported_literal,,v2:10.3.7
+2,694,38,10.3.8 N/A,unsupported_literal,unsupported_literal,,v2:10.3.8
+2,695,31,10.11.5 ) 10.11.6 C 10.12.1 6:6 10.13.1 D 10.13.2 D,id_without_answer,id_without_answer,id_str detected but no answer token found before lookahead window expiry,10.11.5
+2,695,4,10.5.1 TRUE,unsupported_literal,unsupported_literal,,v2:10.5.1
+2,695,4,10.5.2 TRUE,unsupported_literal,unsupported_literal,,v2:10.5.2
+2,695,4,10.5.3 N/A,unsupported_literal,unsupported_literal,,v2:10.5.3
+2,695,5,10.5.6 N/A,unsupported_literal,unsupported_literal,,v2:10.5.6
+2,695,6,10.5.9 N/A,unsupported_literal,unsupported_literal,,v2:10.5.9
+2,695,6,10.5.12 N/A,unsupported_literal,unsupported_literal,,v2:10.5.12
+2,695,6,10.5.13 N/A,unsupported_literal,unsupported_literal,,v2:10.5.13
+2,695,10,10.7.1 N/A,unsupported_literal,unsupported_literal,,v2:10.7.1
+2,695,10,10.7.2 N/A,unsupported_literal,unsupported_literal,,v2:10.7.2
+2,695,10,10.7.3 N/A,unsupported_literal,unsupported_literal,,v2:10.7.3
+2,695,11,10.7.4 N/A,unsupported_literal,unsupported_literal,,v2:10.7.4
+2,695,11,10.7.5 N/A,unsupported_literal,unsupported_literal,,v2:10.7.5
+2,695,11,10.7.7 N/A,unsupported_literal,unsupported_literal,,v2:10.7.7
+2,695,12,10.7.9 N/A,unsupported_literal,unsupported_literal,,v2:10.7.9
+2,695,12,10.7.13 X,unsupported_literal,unsupported_literal,,v2:10.7.13
+2,695,19,10.9.2 N/A,unsupported_literal,unsupported_literal,,v2:10.9.2
+2,695,19,10.9.3 N/A,unsupported_literal,unsupported_literal,,v2:10.9.3
+2,695,19,10.9.4 N/A,unsupported_literal,unsupported_literal,,v2:10.9.4
+2,695,20,10.9.8 S,invalid_mcq_option,invalid_mcq_option,,v2:10.9.8
+2,695,25,10.10.2 N/A,unsupported_literal,unsupported_literal,,v2:10.10.2
+2,695,25,10.10.3 N/A,unsupported_literal,unsupported_literal,,v2:10.10.3
+2,695,26,10.10.5 N/A,unsupported_literal,unsupported_literal,,v2:10.10.5
+2,695,32,10.14.1 N/A,unsupported_literal,unsupported_literal,,v2:10.14.1
+2,695,32,10.14.3 N/A,unsupported_literal,unsupported_literal,,v2:10.14.3
+2,695,32,10.14.5 N/A,unsupported_literal,unsupported_literal,,v2:10.14.5
+2,695,33,10.14.6 N/A,unsupported_literal,unsupported_literal,,v2:10.14.6
+2,695,33,10.14.8 S,invalid_mcq_option,invalid_mcq_option,,v2:10.14.8
+2,695,38,10.17.1 N/A,unsupported_literal,unsupported_literal,,v2:10.17.1
+2,695,39,10.17.4 N/A,unsupported_literal,unsupported_literal,,v2:10.17.4

@@ -1,0 +1,186 @@
+{
+  "vol1": [
+    {
+      "subject_group": "answers_group_01",
+      "page_ranges": [
+        {
+          "start": 14,
+          "end": 14
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_02",
+      "page_ranges": [
+        {
+          "start": 30,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_03",
+      "page_ranges": [
+        {
+          "start": 47,
+          "end": 47
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_04",
+      "page_ranges": [
+        {
+          "start": 79,
+          "end": 80
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_05",
+      "page_ranges": [
+        {
+          "start": 92,
+          "end": 92
+        },
+        {
+          "start": 115,
+          "end": 115
+        },
+        {
+          "start": 136,
+          "end": 136
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_06",
+      "page_ranges": [
+        {
+          "start": 171,
+          "end": 171
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_07",
+      "page_ranges": [
+        {
+          "start": 279,
+          "end": 281
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_08",
+      "page_ranges": [
+        {
+          "start": 300,
+          "end": 301
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_09",
+      "page_ranges": [
+        {
+          "start": 371,
+          "end": 373
+        }
+      ]
+    }
+  ],
+  "vol2": [
+    {
+      "subject_group": "answers_group_01",
+      "page_ranges": [
+        {
+          "start": 90,
+          "end": 92
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_02",
+      "page_ranges": [
+        {
+          "start": 153,
+          "end": 155
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_03",
+      "page_ranges": [
+        {
+          "start": 218,
+          "end": 219
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_04",
+      "page_ranges": [
+        {
+          "start": 271,
+          "end": 272
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_05",
+      "page_ranges": [
+        {
+          "start": 358,
+          "end": 359
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_06",
+      "page_ranges": [
+        {
+          "start": 431,
+          "end": 432
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_07",
+      "page_ranges": [
+        {
+          "start": 521,
+          "end": 523
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_08",
+      "page_ranges": [
+        {
+          "start": 579,
+          "end": 580
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_09",
+      "page_ranges": [
+        {
+          "start": 624,
+          "end": 624
+        }
+      ]
+    },
+    {
+      "subject_group": "answers_group_10",
+      "page_ranges": [
+        {
+          "start": 694,
+          "end": 696
+        }
+      ]
+    }
+  ]
+}
+

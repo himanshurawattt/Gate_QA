@@ -1,0 +1,185 @@
+{
+  "normalization_cases": [
+    {
+      "name": "clean_mcq",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.24.30 A"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A"
+        }
+      ]
+    },
+    {
+      "name": "clean_msq",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.24.30 A;B;C"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A;B;C"
+        }
+      ]
+    },
+    {
+      "name": "clean_nat",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.27.26 2.32"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.27.26",
+          "answer_raw": "2.32"
+        }
+      ]
+    },
+    {
+      "name": "colon_id_noise",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1:24:30 A"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A"
+        }
+      ]
+    },
+    {
+      "name": "digit_lookalike_noise",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "I.24.3O A"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A"
+        }
+      ]
+    },
+    {
+      "name": "msq_separator_noise",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.24.30 A,B/C"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A;B;C"
+        }
+      ]
+    },
+    {
+      "name": "split_two_line_record",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.24.30"
+        },
+        {
+          "line_index": 1,
+          "text": "A;B;C"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A;B;C"
+        }
+      ]
+    },
+    {
+      "name": "signed_nat",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "2.10.6 -16.0"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "2.10.6",
+          "answer_raw": "-16.0"
+        }
+      ]
+    },
+    {
+      "name": "integer_nat",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.24.31 24"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.31",
+          "answer_raw": "24"
+        }
+      ]
+    },
+    {
+      "name": "extra_spacing",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": " 1.24.30   A ;  B ; C "
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.24.30",
+          "answer_raw": "A;B;C"
+        }
+      ]
+    },
+    {
+      "name": "multi_id_single_line",
+      "lines": [
+        {
+          "line_index": 0,
+          "text": "1.2.2 A;C 1.2.3 A 1.2.4 N/A 1.2.5 0"
+        }
+      ],
+      "expected_rows": [
+        {
+          "id_str": "1.2.2",
+          "answer_raw": "A;C"
+        },
+        {
+          "id_str": "1.2.3",
+          "answer_raw": "A"
+        },
+        {
+          "id_str": "1.2.4",
+          "answer_raw": "N/A"
+        },
+        {
+          "id_str": "1.2.5",
+          "answer_raw": "0"
+        }
+      ]
+    }
+  ]
+}

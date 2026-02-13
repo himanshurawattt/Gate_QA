@@ -82,6 +82,11 @@ def main():
         if link and link in seen_links:
             continue
             
+        # Filter out Blog posts and non-question URLs
+        if "/blog/" in link or "/exam/" in link:
+            # print(f"Skipping non-question link: {link}")
+            continue
+            
         # Validate Schema (for new merges or sanity check)
         if not validate_question(q):
             skipping_invalid_count += 1

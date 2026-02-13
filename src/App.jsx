@@ -6,6 +6,7 @@ import { useCallback, useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import FilterTags from "./components/FilterTags/FilterTags";
 import { QuestionService } from "./services/QuestionService";
+import { AnswerService } from "./services/AnswerService";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,7 @@ function App() {
 
     try {
       await QuestionService.init();
+      await AnswerService.init();
       setQuestion(QuestionService.getRandomQuestion());
     } catch (err) {
       setError(err.message || "Unable to load questions.");
@@ -30,6 +32,26 @@ function App() {
   useEffect(() => {
     loadQuestions();
   }, [loadQuestions]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    const identity = AnswerService.getQuestionIdentity(question);
+    const answer = AnswerService.getAnswerForQuestion(question);
+    window.__gateqa_q = question;
+    window.__gateqa_lookup = {
+      identity,
+      hasAnswer: !!answer,
+      sourceUrl: QuestionService.sourceUrl,
+      answersLoaded: AnswerService.loaded,
+      answersByQuestionUidCount: Object.keys(
+        AnswerService.answersByQuestionUid || {}
+      ).length,
+      answersByExamUidCount: Object.keys(AnswerService.answersByExamUid || {})
+        .length,
+    };
+  }, [question]);
 
   return (
     <MathJaxContext>

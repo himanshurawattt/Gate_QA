@@ -22,3 +22,25 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# generated OCR artifacts
+artifacts/answer_pages/vol1/*
+!artifacts/answer_pages/vol1/.gitkeep
+artifacts/answer_pages/vol2/*
+!artifacts/answer_pages/vol2/.gitkeep
+artifacts/ocr_raw/*
+!artifacts/ocr_raw/.gitkeep
+artifacts/normalized/*
+!artifacts/normalized/.gitkeep
+artifacts/parsed/*
+!artifacts/parsed/.gitkeep
+
+# local backup snapshots
+*.backup*
+*.summary.json
+

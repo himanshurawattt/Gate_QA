@@ -6,6 +6,7 @@ describe("QuestionService", () => {
     QuestionService.loaded = false;
     QuestionService.count = new Map();
     QuestionService.tags = [];
+    QuestionService.sourceUrl = "";
   });
 
   test("builds tag indexes correctly", () => {
@@ -56,5 +57,13 @@ describe("QuestionService", () => {
 
     expect(result.title).toContain("No matching question");
     expect(result.tags).toEqual([]);
+  });
+
+  test("does not overwrite existing question_uid", () => {
+    const uid = QuestionService.buildQuestionUid({
+      question_uid: "go:497",
+      link: "https://gateoverflow.in/371497/another-link",
+    });
+    expect(uid).toBe("go:497");
   });
 });

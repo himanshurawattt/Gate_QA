@@ -1,0 +1,200 @@
+{
+  "unresolved": [
+    {
+      "answer_uid": "v1:49.0.125",
+      "id_str": "49.0.125",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:6.3.30",
+      "id_str": "6.3.30",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:6.6.20",
+      "id_str": "6.6.20",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:6.11.8",
+      "id_str": "6.11.8",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:6.12.6",
+      "id_str": "6.12.6",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:7.1.1",
+      "id_str": "7.1.1",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:7.7.11",
+      "id_str": "7.7.11",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:7.8.3",
+      "id_str": "7.8.3",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:7.12.21",
+      "id_str": "7.12.21",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:0.4.0",
+      "id_str": "0.4.0",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:66.6.66",
+      "id_str": "66.6.66",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:0.35.0",
+      "id_str": "0.35.0",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:0.300.0",
+      "id_str": "0.300.0",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:9.45.7",
+      "id_str": "9.45.7",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:95.0.489",
+      "id_str": "95.0.489",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:9.45.8",
+      "id_str": "9.45.8",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:22.2.22",
+      "id_str": "22.2.22",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:9.45.9",
+      "id_str": "9.45.9",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:9.45.11",
+      "id_str": "9.45.11",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:9.70.15",
+      "id_str": "9.70.15",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:9.70.17",
+      "id_str": "9.70.17",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v1:11.9.3",
+      "id_str": "11.9.3",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.18.33",
+      "id_str": "1.18.33",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.18.24",
+      "id_str": "1.18.24",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:2.32.2",
+      "id_str": "2.32.2",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.35.4",
+      "id_str": "1.35.4",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:2.4.35",
+      "id_str": "2.4.35",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:4.7.4",
+      "id_str": "4.7.4",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:13.3.13",
+      "id_str": "13.3.13",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:2.17.37",
+      "id_str": "2.17.37",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.50.1",
+      "id_str": "1.50.1",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.42.1",
+      "id_str": "1.42.1",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:2.15.2",
+      "id_str": "2.15.2",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.10.1",
+      "id_str": "1.10.1",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:0.949.0",
+      "id_str": "0.949.0",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:86.5.89",
+      "id_str": "86.5.89",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:0.502.0",
+      "id_str": "0.502.0",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:5.25.5",
+      "id_str": "5.25.5",
+      "reason": "no_mapping_to_question"
+    },
+    {
+      "answer_uid": "v2:1.72.1",
+      "id_str": "1.72.1",
+      "reason": "no_mapping_to_question"
+    }
+  ],
+  "count": 39
+}

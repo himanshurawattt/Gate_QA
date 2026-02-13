@@ -1,0 +1,13 @@
+{
+  "min_records_required": 1,
+  "max_suspicious_lines": 10000,
+  "max_suspicious_ratio": 0.9,
+  "min_parse_rate": 0.15,
+  "max_coverage_mismatch_ratio": 0.1,
+  "min_mapping_coverage_ratio": 1.0,
+  "max_mapping_conflicts": 0,
+  "max_unresolved_mappings": 0,
+  "questions_missing_scope": "full_dataset",
+  "questions_missing_exclude_descriptive": true,
+  "max_questions_missing_answers": 0
+}

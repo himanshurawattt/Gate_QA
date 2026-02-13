@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-02-12T22:33:51.249141+00:00",
+  "suspicious_csv": "artifacts\\review\\suspicious_lines.csv",
+  "mapping_report": "data\\answers\\answer_to_question_map_v1.json",
+  "id_mapping_unresolved_csv": "artifacts\\review\\id_mapping_unresolved.csv",
+  "questions_missing_answers_csv": "artifacts\\review\\questions_missing_answers.csv",
+  "questions_missing_answers_full_dataset_csv": "artifacts\\review\\questions_missing_answers.full_dataset.csv",
+  "questions_missing_answers_mapped_universe_csv": "artifacts\\review\\questions_missing_answers.mapped_universe.csv",
+  "questions_missing_answers_diff_csv": "artifacts\\review\\questions_missing_answers.diff_unresolved_ui.csv",
+  "answers_by_exam_uid": "data\\answers\\answers_by_exam_uid_v1.json",
+  "exam_uid_summary": {
+    "output_path": "data\\answers\\answers_by_exam_uid_v1.json",
+    "conflicts_csv_path": "artifacts\\review\\exam_uid_mapping_conflicts.csv",
+    "missing_csv_path": "artifacts\\review\\questions_missing_exam_uid_answers.csv",
+    "manual_patch_invalid": [],
+    "stats": {
+      "questions_scanned": 3421,
+      "questions_with_exam_uid": 3037,
+      "questions_without_exam_uid": 384,
+      "source_question_uid_records": 2582,
+      "records": 2582,
+      "conflicts": 0,
+      "manual_patch_applied": 0,
+      "manual_patch_invalid": 0,
+      "missing_exam_uid_answers": 455
+    }
+  },
+  "manual_patch_summary": {
+    "applied": 600,
+    "invalid_count": 0,
+    "invalid_records": [],
+    "manual_patch_path": "data/answers/manual_answers_patch_v1.json"
+  },
+  "parsed_summary": "artifacts\\parsed\\summary.json",
+  "normalized_summary": "artifacts\\normalized\\summary.json",
+  "ocr_summary": "artifacts\\ocr_raw\\summary.json"
+}
