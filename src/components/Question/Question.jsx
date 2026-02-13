@@ -25,34 +25,12 @@ export default function Question({ question = {}, changeQuestion }) {
             ></div>
           </MathJax>
         </div>
-        <div className="mb-4">
-          {(question.tags || []).map((tag) => (
-            <span
-              key={tag}
-              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
-        {question.link && (
-          <a
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block"
-            href={question.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Solution
-          </a>
-        )}
-        <button
-          className="bg-green-500 hover:bg-green-700 ml-5 text-white font-bold py-2 px-4 rounded"
-          onClick={changeQuestion}
-        >
-          Get Question
-        </button>
 
-        <AnswerPanel question={question} />
+        <AnswerPanel
+          question={question}
+          onNextQuestion={changeQuestion}
+          solutionLink={question.link}
+        />
       </div>
     </div>
   );
