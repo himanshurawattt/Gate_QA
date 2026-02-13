@@ -1,0 +1,579 @@
+{
+  "version": "v1",
+  "generated_at": "2026-02-12T20:57:00.222423+00:00",
+  "stats": {
+    "records": 81,
+    "source_missing_rows": 81
+  },
+  "question_uids": [
+    "go:132099",
+    "go:1376",
+    "go:1498",
+    "go:1506",
+    "go:153546",
+    "go:159741",
+    "go:165580",
+    "go:165929",
+    "go:1735",
+    "go:185173",
+    "go:189878",
+    "go:202867",
+    "go:203832",
+    "go:208574",
+    "go:211439",
+    "go:214569",
+    "go:2251",
+    "go:2281",
+    "go:2297",
+    "go:2303",
+    "go:2305",
+    "go:2468",
+    "go:2469",
+    "go:2470",
+    "go:2471",
+    "go:2472",
+    "go:2473",
+    "go:2474",
+    "go:2477",
+    "go:2482",
+    "go:2503",
+    "go:2597",
+    "go:357428",
+    "go:36282",
+    "go:3804",
+    "go:387302",
+    "go:388951",
+    "go:394296",
+    "go:395812",
+    "go:401",
+    "go:402659",
+    "go:43575",
+    "go:441",
+    "go:473",
+    "go:503",
+    "go:504",
+    "go:508",
+    "go:509",
+    "go:510",
+    "go:513",
+    "go:514",
+    "go:525",
+    "go:545",
+    "go:547",
+    "go:548",
+    "go:550",
+    "go:552",
+    "go:553",
+    "go:579",
+    "go:611",
+    "go:655",
+    "go:80",
+    "go:80584",
+    "go:83829",
+    "go:83830",
+    "go:83833",
+    "go:83850",
+    "go:83851",
+    "go:83854",
+    "go:83859",
+    "go:83977",
+    "go:83980",
+    "go:83993",
+    "go:84033",
+    "go:84039",
+    "go:87055",
+    "go:87078",
+    "go:87080",
+    "go:87081",
+    "local:79b9ddd7f1bfa3ad",
+    "local:c44fd595de4edd43"
+  ],
+  "records_by_question_uid": {
+    "local:79b9ddd7f1bfa3ad": {
+      "link": "https://gateoverflow.in/blog/17969/gate-cse-2026-just-one-day-before-exam",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:36282": {
+      "link": "https://gateoverflow.in/36282/deadlock",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:165580": {
+      "link": "https://gateoverflow.in/165580/modified-gate-2003-question",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:132099": {
+      "link": "https://gateoverflow.in/132099/gate-2005",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:402659": {
+      "link": "https://gateoverflow.in/402659/why-option-b-is-not-correct",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:165929": {
+      "link": "https://gateoverflow.in/165929/doubt-in-pipelining-questions",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:153546": {
+      "link": "https://gateoverflow.in/153546/general",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:159741": {
+      "link": "https://gateoverflow.in/159741/computer-network",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:185173": {
+      "link": "https://gateoverflow.in/185173/enquiry",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:189878": {
+      "link": "https://gateoverflow.in/189878/i-am-getting-low-score-mocks-even-after-preparing-for-months",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:202867": {
+      "link": "https://gateoverflow.in/202867/gate-2018",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:208574": {
+      "link": "https://gateoverflow.in/208574/gate2018-admissions",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:211439": {
+      "link": "https://gateoverflow.in/211439/previous-gate-year-score-degrades",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:214569": {
+      "link": "https://gateoverflow.in/214569/m-tech-admission",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "local:c44fd595de4edd43": {
+      "link": "https://gateoverflow.in/blog/17024/gate-overflow-test-series-for-gate-cse-2026",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:3804": {
+      "link": "https://gateoverflow.in/3804/gate-it-2005-question-43",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:394296": {
+      "link": "https://gateoverflow.in/394296/lock-compatibility-in-gate-it-2007-question-66",
+      "reason": "exam_uid_missing",
+      "exam_uid": "",
+      "type": "MCQ"
+    },
+    "go:80584": {
+      "link": "https://gateoverflow.in/80584/gate-cse-1987-question-2e",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1987:set1:main:q2e",
+      "type": "MCQ"
+    },
+    "go:87078": {
+      "link": "https://gateoverflow.in/87078/gate-cse-1989-question-2-ii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1989:set1:main:q2-ii",
+      "type": "MCQ"
+    },
+    "go:87080": {
+      "link": "https://gateoverflow.in/87080/gate-cse-1989-question-2-iii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1989:set1:main:q2-iii",
+      "type": "MCQ"
+    },
+    "go:87081": {
+      "link": "https://gateoverflow.in/87081/gate-cse-1989-question-2-iv",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1989:set1:main:q2-iv",
+      "type": "MCQ"
+    },
+    "go:203832": {
+      "link": "https://gateoverflow.in/203832/gate-cse-1990-question-1-iv-b",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-iv-b",
+      "type": "NAT"
+    },
+    "go:83829": {
+      "link": "https://gateoverflow.in/83829/gate-cse-1990-question-1-i",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-i",
+      "type": "NAT"
+    },
+    "go:83830": {
+      "link": "https://gateoverflow.in/83830/gate-cse-1990-question-1-iv-a",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-iv-a",
+      "type": "NAT"
+    },
+    "go:83833": {
+      "link": "https://gateoverflow.in/83833/gate-cse-1990-question-1-v",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-v",
+      "type": "NAT"
+    },
+    "go:83850": {
+      "link": "https://gateoverflow.in/83850/gate-cse-1990-question-1-vi",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-vi",
+      "type": "NAT"
+    },
+    "go:83851": {
+      "link": "https://gateoverflow.in/83851/gate-cse-1990-question-1-vii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-vii",
+      "type": "NAT"
+    },
+    "go:83854": {
+      "link": "https://gateoverflow.in/83854/gate-cse-1990-question-1-viii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-viii",
+      "type": "NAT"
+    },
+    "go:83859": {
+      "link": "https://gateoverflow.in/83859/gate-cse-1990-question-2-iii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q2-iii",
+      "type": "MCQ"
+    },
+    "go:83977": {
+      "link": "https://gateoverflow.in/83977/gate-cse-1990-question-2-iv",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q2-iv",
+      "type": "MCQ"
+    },
+    "go:83980": {
+      "link": "https://gateoverflow.in/83980/gate-cse-1990-question-2-v",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q2-v",
+      "type": "MCQ"
+    },
+    "go:83993": {
+      "link": "https://gateoverflow.in/83993/gate-cse-1990-question-2-viii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q2-viii",
+      "type": "MCQ"
+    },
+    "go:84033": {
+      "link": "https://gateoverflow.in/84033/gate-cse-1990-question-2-ix",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q2-ix",
+      "type": "MCQ"
+    },
+    "go:84039": {
+      "link": "https://gateoverflow.in/84039/gate-cse-1990-question-2-x",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q2-x",
+      "type": "MCQ"
+    },
+    "go:87055": {
+      "link": "https://gateoverflow.in/87055/gate-cse-1990-question-1-viii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1990:set1:main:q1-viii",
+      "type": "NAT"
+    },
+    "go:503": {
+      "link": "https://gateoverflow.in/503/gate-cse-1991-question-01-v",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q1-v",
+      "type": "NAT"
+    },
+    "go:504": {
+      "link": "https://gateoverflow.in/504/gate-cse-1991-question-1-vi",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q1-vi",
+      "type": "NAT"
+    },
+    "go:508": {
+      "link": "https://gateoverflow.in/508/gate-cse-1991-question-01-xii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q1-xii",
+      "type": "NAT"
+    },
+    "go:509": {
+      "link": "https://gateoverflow.in/509/gate-cse-1991-question-01-xiv",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q1-xiv",
+      "type": "NAT"
+    },
+    "go:510": {
+      "link": "https://gateoverflow.in/510/gate-cse-1991-question-01-xv",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q1-xv",
+      "type": "NAT"
+    },
+    "go:513": {
+      "link": "https://gateoverflow.in/513/gate-cse-1991-question-02-iii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q2-iii",
+      "type": "MCQ"
+    },
+    "go:514": {
+      "link": "https://gateoverflow.in/514/gate-cse-1991-question-02-iv",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q2-iv",
+      "type": "MCQ"
+    },
+    "go:525": {
+      "link": "https://gateoverflow.in/525/gate-cse-1991-question-03-xi",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1991:set1:main:q3-xi",
+      "type": "MSQ"
+    },
+    "go:545": {
+      "link": "https://gateoverflow.in/545/gate-cse-1992-question-01-i",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q1-i",
+      "type": "NAT"
+    },
+    "go:547": {
+      "link": "https://gateoverflow.in/547/gate-cse-1992-question-01-iii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q1-iii",
+      "type": "NAT"
+    },
+    "go:548": {
+      "link": "https://gateoverflow.in/548/gate-cse-1992-question-01-iv",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q1-iv",
+      "type": "NAT"
+    },
+    "go:550": {
+      "link": "https://gateoverflow.in/550/gate-cse-1992-question-01-v",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q1-v",
+      "type": "NAT"
+    },
+    "go:552": {
+      "link": "https://gateoverflow.in/552/gate-cse-1992-question-01-vii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q1-vii",
+      "type": "NAT"
+    },
+    "go:553": {
+      "link": "https://gateoverflow.in/553/gate-cse-1992-question-01-viii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q1-viii",
+      "type": "NAT"
+    },
+    "go:579": {
+      "link": "https://gateoverflow.in/579/gate-cse-1992-question-03-ii",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1992:set1:main:q3-ii",
+      "type": "MCQ"
+    },
+    "go:2297": {
+      "link": "https://gateoverflow.in/2297/gate-cse-1993-question-7-9-ugcnet-dec2012-iii-41",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1993:set1:main:q7-9-ugcnet-dec2012-iii-41",
+      "type": "MSQ"
+    },
+    "go:2303": {
+      "link": "https://gateoverflow.in/2303/gate-cse-1993-question-8-5",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1993:set1:main:q8-5",
+      "type": "MCQ"
+    },
+    "go:2305": {
+      "link": "https://gateoverflow.in/2305/gate-cse-1993-question-8-7",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1993:set1:main:q8-7",
+      "type": "MCQ"
+    },
+    "go:611": {
+      "link": "https://gateoverflow.in/611/gate-cse-1993-question-02-7",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1993:set1:main:q2-7",
+      "type": "NAT"
+    },
+    "go:2468": {
+      "link": "https://gateoverflow.in/2468/gate-cse-1994-question-2-1",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-1",
+      "type": "NAT"
+    },
+    "go:2469": {
+      "link": "https://gateoverflow.in/2469/gate-cse-1994-question-2-2",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-2",
+      "type": "NAT"
+    },
+    "go:2470": {
+      "link": "https://gateoverflow.in/2470/gate-cse-1994-question-2-3",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-3",
+      "type": "NAT"
+    },
+    "go:2471": {
+      "link": "https://gateoverflow.in/2471/gate-cse-1994-question-2-4",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-4",
+      "type": "NAT"
+    },
+    "go:2472": {
+      "link": "https://gateoverflow.in/2472/gate-cse-1994-question-2-5",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-5",
+      "type": "NAT"
+    },
+    "go:2473": {
+      "link": "https://gateoverflow.in/2473/gate-cse-1994-question-2-6",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-6",
+      "type": "NAT"
+    },
+    "go:2474": {
+      "link": "https://gateoverflow.in/2474/gate-cse-1994-question-2-7",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-7",
+      "type": "NAT"
+    },
+    "go:2477": {
+      "link": "https://gateoverflow.in/2477/gate-cse-1994-question-2-10",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q2-10",
+      "type": "NAT"
+    },
+    "go:2482": {
+      "link": "https://gateoverflow.in/2482/gate-cse-1994-question-3-5",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q3-5",
+      "type": "MCQ"
+    },
+    "go:2503": {
+      "link": "https://gateoverflow.in/2503/gate-cse-1994-question-7",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1994:set1:main:q7",
+      "type": "NAT"
+    },
+    "go:2597": {
+      "link": "https://gateoverflow.in/2597/gate-cse-1995-question-1-10",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1995:set1:main:q1-10",
+      "type": "MCQ"
+    },
+    "go:2251": {
+      "link": "https://gateoverflow.in/2251/gate-cse-1997-question-4-10",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1997:set1:main:q4-10",
+      "type": "MCQ"
+    },
+    "go:2281": {
+      "link": "https://gateoverflow.in/2281/gate-cse-1997-question-21",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1997:set1:main:q21",
+      "type": "MCQ"
+    },
+    "go:1735": {
+      "link": "https://gateoverflow.in/1735/gate-cse-1998-question-21",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1998:set1:main:q21",
+      "type": "NAT"
+    },
+    "go:1498": {
+      "link": "https://gateoverflow.in/1498/gate-cse-1999-question-2-21",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1999:set1:main:q2-21",
+      "type": "MCQ"
+    },
+    "go:1506": {
+      "link": "https://gateoverflow.in/1506/gate-cse-1999-question-7",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:1999:set1:main:q7",
+      "type": "MCQ"
+    },
+    "go:655": {
+      "link": "https://gateoverflow.in/655/gate-cse-2000-question-2-8",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2000:set1:main:q2-8",
+      "type": "MCQ"
+    },
+    "go:43575": {
+      "link": "https://gateoverflow.in/43575/gate-cse-2003-question-74",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2003:set1:main:q74",
+      "type": "MCQ"
+    },
+    "go:1376": {
+      "link": "https://gateoverflow.in/1376/gate-cse-2005-question-53",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2005:set1:main:q53",
+      "type": "MCQ"
+    },
+    "go:387302": {
+      "link": "https://gateoverflow.in/387302/gate-2008-question-21",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2008:set1:main:q21",
+      "type": "MCQ"
+    },
+    "go:401": {
+      "link": "https://gateoverflow.in/401/gate-cse-2008-question-3",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2008:set1:main:q3",
+      "type": "MCQ"
+    },
+    "go:441": {
+      "link": "https://gateoverflow.in/441/gate-cse-2008-question-30",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2008:set1:main:q30",
+      "type": "MCQ"
+    },
+    "go:473": {
+      "link": "https://gateoverflow.in/473/gate-cse-2012-question-38",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2012:set1:main:q38",
+      "type": "MCQ"
+    },
+    "go:80": {
+      "link": "https://gateoverflow.in/80/gate-cse-2013-question-47",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2013:set1:main:q47",
+      "type": "MCQ"
+    },
+    "go:395812": {
+      "link": "https://gateoverflow.in/395812/gate-cse-2014-set-2-question-10-modified",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2014:set2:main:q10-modified",
+      "type": "NAT"
+    },
+    "go:388951": {
+      "link": "https://gateoverflow.in/388951/gate-cse-2017-set-2-question-33-msq-version",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2017:set2:main:q33-msq-version",
+      "type": "MSQ"
+    },
+    "go:357428": {
+      "link": "https://gateoverflow.in/357428/gate-cse-2021-set-1-question-23",
+      "reason": "no_exam_answer_record",
+      "exam_uid": "cse:2021:set1:main:q23",
+      "type": "NAT"
+    }
+  }
+}
