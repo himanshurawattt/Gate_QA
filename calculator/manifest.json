@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "TCS Scientific Calculator",
+  "version": "1.0",
+  "description": "A floating scientific calculator that stays open until you close it",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-calculator": {
+      "suggested_key": {
+        "default": "Alt+C",
+        "windows": "Alt+C",
+        "mac": "Alt+C"
+      },
+      "description": "Toggle TCS Calculator"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

@@ -29817,7 +29817,19 @@
       "1-mark"
     ],
     "question_uid": "go:357428",
-    "exam_uid": "cse:2021:set1:main:q23"
+    "exam_uid": "cse:2021:set1:main:q23",
+    "answer_uid": "manual:go:357428",
+    "answer_meta": {
+      "type": "NAT",
+      "answer": [
+        205,
+        820
+      ],
+      "tolerance": {
+        "abs": 0
+      },
+      "source": "question_uid"
+    }
   },
   {
     "title": "GATE CSE 2021 Set 1 | Question: 24",

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Scientific Calculator</title>
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background: linear-gradient(to bottom, #f0f0f0 0%, #d0d0d0 100%);
+            overflow: hidden;
+            user-select: none;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Display Area - Two equal input boxes */
+        #display-area {
+            margin: 6px 10px 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        input.display-box {
+            display: block;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #aaa;
+            border-bottom: 3px solid #aaa;
+            border-radius: 3px;
+            padding: 0 5px;
+            text-align: right;
+            outline: none;
+            font-family: Arial, sans-serif;
+            cursor: default;
+            height: 30px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        #expression {
+            font-size: 11px;
+            color: #555;
+        }
+
+        #display {
+            font-weight: 700;
+            color: #000;
+        }
+
+        /* Display container for memory indicator */
+        .display-row {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .display-row input {
+            flex: 1;
+        }
+
+        /* Memory indicator - matches real.html */
+        #memory-indicator {
+            display: none;
+            font-size: 11px;
+            font-weight: 700;
+            color: #000;
+            padding: 0 3px;
+            align-items: center;
+            background: #fff;
+            border: 1px solid #777;
+            border-left: none;
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        #memory-indicator.memoryshow {
+            display: flex;
+        }
+
+        /* Main Button Grid - 11 columns, 5px gap (matches real.css margin-right) */
+        #buttons {
+            display: grid;
+            grid-template-columns: repeat(11, minmax(0, 1fr));
+            gap: 5px;
+            padding: 0 10px 10px;
+        }
+
+        button {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            border: 1px solid #aaa;
+            border-bottom: 3px solid #aaa;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 25px;
+            /* Standard Height - matches real.css */
+            background: #f1f1f1;
+            color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #eaeaea;
+        }
+
+        button:active {
+            background: #ddd;
+            border-bottom: 1px solid #aaa;
+            position: relative;
+            height: 25px;
+        }
+
+        /* Mod Button (Row 1 Col 1) */
+        .mod-btn {
+            height: 25px;
+            font-size: 11px;
+            line-height: normal;
+        }
+
+        /* Angle Mode (Row 1 Cols 2-3) - Side by Side */
+        #angle-mode {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            height: 25px;
+            grid-column: span 2;
+        }
+
+        #angle-mode label {
+            display: flex;
+            align-items: center;
+            gap: 1px;
+            font-size: 9px;
+            font-weight: normal;
+            color: #000;
+            cursor: pointer;
+        }
+
+        #angle-mode input[type="radio"] {
+            cursor: pointer;
+            margin: 0;
+            transform: scale(0.8);
+        }
+
+        /* Memory Buttons (Row 1 Cols 3-7) */
+        .mem-btn {
+            font-size: 10px;
+            height: 25px;
+        }
+
+        .num {
+            background: #f1f1f1;
+            color: #444;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .num:hover {
+            background: #eaeaea;
+        }
+
+        /* 0 Button alignment */
+        .wide {
+            grid-column: span 2;
+            padding-bottom: 2px;
+        }
+
+        .red {
+            background: #e74c3c;
+            color: #fff;
+            border: 1px solid #c0392b;
+            border-bottom: 3px solid #c0392b;
+        }
+
+        .red:hover {
+            background: #d44637;
+        }
+
+        .red:active {
+            background: #c0392b;
+            border-bottom: 1px solid #c0392b;
+        }
+
+        .eq {
+            background: #2ecc71;
+            color: #fff;
+            font-size: 20px;
+            border: 1px solid #27ae60;
+            border-bottom: 3px solid #27ae60;
+            grid-row: span 2;
+            height: auto;
+            font-weight: 900;
+        }
+
+        .eq:hover {
+            background: #27c468;
+        }
+
+        .eq:active {
+            background: #27ae60;
+            border-bottom: 2px solid #27ae60;
+            height: auto;
+            position: static;
+        }
+
+        /* Typography Tweaks */
+        .op {
+            font-size: 14px;
+        }
+
+        .fn {
+            font-size: 10px;
+        }
+
+        /* Arrow Button - matches real.css .calc_arrows */
+        button[data-action="backspace"] {
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 20px;
+        }
+
+        sup {
+            font-size: 9px;
+            line-height: 0;
+            vertical-align: super;
+        }
+
+        /* y√x button: y as superscript above root */
+        .yroot-label {
+            display: inline-flex;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .yroot-label .yroot-y {
+            font-size: 0.7em;
+            position: relative;
+            top: -8px;
+            margin-right: -2px;
+        }
+
+        .yroot-label .yroot-root {
+            font-size: 1.2em;
+        }
+
+        /* Help Button */
+        #help-btn {
+            background: #4286f3;
+            color: #fff;
+            border: 1px solid #3070d4;
+            border-bottom: 3px solid #3070d4;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        #help-btn:hover {
+            background: #3a7be0;
+        }
+
+        /* Help Section */
+        #help-section {
+            display: none;
+            padding: 10px;
+            margin: 0 10px 10px;
+            background: #fff;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #333;
+            overflow-y: auto;
+            max-height: 240px;
+        }
+
+        #help-section.visible {
+            display: block;
+        }
+
+        #help-section h3 {
+            text-align: center;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        #help-section h4 {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        #help-section ul {
+            padding-left: 18px;
+            margin: 4px 0;
+        }
+
+        #help-section li {
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="calc-body">
+        <div id="display-area">
+            <input type="text" id="expression" class="display-box" readonly>
+            <div class="display-row">
+                <input type="text" id="display" class="display-box" readonly value="0">
+                <span id="memory-indicator">M</span>
+            </div>
+        </div>
+
+        <!-- Main Grid - All buttons including Top Row -->
+        <div id="buttons">
+            <!-- Row 1: Mod, Angle, Memory, Spacers -->
+            <button class="mod-btn" data-action="mod">mod</button>
+            <div id="angle-mode" style="grid-column: span 2;">
+                <label><input type="radio" name="angle" value="deg" checked> Deg</label>
+                <label><input type="radio" name="angle" value="rad"> Rad</label>
+            </div>
+            <!-- Spacers before memory buttons -->
+            <div style="grid-column: span 3;"></div>
+            <button class="mem-btn" data-action="mc">MC</button>
+            <button class="mem-btn" data-action="mr">MR</button>
+            <button class="mem-btn" data-action="ms">MS</button>
+            <button class="mem-btn" data-action="m+">M+</button>
+            <button class="mem-btn" data-action="m-">M-</button>
+
+            <!-- Row 2 -->
+            <button class="fn" data-action="fn" data-val="sinh">sinh</button>
+            <button class="fn" data-action="fn" data-val="cosh">cosh</button>
+            <button class="fn" data-action="fn" data-val="tanh">tanh</button>
+            <button class="fn" data-action="exp">Exp</button>
+            <button class="op" data-action="num" data-val="(">(</button>
+            <button class="op" data-action="num" data-val=")">)</button>
+            <button class="red wide" data-action="backspace">&larr;</button> <!-- Thinner Arrow Entity -->
+            <button class="red" data-action="clear">C</button>
+            <button class="red" data-action="sign">+/-</button>
+            <button class="fn" data-action="fn" data-val="sqrt">√</button>
+
+            <!-- Row 3 -->
+            <button class="fn" data-action="fn" data-val="asinh">sinh⁻¹</button>
+            <button class="fn" data-action="fn" data-val="acosh">cosh⁻¹</button>
+            <button class="fn" data-action="fn" data-val="atanh">tanh⁻¹</button>
+            <button class="fn" data-action="fn" data-val="log2">log₂x</button>
+            <button class="fn" data-action="fn" data-val="ln">ln</button>
+            <button class="fn" data-action="fn" data-val="log">log</button>
+            <button class="num" data-action="num" data-val="7">7</button>
+            <button class="num" data-action="num" data-val="8">8</button>
+            <button class="num" data-action="num" data-val="9">9</button>
+            <button class="op" data-action="op" data-val="/">/</button>
+            <button class="op" data-action="percent">%</button>
+
+            <!-- Row 4 -->
+            <button class="fn" data-action="const" data-val="PI">π</button>
+            <button class="fn" data-action="const" data-val="E">e</button>
+            <button class="fn" data-action="fn" data-val="fact">n!</button>
+            <button class="fn" data-action="logyx">log<sub>y</sub>x</button>
+            <button class="fn" data-action="fn" data-val="exp">eˣ</button>
+            <button class="fn" data-action="fn" data-val="tenx">10ˣ</button>
+            <button class="num" data-action="num" data-val="4">4</button>
+            <button class="num" data-action="num" data-val="5">5</button>
+            <button class="num" data-action="num" data-val="6">6</button>
+            <button class="op" data-action="op" data-val="*">*</button>
+            <button class="fn" data-action="fn" data-val="recip">1/x</button>
+
+            <!-- Row 5 -->
+            <button class="fn" data-action="trig" data-val="sin">sin</button>
+            <button class="fn" data-action="trig" data-val="cos">cos</button>
+            <button class="fn" data-action="trig" data-val="tan">tan</button>
+            <button class="fn" data-action="pow">xʸ</button>
+            <button class="fn" data-action="fn" data-val="cube">x³</button>
+            <button class="fn" data-action="fn" data-val="square">x²</button>
+            <button class="num" data-action="num" data-val="1">1</button>
+            <button class="num" data-action="num" data-val="2">2</button>
+            <button class="num" data-action="num" data-val="3">3</button>
+            <button class="op" data-action="op" data-val="-">-</button>
+            <button class="eq" data-action="calc">=</button>
+
+            <!-- Row 6 -->
+            <button class="fn" data-action="trig" data-val="asin">sin⁻¹</button>
+            <button class="fn" data-action="trig" data-val="acos">cos⁻¹</button>
+            <button class="fn" data-action="trig" data-val="atan">tan⁻¹</button>
+            <button class="fn" data-action="yroot"><span class="yroot-label"><span class="yroot-y">y</span><span
+                        class="yroot-root">√x</span></span></button>
+            <button class="fn" data-action="fn" data-val="cbrt">∛</button>
+            <button class="fn" data-action="fn" data-val="abs">|x|</button>
+            <button class="num wide" data-action="num" data-val="0">0</button>
+            <button class="num" data-action="num" data-val=".">.</button>
+            <button class="op" data-action="op" data-val="+">+</button>
+        </div>
+    </div>
+
+    <!-- Help Section (hidden by default) -->
+    <div id="help-section">
+        <h3>Calculator Instructions</h3>
+        <p>Allows you to perform basic and complex mathematical operations such as modulus, square root, cube root,
+            trigonometric, exponential, logarithmic, hyperbolic functions, etc.</p>
+        <p>You can operate the calculator using the buttons provided on screen with your mouse.</p>
+        <h4 style="color:green; text-decoration:underline;">Do's:</h4>
+        <ul>
+            <li>Be sure to press [C] when beginning a new calculation.</li>
+            <li>Simply an equation using parenthesis and other mathematical operators.</li>
+            <li>Use the predefined operations such as π (Pi), log, Exp to save time.</li>
+            <li>Use memory function for calculating cumulative totals.<br>
+                <strong>[M+]</strong>: Add displayed value to memory.<br>
+                <strong>[MR]</strong>: Recall the value stored in memory.<br>
+                <strong>[M-]</strong>: Subtract displayed value from memory.
+            </li>
+            <li>Be sure to select the angle unit (Deg or Rad) before beginning any calculation.<br>
+                <strong>Note:</strong> By default angle unit is set as Degree.
+            </li>
+        </ul>
+        <h4 style="color:red; text-decoration:underline;">Don'ts:</h4>
+        <ul>
+            <li>Perform multiple operations together.</li>
+            <li>Leave parenthesis unbalanced.</li>
+            <li>Change the angle unit while performing a calculation.</li>
+        </ul>
+        <h4 style="text-decoration:underline;">Limitations:</h4>
+        <ul>
+            <li>Keyboard operation is disabled.</li>
+            <li>Factorial output is precise up to 14 digits.</li>
+            <li>Logarithmic and Hyperbolic outputs are precise up to 5 digits.</li>
+            <li>Modulus on decimal numbers with 15 digits may not be precise.</li>
+            <li>Supported range: 10<sup>-323</sup> to 10<sup>308</sup>.</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleHelp() {
+            const calcBody = document.getElementById('calc-body');
+            const helpSection = document.getElementById('help-section');
+            const helpBtn = document.getElementById('help-btn');
+            if (helpSection.classList.contains('visible')) {
+                helpSection.classList.remove('visible');
+                calcBody.style.display = '';
+                helpBtn.textContent = 'Help';
+            } else {
+                calcBody.style.display = 'none';
+                helpSection.classList.add('visible');
+                helpBtn.textContent = 'Back';
+            }
+        }
+    </script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
