@@ -1,8 +1,9 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useCallback } from "react";
 import { AnswerService } from "../../services/AnswerService";
 import { evaluateAnswer } from "../../utils/evaluateAnswer";
 import { useFilters } from "../../contexts/FilterContext";
 import QuestionStatusControls from "../QuestionStatusControls/QuestionStatusControls";
+import Toast from "../Toast/Toast";
 
 const PROGRESS_KEY = "gateqa_progress_v1";
 const OPTIONS = ["A", "B", "C", "D"];
@@ -103,6 +104,49 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
     writeJsonToLocalStorage(PROGRESS_KEY, progress);
   };
 
+  // --- Share Question ---
+  const [toastVisible, setToastVisible] = useState(false);
+
+  const handleShare = useCallback(() => {
+    const questionId = question.question_uid || '';
+    if (!questionId) return;
+
+    const url = `${window.location.origin}${window.location.pathname}?question=${encodeURIComponent(questionId)}`;
+
+    const showToast = () => {
+      setToastVisible(true);
+      setTimeout(() => setToastVisible(false), 2000);
+    };
+
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+      navigator.clipboard.writeText(url).then(showToast).catch(() => {
+        // Fallback if clipboard API rejects
+        fallbackCopyToClipboard(url);
+        showToast();
+      });
+    } else {
+      fallbackCopyToClipboard(url);
+      showToast();
+    }
+  }, [question]);
+
+  const fallbackCopyToClipboard = (text) => {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.left = '-9999px';
+    textarea.style.top = '-9999px';
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    try {
+      document.execCommand('copy');
+    } catch (_) {
+      // Silently fail
+    }
+    document.body.removeChild(textarea);
+  };
+
   // --- Render Logic for Input Section ---
   const renderInputSection = () => {
     if (!questionIdentity.hasIdentity) {
@@ -149,10 +193,10 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
         {/* Question Type Badge */}
         <div className="flex">
           <span className={`inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ${answerRecord.type === "NAT"
-              ? "bg-purple-50 text-purple-700 ring-purple-600/20"
-              : answerRecord.type === "MSQ"
-                ? "bg-orange-50 text-orange-700 ring-orange-600/20"
-                : "bg-blue-50 text-blue-700 ring-blue-600/20"
+            ? "bg-purple-50 text-purple-700 ring-purple-600/20"
+            : answerRecord.type === "MSQ"
+              ? "bg-orange-50 text-orange-700 ring-orange-600/20"
+              : "bg-blue-50 text-blue-700 ring-blue-600/20"
             }`}>
             {answerRecord.type}
           </span>
@@ -241,7 +285,7 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
       </div>
 
       {/* Unified Action Bar */}
-      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-4">
 
         {/* 1. Submit Answer */}
         <button
@@ -271,7 +315,7 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
             href={solutionLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center rounded bg-white border border-gray-300 px-4 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 transition-colors h-12"
+            className="flex items-center justify-center rounded border border-purple-300 bg-purple-50 px-4 py-3 text-sm font-medium text-purple-700 shadow-sm hover:bg-purple-100 transition-colors h-12"
           >
             View Solution
           </a>
@@ -281,11 +325,29 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
           </div>
         )}
 
-        {/* 5. Next Question */}
+        {/* 5. Share Question */}
+        <button
+          type="button"
+          onClick={handleShare}
+          className="flex items-center justify-center gap-2 rounded border border-gray-300 bg-gray-100 px-4 py-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-gray-200 transition-colors h-12"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="w-4 h-4 text-gray-500"
+          >
+            <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+            <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+          </svg>
+          Share
+        </button>
+
+        {/* 6. Next Question */}
         <button
           type="button"
           onClick={onNextQuestion}
-          className="flex items-center justify-center rounded bg-green-600 px-4 py-3 text-base font-bold text-white shadow-sm hover:bg-green-700 transition-colors h-12"
+          className="flex items-center justify-center rounded bg-teal-600 px-4 py-3 text-base font-bold text-white shadow-sm hover:bg-teal-700 transition-colors h-12"
         >
           Next Question
         </button>
@@ -297,6 +359,8 @@ export default function AnswerPanel({ question = {}, onNextQuestion, solutionLin
           Progress status is unavailable for this question identifier.
         </p>
       )}
+
+      <Toast message="Link copied!" visible={toastVisible} />
     </div>
   );
 }

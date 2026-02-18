@@ -181,6 +181,10 @@ export const FilterProvider = ({ children }) => {
     useEffect(() => {
         if (!isInitialized) return;
 
+        // Preserve any existing `question` param set by App.jsx deep-linking
+        const existingParams = new URLSearchParams(window.location.search);
+        const questionParam = existingParams.get('question');
+
         const params = new URLSearchParams();
         if (filters.selectedYears.length) params.set('years', filters.selectedYears.join(','));
         if (filters.selectedTopics.length) params.set('topics', filters.selectedTopics.join(','));
@@ -200,6 +204,11 @@ export const FilterProvider = ({ children }) => {
         }
         if (filters.showOnlyBookmarked) {
             params.set('showOnlyBookmarked', '1');
+        }
+
+        // Re-attach the question param so deep-link is not wiped by filter sync
+        if (questionParam) {
+            params.set('question', questionParam);
         }
 
         const query = params.toString();
@@ -490,12 +499,24 @@ export const FilterProvider = ({ children }) => {
         });
     }, [structuredTags]);
 
+    // Expose all questions and a lookup helper for deep-linking
+    const allQuestions = QuestionService.questions;
+
+    const getQuestionById = useCallback((id) => {
+        if (!id || typeof id !== 'string') return null;
+        const trimmed = id.trim();
+        if (!trimmed) return null;
+        return allQuestions.find(q => q.question_uid === trimmed) || null;
+    }, [allQuestions]);
+
     return (
         <FilterContext.Provider value={{
             filters,
             updateFilters,
             clearFilters,
             filteredQuestions,
+            allQuestions,
+            getQuestionById,
             structuredTags,
             totalQuestions,
             isInitialized,

@@ -12,8 +12,9 @@ import { QuestionService } from "./services/QuestionService";
 import { AnswerService } from "./services/AnswerService";
 
 const GateQAContent = ({ loading, error, loadQuestions, isMobileFilterOpen, setIsMobileFilterOpen }) => {
-  const { filteredQuestions, isInitialized, totalQuestions } = useFilters();
+  const { filteredQuestions, isInitialized, totalQuestions, allQuestions, getQuestionById } = useFilters();
   const [currentQuestion, setCurrentQuestion] = useState(null);
+  const hasResolvedDeepLink = useRef(false);
 
   // Pick a random question from the filtered list
   const pickRandomQuestion = useCallback(() => {
@@ -25,9 +26,32 @@ const GateQAContent = ({ loading, error, loadQuestions, isMobileFilterOpen, setI
     setCurrentQuestion(filteredQuestions[randomIndex]);
   }, [filteredQuestions]);
 
-  // Initial pick when data determines it's ready
+  // Deep-link: on init, resolve ?question=<id> to a real question
   useEffect(() => {
-    if (isInitialized && filteredQuestions.length > 0 && !currentQuestion) {
+    if (!isInitialized || allQuestions.length === 0 || hasResolvedDeepLink.current) {
+      return;
+    }
+    hasResolvedDeepLink.current = true;
+
+    const params = new URLSearchParams(window.location.search);
+    const questionId = params.get('question');
+    if (questionId) {
+      const found = getQuestionById(questionId);
+      if (found) {
+        setCurrentQuestion(found);
+        return;
+      }
+    }
+    // Fall back to random question if no deep-link or invalid ID
+    if (!currentQuestion && filteredQuestions.length > 0) {
+      const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
+      setCurrentQuestion(filteredQuestions[randomIndex]);
+    }
+  }, [isInitialized, allQuestions, filteredQuestions, getQuestionById, currentQuestion]);
+
+  // Pick random when data is ready and no question is set (non-deep-link path)
+  useEffect(() => {
+    if (isInitialized && filteredQuestions.length > 0 && !currentQuestion && hasResolvedDeepLink.current) {
       pickRandomQuestion();
     }
   }, [isInitialized, filteredQuestions, currentQuestion, pickRandomQuestion]);
@@ -43,6 +67,17 @@ const GateQAContent = ({ loading, error, loadQuestions, isMobileFilterOpen, setI
       setCurrentQuestion(null);
     }
   }, [isInitialized, filteredQuestions, currentQuestion, pickRandomQuestion]);
+
+  // Sync ?question=<id> into the URL whenever currentQuestion changes
+  useEffect(() => {
+    if (typeof window === "undefined" || !currentQuestion || !currentQuestion.question_uid) {
+      return;
+    }
+    const params = new URLSearchParams(window.location.search);
+    params.set('question', currentQuestion.question_uid);
+    const newUrl = `${window.location.pathname}?${params.toString()}`;
+    window.history.replaceState({}, '', newUrl);
+  }, [currentQuestion]);
 
   // Update window object for debug/external services
   useEffect(() => {
