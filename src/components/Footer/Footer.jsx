@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Copyright & Attribution Section */}
           <div className="flex-1 max-w-3xl">
             <p className="text-sm text-gray-800 mb-2">
-              Question database powered by <a href="https://gateoverflow.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">GATE Overflow</a> © 2014-2025.
+              Question database powered by <a href="https://gateoverflow.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">GATE Overflow</a> ©.
             </p>
 
             {/* Data Policy Link - Made Prominent */}
