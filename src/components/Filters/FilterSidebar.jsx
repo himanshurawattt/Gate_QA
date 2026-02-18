@@ -34,7 +34,8 @@ const FilterSidebar = ({ className = "", onClose }) => {
         progressPercentage,
         isProgressStorageAvailable,
         setHideSolved,
-        setShowOnlyBookmarked
+        setShowOnlyBookmarked,
+        setShowOnlySolved
     } = useFilters();
     const selectedTypes = Array.isArray(filters.selectedTypes) ? filters.selectedTypes : [...QUESTION_TYPES];
 
@@ -46,7 +47,7 @@ const FilterSidebar = ({ className = "", onClose }) => {
                     {filteredQuestions.length} / {totalQuestions} results
                 </span>
                 <div className="flex items-center gap-2">
-                    {(filters.selectedYears.length > 0 || filters.selectedTopics.length > 0 || filters.selectedSubtopics.length > 0 || selectedTypes.length < QUESTION_TYPES.length || filters.hideSolved || filters.showOnlyBookmarked) && (
+                    {(filters.selectedYears.length > 0 || filters.selectedTopics.length > 0 || filters.selectedSubtopics.length > 0 || selectedTypes.length < QUESTION_TYPES.length || filters.hideSolved || filters.showOnlySolved || filters.showOnlyBookmarked) && (
                         <button
                             onClick={clearFilters}
                             className="text-xs font-bold text-blue-600 hover:text-blue-800 uppercase tracking-wide"
@@ -66,16 +67,33 @@ const FilterSidebar = ({ className = "", onClose }) => {
             </div>
 
             <div className="p-4 border-b border-gray-200 bg-white z-10 flex-shrink-0">
-                <ProgressBar
-                    solvedCount={solvedCount}
-                    totalQuestions={totalQuestions}
-                    progressPercentage={progressPercentage}
-                />
-                {!isProgressStorageAvailable && (
-                    <p className="mt-2 text-xs text-amber-700">
-                        Progress persistence is unavailable in this browser mode. Changes will reset on refresh.
-                    </p>
-                )}
+                <div className="flex flex-col lg:flex-row gap-4 h-full items-stretch">
+                    <div className="flex-1 min-w-0 flex flex-col">
+                        <ProgressBar
+                            solvedCount={solvedCount}
+                            totalQuestions={totalQuestions}
+                            progressPercentage={progressPercentage}
+                            className="flex-1"
+                        />
+                        {!isProgressStorageAvailable && (
+                            <p className="mt-2 text-xs text-amber-700">
+                                Progress persistence is unavailable.
+                            </p>
+                        )}
+                    </div>
+                    <div className="lg:w-[45%] flex flex-col justify-center">
+                        <div className="bg-gray-50 rounded-lg p-3 border border-gray-100 h-full flex flex-col justify-center">
+                            <ProgressFilterToggles
+                                hideSolved={filters.hideSolved}
+                                showOnlySolved={filters.showOnlySolved}
+                                showOnlyBookmarked={filters.showOnlyBookmarked}
+                                onToggleHideSolved={setHideSolved}
+                                onToggleShowOnlySolved={setShowOnlySolved}
+                                onToggleShowBookmarked={setShowOnlyBookmarked}
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Question Type Filter (Horizontal Toggles) */}
@@ -148,17 +166,8 @@ const FilterSidebar = ({ className = "", onClose }) => {
                 <YearRangeFilter />
 
                 <div className="mt-4 border-t border-gray-200 pt-4">
-                    <div className="mb-2">
-                        <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider">Progress Filters</h3>
-                    </div>
-                    <ProgressFilterToggles
-                        hideSolved={filters.hideSolved}
-                        showOnlyBookmarked={filters.showOnlyBookmarked}
-                        onToggleHideSolved={setHideSolved}
-                        onToggleShowBookmarked={setShowOnlyBookmarked}
-                    />
-                    <p className="mt-2 text-xs text-gray-500">
-                        {bookmarkedCount} bookmarked questions
+                    <p className="text-xs text-gray-500 text-center">
+                        {bookmarkedCount} bookmarked questions in current view
                     </p>
                 </div>
             </div>

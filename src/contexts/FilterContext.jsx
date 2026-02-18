@@ -124,6 +124,7 @@ export const FilterProvider = ({ children }) => {
         selectedSubtopics: [],
         selectedTypes: [...DEFAULT_SELECTED_TYPES],
         hideSolved: false,
+        showOnlySolved: false,
         showOnlyBookmarked: false,
         searchQuery: ''
     });
@@ -165,6 +166,7 @@ export const FilterProvider = ({ children }) => {
                 ? [...DEFAULT_SELECTED_TYPES]
                 : normalizeSelectedTypes(urlTypes.split(',').filter(Boolean)),
             hideSolved: parseBooleanParam(params.get('hideSolved')),
+            showOnlySolved: parseBooleanParam(params.get('showOnlySolved')),
             showOnlyBookmarked: parseBooleanParam(params.get('showOnlyBookmarked'))
         };
 
@@ -192,6 +194,9 @@ export const FilterProvider = ({ children }) => {
 
         if (filters.hideSolved) {
             params.set('hideSolved', '1');
+        }
+        if (filters.showOnlySolved) {
+            params.set('showOnlySolved', '1');
         }
         if (filters.showOnlyBookmarked) {
             params.set('showOnlyBookmarked', '1');
@@ -297,6 +302,7 @@ export const FilterProvider = ({ children }) => {
             selectedSubtopics,
             yearRange,
             hideSolved,
+            showOnlySolved,
             showOnlyBookmarked
         } = filters;
 
@@ -309,6 +315,10 @@ export const FilterProvider = ({ children }) => {
             const isBookmarked = questionId ? bookmarkedQuestionSet.has(questionId) : false;
 
             if (hideSolved && isSolved) {
+                return false;
+            }
+
+            if (showOnlySolved && !isSolved) {
                 return false;
             }
 
@@ -426,7 +436,21 @@ export const FilterProvider = ({ children }) => {
     }, [bookmarkedQuestionSet]);
 
     const setHideSolved = useCallback((value) => {
-        updateFilters({ hideSolved: !!value });
+        const isHiding = !!value;
+        const newFilters = { hideSolved: isHiding };
+        if (isHiding) {
+            newFilters.showOnlySolved = false;
+        }
+        updateFilters(newFilters);
+    }, [updateFilters]);
+
+    const setShowOnlySolved = useCallback((value) => {
+        const isShowing = !!value;
+        const newFilters = { showOnlySolved: isShowing };
+        if (isShowing) {
+            newFilters.hideSolved = false;
+        }
+        updateFilters(newFilters);
     }, [updateFilters]);
 
     const setShowOnlyBookmarked = useCallback((value) => {
@@ -460,6 +484,7 @@ export const FilterProvider = ({ children }) => {
             selectedSubtopics: [],
             selectedTypes: [...DEFAULT_SELECTED_TYPES],
             hideSolved: false,
+            showOnlySolved: false,
             showOnlyBookmarked: false,
             searchQuery: ''
         });
@@ -486,6 +511,7 @@ export const FilterProvider = ({ children }) => {
             isQuestionBookmarked,
             getQuestionProgressId,
             setHideSolved,
+            setShowOnlySolved,
             setShowOnlyBookmarked
         }}>
             {children}

@@ -10,6 +10,7 @@ const ActiveFilterChips = () => {
         selectedSubtopics,
         yearRange,
         hideSolved,
+        showOnlySolved,
         showOnlyBookmarked
     } = filters;
     const { minYear, maxYear } = structuredTags;
@@ -34,6 +35,10 @@ const ActiveFilterChips = () => {
         updateFilters({ hideSolved: false });
     };
 
+    const resetShowOnlySolved = () => {
+        updateFilters({ showOnlySolved: false });
+    };
+
     const resetShowBookmarkedOnly = () => {
         updateFilters({ showOnlyBookmarked: false });
     };
@@ -44,6 +49,7 @@ const ActiveFilterChips = () => {
         || selectedSubtopics.length > 0
         || isRangeActive
         || hideSolved
+        || showOnlySolved
         || showOnlyBookmarked;
 
     const formatYear = (tag) => {
@@ -101,6 +107,15 @@ const ActiveFilterChips = () => {
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
                     Hide solved
                     <button onClick={resetHideSolved} className="ml-1.5 inline-flex text-emerald-500 hover:text-emerald-600 focus:outline-none">
+                        <FaTimes />
+                    </button>
+                </span>
+            )}
+
+            {showOnlySolved && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+                    Solved only
+                    <button onClick={resetShowOnlySolved} className="ml-1.5 inline-flex text-indigo-500 hover:text-indigo-600 focus:outline-none">
                         <FaTimes />
                     </button>
                 </span>

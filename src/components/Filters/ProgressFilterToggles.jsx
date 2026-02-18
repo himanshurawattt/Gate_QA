@@ -21,8 +21,10 @@ const ToggleRow = ({ id, label, checked, onChange }) => {
 
 const ProgressFilterToggles = ({
     hideSolved = false,
+    showOnlySolved = false,
     showOnlyBookmarked = false,
     onToggleHideSolved,
+    onToggleShowOnlySolved,
     onToggleShowBookmarked
 }) => {
     return (
@@ -32,6 +34,12 @@ const ProgressFilterToggles = ({
                 label="Hide Solved Questions"
                 checked={hideSolved}
                 onChange={onToggleHideSolved}
+            />
+            <ToggleRow
+                id="show-only-solved-toggle"
+                label="Show Only Solved"
+                checked={showOnlySolved}
+                onChange={onToggleShowOnlySolved}
             />
             <ToggleRow
                 id="show-bookmarked-toggle"

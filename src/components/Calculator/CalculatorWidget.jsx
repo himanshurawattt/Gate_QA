@@ -239,8 +239,8 @@ export default function CalculatorWidget({ isOpen, onClose, anchorRef }) {
       <section
         ref={panelRef}
         className={`absolute pointer-events-auto overflow-hidden border border-gray-200 bg-white shadow-2xl ${panelTransitionClass} ${panelAnimationClass} ${isMobile
-            ? "inset-0 h-screen w-screen rounded-none"
-            : "h-[340px] w-[470px] rounded-xl"
+          ? "inset-0 h-screen w-screen rounded-none"
+          : "h-[340px] w-[470px] rounded-xl"
           }`}
         style={panelPositionStyle}
         role="dialog"
